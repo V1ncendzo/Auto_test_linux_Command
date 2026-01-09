@@ -1,0 +1,11 @@
+ID,Command Content,Log File,Detection Status,Triggered Rules
+1,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | bash""",auto_attack1.log,DETECTED,System Information Discovery | Syslog Clearing or Removal Via System Utilities | Linux Shell Pipe to Shell | Linux Base64 Encoded Pipe to Shell
+2,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\""\\$_\"")' |\""bash\""""",auto_attack2.log,DETECTED,Syslog Clearing or Removal Via System Utilities
+3,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\""\\$_\"")' | b\""ash\""""",auto_attack3.log,DETECTED,Syslog Clearing or Removal Via System Utilities
+4,"bash -c \""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | b\\ash""",auto_attack4.log,DETECTED,Syslog Clearing or Removal Via System Utilities
+5,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | ba\\sh""",auto_attack5.log,DETECTED,System Information Discovery | Syslog Clearing or Removal Via System Utilities
+6,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | \\bash""",auto_attack6.log,DETECTED,System Information Discovery | Syslog Clearing or Removal Via System Utilities
+7,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | /bin/\""bash\""""",auto_attack7.log,DETECTED,System Information Discovery | Syslog Clearing or Removal Via System Utilities
+8,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | (bash)""",auto_attack8.log,DETECTED,Syslog Clearing or Removal Via System Utilities
+9,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | {bash}""",auto_attack9.log,BYPASS,Bypass All
+10,"bash -c ""echo 'dW5hbWUgLWE=' | perl -MMIME::Base64 -ne 'print decode_base64(\$_)' | ba${IFS}sh""",auto_attack10.log,BYPASS,Bypass All

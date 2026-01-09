@@ -1,0 +1,10 @@
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/null
+find / \( -name ".*passwd" -o -perm "-4000" \) -ls 2>/dev/null
+find / \( -name ".*passwd" -o -perm '-4000' \) -ls 2>/dev/null
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>"/dev/null"
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2> '/dev/null'
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/""null
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/nu\ll
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/nul""l
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/'null'
+find / \( -name ".*passwd" -o -perm -4000 \) -ls 2>/dev/nu'l'l
