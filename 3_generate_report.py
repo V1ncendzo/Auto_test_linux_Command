@@ -32,6 +32,12 @@ def get_rule_selection():
                 return rules[choice-1]
         except ValueError: pass
 
+def normalize_text(text):
+    """Hàm chuẩn hóa chuỗi để so sánh tương đối"""
+    if not text: return ""
+    # Chuyển về chữ thường, thay gạch dưới/gạch ngang bằng khoảng trắng
+    return text.lower().replace("_", " ").replace("-", " ").strip()
+
 def main():
     rule_name = get_rule_selection()
     
@@ -45,7 +51,7 @@ def main():
     report_file = f"Report_{rule_name}.csv"
 
     if not os.path.exists(command_file):
-        print(f"Cảnh báo: Không tìm thấy file gốc {command_file} để lấy nội dung lệnh.")
+        print(f"Cảnh báo: Không tìm thấy file gốc {command_file}. Command content sẽ trống.")
         commands = []
     else:
         with open(command_file, 'r') as f:
@@ -54,6 +60,9 @@ def main():
     print(f"\n[*] Đang tạo báo cáo: {report_file}")
     
     report_data = []
+
+    # Chuẩn hóa tên Target Rule (tên folder) để so sánh
+    target_rule_normalized = normalize_text(rule_name)
 
     for index, cmd_content in enumerate(commands):
         cmd_id = index + 1
@@ -64,8 +73,9 @@ def main():
         
         full_json_path = os.path.join(rule_result_dir, json_filename)
         
-        status = "UNKNOWN"
-        triggered_rules = "N/A"
+        # Biến lưu kết quả cuối cùng
+        final_result = "Unknown"
+        detected_list_str = "" # Để lưu danh sách các rule dính (nếu cần tham khảo)
 
         if os.path.exists(full_json_path):
             try:
@@ -75,32 +85,56 @@ def main():
                     titles = [item.get('title') for item in data if 'title' in item]
                     titles = list(set(titles)) # Unique
                     
-                    if titles:
-                        status = "DETECTED"
-                        triggered_rules = " | ".join(titles)
+                    if not titles:
+                        # Trường hợp 1: Không có rule nào bắt
+                        final_result = "Bypass All"
                     else:
-                        status = "BYPASS"
-                        triggered_rules = "Bypass All"
-            except:
-                status = "ERROR JSON"
+                        # Có rule bắt -> Kiểm tra xem có phải Target Rule không
+                        is_target_hit = False
+                        hit_rule_name = ""
+
+                        for t in titles:
+                            t_norm = normalize_text(t)
+                            # So sánh tương đối: Nếu tên folder nằm trong tên rule hoặc ngược lại
+                            if target_rule_normalized in t_norm or t_norm in target_rule_normalized:
+                                is_target_hit = True
+                                hit_rule_name = t
+                                break
+                        
+                        if is_target_hit:
+                            # Trường hợp 2: Bắt đúng rule target
+                            final_result = f"Trigger: {hit_rule_name}"
+                        else:
+                            # Trường hợp 3: Bị bắt bởi rule khác, nhưng rule target lại không bắt
+                            final_result = "Bypass Target Rule"
+                            # (Optional) Nếu muốn ghi chú thêm là bị rule nào bắt thì dùng dòng dưới:
+                            # final_result = f"Bypass Target Rule (Caught by: {', '.join(titles)})"
+
+                    detected_list_str = " | ".join(titles) if titles else "None"
+
+            except Exception as e:
+                final_result = "Log Error (JSON Invalid)"
         else:
-            status = "MISSING LOG/RESULT"
+            final_result = "Log Error (Missing Result)"
 
         report_data.append({
             "ID": cmd_id,
             "Command": cmd_content,
             "Log File": log_filename,
-            "Status": status,
-            "Detected Rules": triggered_rules
+            "Result": final_result,
+            "All Detected Rules": detected_list_str 
         })
 
     # Ghi CSV
     with open(report_file, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=["ID", "Command", "Log File", "Status", "Detected Rules"])
+        # Sửa lại header cho khớp với yêu cầu
+        fieldnames = ["ID", "Command", "Log File", "Result", "All Detected Rules"]
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(report_data)
 
     print(f"[SUCCESS] File CSV đã được tạo tại: {os.path.abspath(report_file)}")
+    print("Mở file CSV để xem cột 'Result' theo logic mới.")
 
 if __name__ == "__main__":
     main()
