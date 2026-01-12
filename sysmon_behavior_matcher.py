@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 XML_EVENT_RE = re.compile(r"(<Event\b.*?</Event>)", re.DOTALL)
 PROCESS_CREATE_EID = "1"
 
-# Lấy số attackNNN từ filename
+# attackNNN in filename
 ATTACK_ID_RE = re.compile(r"attack(\d+)", re.IGNORECASE)
 
 # --------- Defaults tuned for pipeline noise ---------
@@ -31,7 +31,6 @@ DEFAULT_IGNORE_IMAGES = {
     "python", "python3",
 }
 
-# noise filter mặc định (bạn có thể override)
 DEFAULT_NOISE_CMD_REGEX = r"(journalctl\s+--vacuum|journalctl\s+-u\s+sysmon|systemctl\s+restart\s+sysmon)"
 
 
@@ -139,6 +138,12 @@ def build_action_set(
     return out
 
 
+def coverage(baseline: Set[str], cand: Set[str]) -> float:
+    if not baseline:
+        return 0.0
+    return len(baseline & cand) / len(baseline)
+
+
 def jaccard(a: Set[str], b: Set[str]) -> float:
     if not a and not b:
         return 1.0
@@ -147,20 +152,11 @@ def jaccard(a: Set[str], b: Set[str]) -> float:
     return len(a & b) / len(a | b)
 
 
-def coverage(baseline: Set[str], cand: Set[str]) -> float:
-    if not baseline:
-        return 0.0
-    return len(baseline & cand) / len(baseline)
-
-
 def load_commands(path: Path) -> List[str]:
     return [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip()]
 
 
 def attack_index_from_filename(name: str) -> Optional[int]:
-    """
-    Return 1-based attack id from filename like *_attack21.log -> 21
-    """
     m = ATTACK_ID_RE.search(name)
     if not m:
         return None
@@ -184,7 +180,6 @@ def map_command_for_log(lf: Path, commands: List[str], fallback_zero_based: int)
         if 0 <= idx < len(commands):
             return (aid, commands[idx])
 
-    # fallback by order
     if 0 <= fallback_zero_based < len(commands):
         return (aid, commands[fallback_zero_based])
 
@@ -199,7 +194,6 @@ def default_out_command_checklog(logs_path: Path, rule_name: str) -> Path:
     if logs_path.is_dir() and logs_path.parent.name == "logs_output":
         project_root = logs_path.parent.parent
     else:
-        # if given a file: .../logs_output/<rule>/<file>.log
         if logs_path.is_file() and logs_path.parent.parent.name == "logs_output":
             project_root = logs_path.parent.parent.parent
         else:
@@ -207,9 +201,43 @@ def default_out_command_checklog(logs_path: Path, rule_name: str) -> Path:
     return project_root / "attack_commands" / f"{rule_name}_checklog.txt"
 
 
+def compile_many(patterns: List[str]) -> List[re.Pattern]:
+    out: List[re.Pattern] = []
+    for p in patterns:
+        p = p.strip()
+        if not p:
+            continue
+        out.append(re.compile(p, re.IGNORECASE))
+    return out
+
+
+def filter_tokens_by_any(tokens: Set[str], inc_res: List[re.Pattern]) -> Set[str]:
+    if not inc_res:
+        return tokens
+    kept = set()
+    for t in tokens:
+        if any(rx.search(t) for rx in inc_res):
+            kept.add(t)
+    return kept
+
+
+def must_include_ok(tokens: Set[str], must_res: List[re.Pattern]) -> bool:
+    """
+    Require ALL must-include regexes to match at least one token.
+    """
+    for rx in must_res:
+        if not any(rx.search(t) for t in tokens):
+            return False
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser(
-        description="Match Sysmon ProcessCreate (EventID=1) behavior of logs against a baseline; copy matched logs to logs_output/<rule>_checklog; and optionally write matched commands to attack_commands/<rule>_checklog.txt."
+        description=(
+            "Match Sysmon ProcessCreate (EID=1) behavior of logs against a baseline; "
+            "copy matched logs to logs_output/<rule>_checklog; and write matched commands to attack_commands/<rule>_checklog.txt. "
+            "Designed to avoid dropping valid evasion logs by using coverage/anchors (Jaccard optional)."
+        )
     )
     ap.add_argument("--baseline-log", required=True)
     ap.add_argument("--logs-dir", required=True, help="Folder containing logs, or a single log file path")
@@ -219,17 +247,33 @@ def main():
     ap.add_argument("--ignore-images", default=",".join(sorted(DEFAULT_IGNORE_IMAGES)))
     ap.add_argument("--keep-images", default="", help="Comma-separated images to FORCE keep (override ignore/wrapper).")
 
-    # Nếu bạn muốn tắt noise filter trên PowerShell, dùng: --noise-cmd-regex "(?!)" hoặc "a^"
+    # PowerShell-friendly disable: pass --noise-cmd-regex "(?!)" or "a^"
     ap.add_argument("--noise-cmd-regex", default=DEFAULT_NOISE_CMD_REGEX)
 
+    # Matching
     ap.add_argument("--cov-thr", type=float, default=0.90)
+    ap.add_argument("--use-jaccard", action="store_true", help="If set, require jaccard >= --jac-thr too (more strict; can drop valid evasions).")
     ap.add_argument("--jac-thr", type=float, default=0.50)
+
+    # Anchors
+    ap.add_argument(
+        "--baseline-include",
+        action="append",
+        default=[],
+        help="Regex. If set (repeatable), baseline tokens are reduced to only tokens matching ANY of these (anchor-only baseline).",
+    )
+    ap.add_argument(
+        "--must-include",
+        action="append",
+        default=[],
+        help="Regex. If set (repeatable), candidate must contain ALL of these patterns (anchor must-have).",
+    )
 
     ap.add_argument("--copy-to-checklog", action="store_true")
     ap.add_argument("--checklog-root", default=None, help="Root that contains logs_output. Default: logs parent folder.")
     ap.add_argument("--verbose", action="store_true")
 
-    # NEW: output matched commands file
+    # Commands mapping/output
     ap.add_argument("--commands-file", default=None, help="File containing commands (one per line). Used to output <rule>_checklog.txt")
     ap.add_argument("--out-command-checklog", default=None, help="Output path for matched commands file (default: attack_commands/<rule>_checklog.txt)")
 
@@ -251,14 +295,20 @@ def main():
     if args.commands_file:
         commands = load_commands(Path(args.commands_file))
 
+    # Compile anchor regexes
+    baseline_inc_res = compile_many(args.baseline_include)
+    must_inc_res = compile_many(args.must_include)
+
     # Baseline
     base_events = iter_proc_create_events_from_file(baseline_log)
-    base_action = build_action_set(base_events, wrappers, ignore_images, noise_cmd_re, keep_images)
+    base_action_all = build_action_set(base_events, wrappers, ignore_images, noise_cmd_re, keep_images)
+    base_action = filter_tokens_by_any(base_action_all, baseline_inc_res)
+
     if not base_action:
         raise SystemExit(
             "Baseline action-set is empty after filtering. "
-            "Gợi ý: nếu baseline của bạn là shred thì không cần keep journalctl. "
-            "Nếu baseline có journalctl mà bị filter thì dùng --keep-images journalctl hoặc tắt noise bằng --noise-cmd-regex '(?!)'."
+            "If you used --baseline-include, it may be too strict; or you filtered out needed images. "
+            "Try: remove --baseline-include or add --keep-images <image> or disable noise with --noise-cmd-regex '(?!)'."
         )
 
     # Candidates
@@ -279,14 +329,23 @@ def main():
         evs = iter_proc_create_events_from_file(lf)
         cand_action = build_action_set(evs, wrappers, ignore_images, noise_cmd_re, keep_images)
 
-        cov = coverage(base_action, cand_action)
-        jac = jaccard(base_action, cand_action)
+        # must-include anchors (optional)
+        if must_inc_res and not must_include_ok(cand_action, must_inc_res):
+            ok = False
+            cov = coverage(base_action, cand_action)
+            jac = jaccard(base_action, cand_action) if args.use_jaccard else 0.0
+        else:
+            cov = coverage(base_action, cand_action)
 
-        ok = (cov >= args.cov_thr and jac >= args.jac_thr)
+            if args.use_jaccard:
+                jac = jaccard(base_action, cand_action)
+                ok = (cov >= args.cov_thr and jac >= args.jac_thr)
+            else:
+                jac = jaccard(base_action, cand_action)  # for debug only
+                ok = (cov >= args.cov_thr)
+
         if ok:
             matched_logs.append(lf)
-
-            # map command for this log (optional)
             if commands:
                 aid, cmd = map_command_for_log(lf, commands, i)
                 if cmd:
@@ -294,7 +353,11 @@ def main():
 
         if args.verbose:
             status = "MATCH" if ok else "NO_MATCH"
-            print(f"{lf.name}: {status} | cov={cov:.3f} jac={jac:.3f} | base={len(base_action)} cand={len(cand_action)}")
+            mi = "Y" if must_include_ok(cand_action, must_inc_res) else "N"
+            print(
+                f"{lf.name}: {status} | cov={cov:.3f} jac={jac:.3f} | "
+                f"base={len(base_action)} cand={len(cand_action)} | must_include={mi}"
+            )
 
     # Copy matched logs
     copied = 0
@@ -311,7 +374,6 @@ def main():
         out_cmd_path = Path(args.out_command_checklog) if args.out_command_checklog else default_out_command_checklog(logs_path, rule_name)
         out_cmd_path.parent.mkdir(parents=True, exist_ok=True)
 
-        # Sort by attack id if available, otherwise keep original order
         def sort_key(x: Tuple[Optional[int], str]) -> int:
             return x[0] if x[0] is not None else 10**9
 
@@ -323,7 +385,7 @@ def main():
 
     print(f"Baseline: {baseline_log}")
     print(f"Rule: {rule_name}")
-    print(f"Baseline action tokens: {len(base_action)}")
+    print(f"Baseline action tokens (all): {len(base_action_all)} | (used for match): {len(base_action)}")
     print(f"Scanned logs: {len(log_files)} | matched: {len(matched_logs)}")
     if args.copy_to_checklog:
         print(f"CHECKLOG DIR: {checklog_dir.resolve()} | copied: {copied}")

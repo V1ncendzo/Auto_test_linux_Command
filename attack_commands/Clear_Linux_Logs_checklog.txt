@@ -7,12 +7,14 @@ shred -u /va"r"/log/syslog
 shred -u /var/lo"g"/syslog
 sh"red" -u /var/log/syslog
 "shred" -u /var/log/syslog
+shre"d" -u /var/log/syslog
 shred -u /var/log/sy"sl"og
 shred -u /var/l"og"/syslog
 shred -u /v"ar"/log/syslog
 sh"re""d" -u /var/log/syslog
 s"hr"ed -u /var/log/syslog
 shre"d" -u "/var/log/syslog"
+shred -u /var/log/syslog\
 shred -u "/var"/"log"/"syslog"
 sh""red -u /var/log/syslog
 shred -u /var/lo""g/syslog
@@ -32,6 +34,7 @@ shred -u $(echo /var/log/$(basename /var/log/syslog))
 shred -u $(readlink -f /var/../var/log/syslog)
 shred -u $(python3 -c "print('/var/log/' + 'syslog')")
 shred -u $(perl -e "print '/var/log/syslog'")
+shred -u $(echo c3hyZWQgLXUgL3Zhci9sb2cvc3lzbG9n | base64 -d | cut -d ' ' -f3)
 shred -u $(printf '\057\166\141\162\057\154\157\147\057\163\171\163\154\157\147')
 shred -u $(awk 'BEGIN{printf "/var/log/syslog"}')
 shred -u $(perl -e 'print "/var/log/syslog"')
