@@ -1,0 +1,31 @@
+crontab -l > /tmp/.di"scovery"cron && cat /tmp/.di"scovery"cron
+crontab -l > /tmp/.discove"ry"cron && cat /tmp/.discove"ry"cron
+crontab -l | tee /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+cat /tmp/.discovery_cron; crontab -l | tee /tmp/.discovery_cron
+crontab -l|tee /tmp/.discovery_cron; cat /tmp/.discovery_cron
+crontab -l && echo out > /tmp/.discovery_cron; cat /tmp/.discovery_cron
+crontab -l | cat - > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+cat /tmp/.discovery_cron && crontab -l | tee /tmp/.discovery_cron
+crontab -l | tee /tmp/.discovery_cron | cat && cat /tmp/.discovery_cron
+crontab -l | grep -v "^#" > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | grep . > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | tee /tmp/.discovery_cron | cat
+crontab -l | tee /tmp/.discovery_cron > /dev/null && cat /tmp/.discovery_cron
+crontab -l | awk '{print}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | sed '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | base64 -d > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | xargs -I {} echo {} > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+echo "$(crontab -l)" > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | dd of=/tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | head -n 1000 > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | grep '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | tr -d '\r' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | tail -n +1 > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | tee /dev/stdout > /tmp/.discovery_cron
+crontab -l | gzip > /tmp/discovery.gz && gunzip -c /tmp/discovery.gz
+crontab -l | tee /tmp/.discovery_cron | tail -n +0
+crontab -l | sed -e 's/^/ /' | sed -e 's/^ //' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
+crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron
