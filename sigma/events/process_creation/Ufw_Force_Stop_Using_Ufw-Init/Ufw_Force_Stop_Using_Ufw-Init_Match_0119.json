@@ -1,0 +1,80 @@
+{
+  "@timestamp": "2026-01-09T15:37:42.504718000Z",
+  "message": "Process Create (Sysmon for Linux)",
+  "CommandLine": "/bin/sh -c which ps",
+  "Image": "/usr/bin/dash",
+  "CurrentDirectory": "/home/vincenzolog",
+  "event": {
+    "code": 1,
+    "provider": "Linux-Sysmon",
+    "category": [
+      "process"
+    ],
+    "type": [
+      "start",
+      "process_start"
+    ],
+    "action": "Process Create"
+  },
+  "host": {
+    "hostname": "vincenzolog-VMware-Virtual-Platform"
+  },
+  "user": {
+    "name": "vincenzolog"
+  },
+  "process": {
+    "pid": 86254,
+    "entity_id": "{8b8a9dc4-a84f-6960-1d18-4f3305620000}",
+    "executable": "/usr/bin/dash",
+    "name": "dash",
+    "command_line": "/bin/sh -c which ps",
+    "working_directory": "/home/vincenzolog",
+    "hash": {
+      "sha256": "86d31f6fb799e91fa21bad341484564510ca287703a16e9e46c53338776f4f42"
+    },
+    "parent": {
+      "pid": 4183,
+      "entity_id": "{00000000-0000-0000-0000-000000000000}",
+      "executable": "-",
+      "name": "-",
+      "command_line": "-"
+    }
+  },
+  "labels": {
+    "sigma_rule_title": "Ufw Force Stop Using Ufw-Init",
+    "sigma_rule_id": null,
+    "attack_id": "122",
+    "original_command": "echo disable > /tmp/d; sudo /usr/sbin/ufw $(cat /tmp/d)",
+    "log_file": "Ufw_Force_Stop_Using_Ufw-Init_attack122.log",
+    "queried_event_type": "Microsoft-Windows-Sysmon_1"
+  },
+  "sysmon": {
+    "linux_event_data": {
+      "SystemTime": "2026-01-09T15:37:42.504718000Z",
+      "Computer": "vincenzolog-VMware-Virtual-Platform",
+      "RuleName": "-",
+      "UtcTime": "2026-01-09 07:03:43.231",
+      "ProcessGuid": "{8b8a9dc4-a84f-6960-1d18-4f3305620000}",
+      "ProcessId": "86254",
+      "Image": "/usr/bin/dash",
+      "FileVersion": "-",
+      "Description": "-",
+      "Product": "-",
+      "Company": "-",
+      "OriginalFileName": "-",
+      "CommandLine": "/bin/sh -c which ps",
+      "CurrentDirectory": "/home/vincenzolog",
+      "User": "vincenzolog",
+      "LogonGuid": "{8b8a9dc4-0000-0000-e803-000000000000}",
+      "LogonId": "1000",
+      "TerminalSessionId": "3",
+      "IntegrityLevel": "no level",
+      "Hashes": "SHA256=86d31f6fb799e91fa21bad341484564510ca287703a16e9e46c53338776f4f42",
+      "ParentProcessGuid": "{00000000-0000-0000-0000-000000000000}",
+      "ParentProcessId": "4183",
+      "ParentImage": "-",
+      "ParentCommandLine": "-",
+      "ParentUser": "-"
+    }
+  }
+}
