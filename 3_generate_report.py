@@ -9,7 +9,6 @@ LOG_BASE_DIR = "logs_output"
 RESULT_BASE_DIR = "detection_results"
 
 def get_rule_selection():
-    # Quét folder results để xem đã có kết quả của rule nào
     if not os.path.exists(RESULT_BASE_DIR):
         print("Chưa có kết quả detect nào.")
         sys.exit(1)
@@ -33,52 +32,59 @@ def get_rule_selection():
         except ValueError: pass
 
 def normalize_text(text):
-    """Hàm chuẩn hóa chuỗi để so sánh tương đối"""
     if not text: return ""
     return text.lower().replace("_", " ").replace("-", " ").strip()
 
 def main():
-    rule_name = get_rule_selection()
+    rule_name = get_rule_selection() # Tên thư mục bạn chọn
     
-    # File input gốc
-    command_file = os.path.join(ATTACK_DIR, rule_name + ".txt")
+    # 1. Tên sạch (bỏ _checklog) để tìm file txt và json
+    rule_name_clean = rule_name.replace("_checklog", "") 
     
-    # Folder kết quả json
+    # 2. Đường dẫn file lệnh gốc
+    command_file = os.path.join(ATTACK_DIR, rule_name_clean + ".txt")
+    
+    # 3. Đường dẫn thư mục kết quả
     rule_result_dir = os.path.join(RESULT_BASE_DIR, rule_name)
     
-    # Tên file báo cáo CSV output
     report_file = f"Report_{rule_name}.csv"
 
+    # Đọc file lệnh trước để lấy số lượng
+    commands = []
     if not os.path.exists(command_file):
-        print(f"Cảnh báo: Không tìm thấy file gốc {command_file}.")
-        commands = []
+        print(f"Cảnh báo: Không tìm thấy file lệnh gốc {command_file}.")
+        return 
     else:
         with open(command_file, 'r') as f:
             commands = [line.strip() for line in f if line.strip()]
 
+    # --- IN THÔNG TIN TRẠNG THÁI (NHƯ BẠN YÊU CẦU) ---
     print(f"\n[*] Đang tạo báo cáo: {report_file}")
+    print(f"[*] Đang đọc lệnh từ: {rule_name_clean}.txt ({len(commands)} lệnh)")
+    print(f"[*] Đang quét kết quả trong: {rule_result_dir}")
+    # -------------------------------------------------
     
     report_data = []
-
-    # --- KHỞI TẠO BỘ ĐẾM THỐNG KÊ ---
     stats = {
         "total": 0,
-        "bypass_all": 0,          # Không bị bắt bởi bất kỳ rule nào
-        "bypass_target_rule": 0,  # Bị bắt bởi rule khác, nhưng bypass rule target
-        "trigger_target": 0,      # Bị bắt đúng rule target
-        "errors": 0
+        "bypass_all": 0,
+        "bypass_target_rule": 0,
+        "trigger_target": 0,
+        "errors": 0,
+        "missing": 0
     }
 
-    target_rule_normalized = normalize_text(rule_name)
+    target_rule_normalized = normalize_text(rule_name_clean)
 
     for index, cmd_content in enumerate(commands):
         stats["total"] += 1
         cmd_id = index + 1
         
-        log_filename = f"{rule_name}_attack{cmd_id}.log"
-        json_filename = f"result_{rule_name}_attack{cmd_id}.json"
-        
+        # Tìm file JSON bằng tên sạch
+        json_filename = f"result_{rule_name_clean}_attack{cmd_id}.json"
         full_json_path = os.path.join(rule_result_dir, json_filename)
+        
+        log_filename = f"{rule_name}_attack{cmd_id}.log"
         
         final_result = "Unknown"
         detected_list_str = ""
@@ -87,17 +93,19 @@ def main():
             try:
                 with open(full_json_path, 'r') as jf:
                     data = json.load(jf)
-                    titles = [item.get('title') for item in data if 'title' in item]
-                    titles = list(set(titles)) # Unique
+                    if isinstance(data, list):
+                        titles = [item.get('title') for item in data if 'title' in item]
+                    else:
+                        titles = [data.get('title')] if 'title' in data else []
+                        
+                    titles = list(set(titles))
                     
                     if not titles:
-                        # Case 1: Bypass All
                         final_result = "Bypass All"
                         stats["bypass_all"] += 1
                     else:
                         is_target_hit = False
                         hit_rule_name = ""
-
                         for t in titles:
                             t_norm = normalize_text(t)
                             if target_rule_normalized in t_norm or t_norm in target_rule_normalized:
@@ -106,22 +114,20 @@ def main():
                                 break
                         
                         if is_target_hit:
-                            # Case 2: Trigger Target
                             final_result = f"Trigger: {hit_rule_name}"
                             stats["trigger_target"] += 1
                         else:
-                            # Case 3: Bypass Target (nhưng dính rule khác)
                             final_result = "Bypass Target Rule"
                             stats["bypass_target_rule"] += 1
 
                     detected_list_str = " | ".join(titles) if titles else "None"
 
-            except Exception:
+            except Exception as e:
                 final_result = "Log Error (JSON Invalid)"
                 stats["errors"] += 1
         else:
-            final_result = "Log Error (Missing Result)"
-            stats["errors"] += 1
+            final_result = "Log Error (Result Not Found)"
+            stats["missing"] += 1
 
         report_data.append({
             "ID": cmd_id,
@@ -131,34 +137,43 @@ def main():
             "All Detected Rules": detected_list_str 
         })
 
-    # --- GHI FILE CSV ---
+    # --- TÍNH TOÁN VÀ GHI FILE ---
+    total_bypass = stats["bypass_all"] + stats["bypass_target_rule"]
+    total_cmds = stats["total"]
+    rate_percent = (total_bypass / total_cmds * 100) if total_cmds > 0 else 0
+
     with open(report_file, 'w', newline='', encoding='utf-8') as f:
         fieldnames = ["ID", "Command", "Log File", "Result", "All Detected Rules"]
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(report_data)
 
-        # --- GHI PHẦN TỔNG HỢP (SUMMARY) Ở CUỐI FILE ---
-        # Tính tổng số bypass target (Bao gồm cả Bypass All và Bypass Target Rule)
-        total_bypass_target = stats["bypass_all"] + stats["bypass_target_rule"]
-        bypass_rate = (total_bypass_target / stats["total"] * 100) if stats["total"] > 0 else 0
-
-        writer.writerow({}) # Dòng trống
-        writer.writerow({}) # Dòng trống
+        writer.writerow({})
+        writer.writerow({})
         writer.writerow({"ID": "=== SUMMARY REPORT ==="})
+        writer.writerow({"ID": "Total Commands (File)", "Command": total_cmds})
+        writer.writerow({"ID": "Triggered Target", "Command": stats["trigger_target"]})
         
-        # Ghi các dòng thống kê (Lợi dụng cột ID làm nhãn, cột Command làm giá trị)
-        writer.writerow({"ID": "Total Commands", "Command": stats["total"]})
-        writer.writerow({"ID": "Total Triggered Target", "Command": stats["trigger_target"]})
-        writer.writerow({"ID": "Total Bypass Target", "Command": f"{total_bypass_target} ({bypass_rate:.1f}%)"})
-        writer.writerow({"ID": "  > Bypass All (Silent)", "Command": stats["bypass_all"]})
-        writer.writerow({"ID": "  > Bypass Target Rule (Noisy)", "Command": stats["bypass_target_rule"]})
+        summary_bypass = f"{total_bypass} / {total_cmds} ({rate_percent:.2f}%)"
+        writer.writerow({"ID": "TOTAL BYPASS RATE", "Command": summary_bypass})
         
+        writer.writerow({"ID": "  > Bypass All", "Command": stats["bypass_all"]})
+        writer.writerow({"ID": "  > Bypass Target Rule", "Command": stats["bypass_target_rule"]})
+        
+        if stats["missing"] > 0:
+             writer.writerow({"ID": "Missing/Not Run", "Command": stats["missing"]})
         if stats["errors"] > 0:
             writer.writerow({"ID": "Errors", "Command": stats["errors"]})
 
-    print(f"[SUCCESS] File CSV đã được tạo tại: {os.path.abspath(report_file)}")
-    print(f"Tổng kết: {total_bypass_target}/{stats['total']} commands đã bypass được target rule.")
+    # --- IN TỔNG KẾT RA MÀN HÌNH ---
+    print(f"[SUCCESS] Đã xuất báo cáo tại: {os.path.abspath(report_file)}")
+    print("-" * 40)
+    print(f" TỔNG KẾT ({rule_name})")
+    print("-" * 40)
+    print(f" [+] Tổng số lệnh:      {total_cmds}")
+    print(f" [+] Số lệnh Bypass:    {total_bypass}")
+    print(f" [+] Tỉ lệ Bypass:      {total_bypass}/{total_cmds} ({rate_percent:.2f}%)")
+    print("-" * 40)
 
 if __name__ == "__main__":
     main()
