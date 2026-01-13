@@ -10,7 +10,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 # --- Sysmon Linux: extract <Event>...</Event> blocks from syslog/journal text ---
-EVENT_RE = re.compile(r"(<Event>.*?</Event>)", flags=re.DOTALL)
+EVENT_RE = re.compile(r"(<Event\b.*?</Event>)", flags=re.DOTALL)
+
 
 SAFE = re.compile(r"[^a-zA-Z0-9._-]+")
 B64_RE = re.compile(r"[A-Za-z0-9+/=]{20,}")
