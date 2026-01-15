@@ -1,0 +1,1820 @@
+##################################################
+[2026-01-12 17:04:49] CMD 1: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 2: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2lt""dWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 3: /bin/echo "IyEvYmluL2Jhc2gKZW""NobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 4: /bin/echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 5: /bin/echo I"yEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 6: /bin/echo "IyEvYmlu"/"L2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 7: /bin/echo I\yEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 8: /bin/echo "IyEvYmluL2Jhc2gKZWC\nobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 9: /bin/echo "IyEvYmluL2Jhc2gKZW\tNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: e: command not found
+
+##################################################
+[2026-01-12 17:04:49] CMD 10: /bin/echo 'IyEvYmluL2Jhc2gKZWNob''yAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 11: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZy" "BNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching `"'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 12: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="|base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 13: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d|bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 14: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZy BNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching `"'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 15: /bin/echo "IyEvYmluL2Jhc2gKZWC"nobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+/bin/bash: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/bash: -c: line 1: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 16: /bin/echo "IyEvYmluL2Jhc2gKZWC\rnobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 17: /bin/echo 'IyEvYmluL2Jhc2gKZWC\aNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 18: /bin/echo "IyEvYmluL2Jhc2gKZE""NobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+bash: line 2: dCho: command not found
+
+##################################################
+[2026-01-12 17:04:49] CMD 19: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5""bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 20: /bin/echo "IyEvYmluL2Jhc2gKZWC\nohbyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 21: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxh""dGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 22: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2lt\\tdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching `"'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 23: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 24: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2lt$'\x64'$'WxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Error:
+/bin/bash: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/bash: -c: line 1: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 25: /bin/echo "IyEvYmluL2Jhc2gKZWNoby"AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+/bin/bash: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/bash: -c: line 1: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 26: /bin/echo 'IyEvYmluL2Jhc2gKZW'$(echo 'NobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=') | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 27: /bin/echo "IyEvYmluL2Jhc2gKZWC\bNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 28: /bin/echo "IyEvYmluL2Jhc2gKZWC\fNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 29: /bin/echo "IyEvYmluL2Jhc2gKZWC\vNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 30: /bin/echo "IyEvYmluL2Jhc2gKZWC\0NobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 31: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNY""WxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 32: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyB""NYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d|bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 33: /bin/echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='|base64 -d|bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 34: /bin/echo "IyEvYmluL2Jhc2gKZW""NobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d|bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 35: /bin/echo "IyEvYmluL2Jhc2gKZW\tNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d|bash
+-Error:
+base64: invalid input
+bash: line 2: e: command not found
+
+##################################################
+[2026-01-12 17:04:49] CMD 36: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d |bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 37: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZy BNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d|bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 38: /bin/echo "IyEvYmluL2Jhc2gKZWC\rnoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="|base64 -d|bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 39: /bin/echo "IyEvYmluL2Jhc2gKZE\nNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="|base64 -d|bash
+-Error:
+base64: invalid input
+bash: line 2: d: command not found
+
+##################################################
+[2026-01-12 17:04:49] CMD 40: /bin/echo "IyEvYmluL2Jhc2gKZWC\fNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d|bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 41: /bin/echo "IyEvYmluL2Jhc2gKZWNob""yAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d |bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 42: /bin/echo "IyEvYmluL2Jhc2gKZWNoby""AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="|base64 -d|bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 43: /bin/echo "IyEvYmluL2Jhc2gKZWC\\Noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 44: /bin/echo "IyEvYmluL2Jhc2gKZWC/./Noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d |bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 45: /bin/echo "IyEvYmluL2Jhc2gKZWC//Noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d |bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 46: /bin/echo "IyEvYmluL2Jhc2gKZWNoby""AiU2lt""dWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="| base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:49] CMD 47: /bin/echo "IyEvYmluL2Jhc2gKZWC$'Noby' AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 48: /bin/echo "IyEvYmluL2Jhc2gKZWC\noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" |base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 49: /bin/echo "IyEvYmluL2Jhc2gKZW$(echo 'Noby') AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 50: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZy BN""YWxpY2lvdXMgUGF5bG9hZCI="| base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 51: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2lt""dWxhdGluZyBNYWxpY2lvdX MgUGF5bG9hZCI="| base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 52: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5""bG9hZCI="| base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 53: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2lt$'\x64WxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='" | base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 54: /bin/echo "IyEvYmluL2Jhc2gKZWNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="|base64 -d|bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:04:49] CMD 55: /bin/echo "IyEvYmluL2Jhc2gKZWC\aNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 56: /bin/echo "IyEvYmluL2Jhc2gKZWC\bNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 57: /bin/echo "IyEvYmluL2Jhc2gKZWC\vNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:49] CMD 58: /bin/echo "IyEvYmluL2Jhc2gKZWC\0Noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:50] CMD 59: /bin/echo 'IyEvYmluL2Jhc2gKZWC\noby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:50] CMD 60: /bin/echo "IyEvYmluL2Jhc2gKZWC\x0aNoby AiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+base64: invalid input
+bash: line 2: unexpected EOF while looking for matching ``'
+bash: line 3: syntax error: unexpected end of file
+
+##################################################
+[2026-01-12 17:04:50] CMD 61: /usr/bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 --decode | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 62: /bin/echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 63: printf %s "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 64: cat <<EOF | base64 -d | bash\nIyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=\nEOF
+-Error:
+/bin/bash: warning: here-document at line 0 delimited by end-of-file (wanted `EOF')
+/bin/bash: bashnIyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=nEOF: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 65: base64 -d <<< "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 66: echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 --decode | /bin/sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 67: printf "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 68: echo -n "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 69: python3 -c 'import base64,os;os.system(base64.b64decode("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=").decode())'
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 70: perl -MMIME::Base64 -e 'system(decode_base64("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="))'
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 71: echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | /usr/bin/base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 72: sh -c "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 73: bash -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 74: export CMD=IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=; echo $CMD | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 75: VAR="IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="; echo $VAR | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 76: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 77: echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | eval "$(cat)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 78: echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d > /tmp/p.sh && bash /tmp/p.sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 79: base64 -d <<<IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 80: echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | openssl base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 81: bash -c "$(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 82: bash <<< $(echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 83: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | tr -d '\n' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 84: base64 -d <<<'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 85: TMP=$(mktemp); echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" > $TMP; base64 -d $TMP | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 86: echo $'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 87: sed 's/.*/&/' <<< "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 88: echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | tee /dev/stdout | base64 -d | bash
+-Output:
+Simulating Malicious Payload#!/bin/bash
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 89: awk 'BEGIN{print "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="}' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 90: echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash --noprofile --norc
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 91: busybox echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | busybox base64 -d | sh
+-Error:
+base64: applet not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 92: openssl enc -d -base64 <<< "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 93: ruby -e 'require "base64";exec(Base64.decode64("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="))'
+-Error:
+/bin/bash: ruby: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 94: node -e 'require("child_process").execSync(Buffer.from("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=","base64").toString())'
+-Error:
+/bin/bash: node: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 95: python3 - <<'EOF'\nimport base64,os\nos.system(base64.b64decode("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=").decode())\nEOF
+-Error:
+/bin/bash: warning: here-document at line 0 delimited by end-of-file (wanted `EOFnimport')
+/bin/bash: -c: line 0: syntax error near unexpected token `('
+/bin/bash: -c: line 0: `set -o pipefail; python3 - <<'EOF'\nimport base64,os\nos.system(base64.b64decode("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=").decode())\nEOF'
+
+##################################################
+[2026-01-12 17:04:50] CMD 96: perl -e 'use MIME::Base64;system(decode_base64("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="))'
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 97: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | openssl base64 -A -d | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 98: bash -s <<< "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 99: sh -c "$(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 100: zsh -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 101: dash -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 102: . <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 103: source <(base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 104: printf IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | env bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 105: cat <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 106: base64 -d <(printf IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 107: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sed '' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 108: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | awk '{print}' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 109: printf "%s\n" IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 110: perl -e 'print unpack("u",pack("u",decode_base64("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=")))' | bash
+-Error:
+Undefined subroutine &main::decode_base64 called at -e line 1.
+
+##################################################
+[2026-01-12 17:04:50] CMD 111: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | xxd -r -p 2>/dev/null | bash
+-Output:
+
+##################################################
+[2026-01-12 17:04:50] CMD 112: ksh -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Error:
+/bin/bash: ksh: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 113: env sh -c "$(base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 114: TMP=$(mktemp); base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= > $TMP; sh $TMP
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 115: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | perl -MMIME::Base64 -ne 'print decode_base64($_)' | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 116: ruby -e 'STDOUT.write(STDIN.read.unpack1("m"))' <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | bash
+-Error:
+/bin/bash: ruby: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 117: node -p 'Buffer.from(process.argv[1],"base64").toString()' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh
+-Error:
+/bin/bash: node: command not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 118: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | /usr/bin/env bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 119: printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | openssl enc -d -base64 | bash
+-Output:
+
+##################################################
+[2026-01-12 17:04:50] CMD 120: bash < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 121: /bin/echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 122: /bin/echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | /bin/sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 123: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 124: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 125: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 126: echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | /bin/sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 127: cat <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 128: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | dash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 129: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | /bin/dash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 130: printf "%s\n" IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 131: TMP=$(mktemp); echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= > $TMP; base64 -d $TMP | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 132: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | openssl base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 133: echo -n IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 134: (echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 135: export CODE=IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=; echo $CODE | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 136: echo $'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 137: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | env bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 138: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 --decode | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 139: (base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 140: bash -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 141: eval $(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+
+##################################################
+[2026-01-12 17:04:50] CMD 142: CMD="IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="; echo $CMD | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 143: read CMD <<< "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="; echo $CMD | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 144: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | exec bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 145: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 146: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | nohup bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 147: bash < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 148: (echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d) | tee /dev/tty | bash
+-Error:
+tee: /dev/tty: No such device or address
+
+##################################################
+[2026-01-12 17:04:50] CMD 149: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | xargs -0 bash -c
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 150: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -s
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 151: base64 --decode <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 152: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | busybox base64 -d | sh
+-Error:
+base64: applet not found
+
+##################################################
+[2026-01-12 17:04:50] CMD 153: printf %s IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 154: cat <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 155: sh -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 156: eval "$(base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 157: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | env sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 158: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | setsid sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 159: (base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 160: sh < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 161: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | command sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 162: base64 -d <(printf "%s" IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 163: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh </dev/null
+-Error:
+
+##################################################
+[2026-01-12 17:04:50] CMD 164: sh -s <<< "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 165: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | stdbuf -i0 sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 166: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh -i
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 167: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -l
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 168: sh -c "$(base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 169: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | exec sh
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 170: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh -e
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 171: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -u
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 172: sh <<< "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 173: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -m
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 174: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh -o monitor
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 175: sh -o pipefail -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Error:
+sh: 0: Illegal option -o pipefail
+
+##################################################
+[2026-01-12 17:04:50] CMD 176: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -s --
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 177: base64 -d <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | sh --
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 178: echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | sh -O expand_aliases
+-Error:
+sh: 0: Illegal option -O
+
+##################################################
+[2026-01-12 17:04:50] CMD 179: sh -c "$(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 180: bash -c "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 181: echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | bash -c "$(base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 182: base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 183: bash <<< $(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 184: eval "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 185: $(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')
+-Error:
+/bin/bash: #!/bin/bash: No such file or directory
+
+##################################################
+[2026-01-12 17:04:50] CMD 186: bash -c "$(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 187: bash -c "$(cat <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 188: echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | { base64 -d; } | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 189: { echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; } | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 190: bash <(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 191: bash -c "$(base64 -d <<<'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 192: bash -c "`echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d`"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 193: bash < <(base64 -d <<<'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 194: set -- 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo "$1" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 195: cmd='IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo $cmd | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 196: read var <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo $var | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 197: (echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 198: printf %s 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 199: bash <<< "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 200: eval $(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)
+-Output:
+
+##################################################
+[2026-01-12 17:04:50] CMD 201: exec bash -c "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 202: bash -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 203: cat <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:50] CMD 204: temp='IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo "$temp" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 205: bash < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 206: export CMD='IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo $CMD | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 207: bash <<<$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 208: eval "$(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 209: bash -c "$(echo 'IyEvYmluL2Zpc2gKZWNobyAiSGVsbG8gV29ybGQhIg==' | base64 -d)"
+-Output:
+Hello World!
+
+##################################################
+[2026-01-12 17:04:51] CMD 210: bash -c "$(base64 -d < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 211: bash <(base64 -d <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 212: base64 -d <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 213: bash -c "$(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 214: printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 215: bash <<< "$(base64 -d < <(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 216: eval "$(base64 -d < <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 217: bash -c "$(cat <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 218: cat <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 219: bash -c "$(base64 -d <(printf '%s\n' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 220: bash < <(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 221: base64 -d < <(printf '%s' IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 222: bash -c "$(base64 --decode <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 223: bash <(base64 --decode <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=))
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 224: base64 --decode <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 225: bash -c "$(sed '' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 226: sed '' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 227: bash -c "$(awk '1' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 228: awk '1' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 229: bash -c "$(tr -d '\n' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)"
+-Output:
+
+##################################################
+[2026-01-12 17:04:51] CMD 230: tr -d '\n' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Error:
+tr: extra operand ‘/dev/fd/63’
+Only one string may be given when deleting without squeezing repeats.
+Try 'tr --help' for more information.
+
+##################################################
+[2026-01-12 17:04:51] CMD 231: bash < <(tr -d '\n' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)
+-Output:
+
+##################################################
+[2026-01-12 17:04:51] CMD 232: bash -c "$(paste -sd '' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 233: paste -sd '' <(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=) | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 234: bash -c "$(xargs -n1 <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 235: xargs -n1 <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 236: bash -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 --decode)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 237: bash <<< "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 --decode)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 238: eval "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 --decode)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 239: bash -c "$(base64 --decode <<< IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 240: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 241: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 --decode | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 242: printf "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 243: echo -n "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 244: echo $'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 245: echo 0x4948457659626d6c4c324a686332674b5a574e6f79416955326c746458704864475a79624d5859696f58596c70644739486a5a43513d | xxd -r -p | base64 -d | bash
+-Error: 'utf-8' codec can't decode byte 0xb9 in position 39: invalid start byte
+##################################################
+[2026-01-12 17:04:51] CMD 246: echo "4948457659626d6c4c324a686332674b5a574e6f79416955326c746458704864475a79624d5859696f58596c70644739486a5a43513d" | xxd -r -p | base64 -d | bash
+-Error: 'utf-8' codec can't decode byte 0xb9 in position 39: invalid start byte
+##################################################
+[2026-01-12 17:04:51] CMD 247: python3 -c 'import base64; exec(base64.b64decode("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="))'
+-Error:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 2
+    echo "Simulating Malicious Payload"
+         ^
+SyntaxError: invalid syntax
+
+##################################################
+[2026-01-12 17:04:51] CMD 248: perl -MMIME::Base64 -e 'eval(decode_base64("IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="))'
+-Output:
+
+##################################################
+[2026-01-12 17:04:51] CMD 249: bash -c "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 250: bash -c "$(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 251: echo 2130706433 | awk '{printf("%d.%d.%d.%d\n", $1>>24&255, $1>>16&255, $1>>8&255, $1&255)}' | xargs -I{} ping {}
+-Error:
+awk: line 1: syntax error at or near >
+
+##################################################
+[2026-01-12 17:04:51] CMD 252: bash <(echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d)
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 253: (echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 254: base64 -d <<<"IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 255: bash -c "$(/bin/echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 256: eval "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 257: echo "0x4948457659626d6c4c..." | xxd -r -p | base64 -d | bash  # (truncated hex on purpose)
+-Error: 'utf-8' codec can't decode byte 0xb9 in position 39: invalid start byte
+##################################################
+[2026-01-12 17:04:51] CMD 258: base64 -d <<< $(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' ) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 259: z=$(echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="); echo $z | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:04:51] CMD 260: echo 'address=2130706433' > /tmp/conf && bash -c "$(cat /tmp/conf; echo IyEvYmlu... | base64 -d)"
+-Output:
+
+##################################################
+[2026-01-12 17:04:51] CMD 261: echo "0x7f.0.0.1" | sed 's/^/ping /' | sh
+-Error: Timeout
+##################################################
+[2026-01-12 17:04:59] CMD 262: ping 0177.0.0.1  # octal recoding of 127
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:07] CMD 263: ping 0x7f.0.0.1  # hexadecimal recoding of 127
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:15] CMD 264: ping 127.000.000.001  # dotted decimal variant
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:23] CMD 265: ping 127.1  # compact form of loopback
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:31] CMD 266: ping 127.000000001  # zero-padded
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:39] CMD 267: ping 127.000.001  # malformed but accepted
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:47] CMD 268: ping 0x7f000001  # 127.0.0.1 as single hex
+-Error: Timeout
+##################################################
+[2026-01-12 17:05:55] CMD 269: ping 2130706433  # 127.0.0.1 as integer
+-Error: Timeout
+##################################################
+[2026-01-12 17:06:03] CMD 270: bash -c "$(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 --decode)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 271: echo ${BASE64_PAYLOAD:-'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='} | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 272: eval "$(base64 -d <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=')"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 273: cmd="echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI="; $cmd | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 274: CMDLINE="base64 -d"; echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | $CMDLINE | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 275: (base64 -d <<<'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=') | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 276: echo $'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | tr -d '\n' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 277: (echo -n "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d) | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 278: cat <<<"IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 279: (echo 'address=127.1') > /dev/null; echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 280: /bin/sh -c "$(echo IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI= | base64 -d)"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 281: export PAYLOAD='IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo $PAYLOAD | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 282: read p <<< 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI='; echo $p | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 283: echo $(( 127 * 256**3 + 0 * 256**2 + 0 * 256 + 1 )) | xargs -I% bash -c 'echo 127.0.0.1=%'
+-Output:
+127.0.0.1=2130706433
+
+##################################################
+[2026-01-12 17:06:03] CMD 284: eval `echo ZWNobyAiTWFsaWNpb3VzIg== | base64 -d`
+-Output:
+Malicious
+
+##################################################
+[2026-01-12 17:06:03] CMD 285: bash -c "`echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d`"
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 286: echo -e "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | /bin/bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 287: dd if=<(echo 'IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=' | base64 -d) | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 288: cat /dev/stdin <<< "IyEvYmlu..." | base64 -d | bash  # shortened for readability
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:06:03] CMD 289: echo $(echo IyEvYmlu... | base64 -d) | bash  # recoding via nested substitution
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 290: bash <<< $(echo IyEvYmlu... | base64 -d)
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 291: awk 'BEGIN{cmd="echo IyEv... | base64 -d | bash"; system(cmd)}'  # using awk as wrapper
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 292: perl -e 'system("echo IyEv... | base64 -d | bash")'  # perl escape
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 293: nohup bash -c "$(echo IyEv... | base64 -d)" &
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 294: address='\x7f\x00\x00\x01'; echo $address > /dev/null; echo 'IyEv...==' | base64 -d | bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:06:03] CMD 295: printf "%s\n" 'IyEv...==' | base64 -d | /bin/bash
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:06:03] CMD 296: bash -c "`base64 -d <<< IyEv...==`"
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 297: python3 -c 'import os; os.system("echo IyEv...== | base64 -d | bash")'
+-Output:
+
+##################################################
+[2026-01-12 17:06:03] CMD 298: echo $'IyEv...==' | sed 's/.$//' | base64 -d | bash  # corrupt then fix to evade detection
+-Error:
+base64: invalid input
+
+##################################################
+[2026-01-12 17:06:03] CMD 299: cp /bin/echo /tmp/echox && /tmp/echox "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 300: ln -s /bin/echo /tmp/e && /tmp/e "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+ln: failed to create symbolic link '/tmp/e': File exists
+
+##################################################
+[2026-01-12 17:06:03] CMD 301: cp /bin/echo /dev/shm/echo2 && /dev/shm/echo2 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 302: cp $(which echo) ./e1 && ./e1 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 303: install /bin/echo /tmp/myecho && /tmp/myecho "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 304: cp /bin/echo /tmp/_.e && /tmp/_.e "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 305: cp /bin/echo /tmp/.hiddenecho && /tmp/.hiddenecho "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 306: mv /bin/echo /bin/_echo && /bin/_echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+mv: cannot move '/bin/echo' to '/bin/_echo': Permission denied
+
+##################################################
+[2026-01-12 17:06:03] CMD 307: cp /bin/echo /tmp/🦠 && /tmp/🦠 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:03] CMD 308: cp /bin/echo /tmp/a && /tmp/a "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+/bin/bash: /tmp/a: Permission denied
+
+##################################################
+[2026-01-12 17:06:04] CMD 309: cp /bin/echo /tmp/echo1 && bash -c '/tmp/echo1 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash'
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 310: cp /bin/echo /var/tmp/echoz && /var/tmp/echoz "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 311: cp /bin/echo /dev/shm/ξ && /dev/shm/ξ "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 312: cp /bin/echo ~/echo2 && ~/echo2 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 313: cp /bin/echo /tmp/ECHO && /tmp/ECHO "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 314: cp /bin/echo ./bin/echo_alt && ./bin/echo_alt "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+cp: cannot create regular file './bin/echo_alt': No such file or directory
+
+##################################################
+[2026-01-12 17:06:04] CMD 315: cp /bin/echo /usr/local/bin/echo_mod && /usr/local/bin/echo_mod "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+cp: cannot create regular file '/usr/local/bin/echo_mod': Permission denied
+
+##################################################
+[2026-01-12 17:06:04] CMD 316: cp /bin/echo /tmp/ec && /tmp/ec "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 317: ln -s /bin/echo /tmp/cmd && /tmp/cmd "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+ln: failed to create symbolic link '/tmp/cmd': File exists
+
+##################################################
+[2026-01-12 17:06:04] CMD 318: cp /bin/echo /tmp/run && /tmp/run "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 319: cp /bin/echo /opt/renamed_echo && /opt/renamed_echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+cp: cannot create regular file '/opt/renamed_echo': Permission denied
+
+##################################################
+[2026-01-12 17:06:04] CMD 320: cp /bin/echo /mnt/data/echo_t && /mnt/data/echo_t "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+cp: cannot create regular file '/mnt/data/echo_t': No such file or directory
+
+##################################################
+[2026-01-12 17:06:04] CMD 321: install -m 755 /bin/echo /tmp/e.exec && /tmp/e.exec "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 322: cp /bin/echo /tmp/.bin_hidden && /tmp/.bin_hidden "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 323: cp /bin/echo /tmp/bashlaunch && /tmp/bashlaunch "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 324: cp /bin/echo /tmp/.cmd && /tmp/.cmd "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 325: cp /bin/echo /tmp/x && /tmp/x "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 326: cp /bin/echo /tmp/decode && /tmp/decode "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 327: cp /bin/echo /tmp/.ev && /tmp/.ev "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 328: cp /bin/echo /tmp/launcher && /tmp/launcher "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 329: cp /bin/echo /tmp/loader && /tmp/loader "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 330: cp /bin/echo /tmp/.decode_cmd && /tmp/.decode_cmd "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 331: install -D /bin/echo /tmp/e_1 && /tmp/e_1 "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 332: cp /bin/echo /var/tmp/xx && /var/tmp/xx "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 333: cp /bin/echo ./e.run && ./e.run "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 334: cp /bin/echo /tmp/.x && /tmp/.x "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 335: cp /bin/echo ~/x && ~/x "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 336: cp /bin/echo /var/tmp/shstart && /var/tmp/shstart "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 337: cp /bin/echo /var/tmp/.sneaky && /var/tmp/.sneaky "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 338: cp /bin/echo /tmp/e_run && /tmp/e_run "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 339: cp /bin/echo /tmp/echobase && /tmp/echobase "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 340: cp /bin/echo /tmp/launch && /tmp/launch "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 341: cp /bin/echo ./cmd_exec && ./cmd_exec "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 342: cp /bin/echo /dev/shm/enc && /dev/shm/enc "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 343: cp /bin/echo /tmp/__echo && /tmp/__echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 344: cp /bin/echo /var/tmp/.shell && /var/tmp/.shell "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 345: cp /bin/echo /tmp/obfuscated && /tmp/obfuscated "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 346: cp /bin/echo /opt/.sh && /opt/.sh "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Error:
+cp: cannot create regular file '/opt/.sh': Permission denied
+
+##################################################
+[2026-01-12 17:06:04] CMD 347: cp /bin/echo /tmp/base4run && /tmp/base4run "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 348: cp /bin/echo /tmp/initbase && /tmp/initbase "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 349: cp /bin/echo ./runthis && ./runthis "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 350: cp /bin/echo /tmp/startup && /tmp/startup "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 351: cp /bin/echo /tmp/.tool && /tmp/.tool "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 352: cp /bin/echo /tmp/boot && /tmp/boot "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 353: cp /bin/echo /tmp/hiddenloader && /tmp/hiddenloader "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 354: cp /bin/echo /tmp/initiate && /tmp/initiate "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 355: cp /bin/echo /tmp/deploy && /tmp/deploy "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 356: cp /bin/echo /tmp/b.sh && /tmp/b.sh "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 357: cp /bin/echo /tmp/shellshock && /tmp/shellshock "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+[2026-01-12 17:06:04] CMD 358: cp /bin/echo /tmp/bazooka && /tmp/bazooka "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+
+-Total: 358
+-Success: 274
+-Fail: 84

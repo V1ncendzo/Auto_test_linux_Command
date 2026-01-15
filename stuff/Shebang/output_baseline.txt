@@ -1,0 +1,10 @@
+##################################################
+[2026-01-09 00:14:00] CMD 1: /bin/echo "IyEvYmluL2Jhc2gKZWNobyAiU2ltdWxhdGluZyBNYWxpY2lvdXMgUGF5bG9hZCI=" | base64 -d | bash
+-Output:
+Simulating Malicious Payload
+
+##################################################
+
+-Total: 1
+-Success: 1
+-Fail: 0
