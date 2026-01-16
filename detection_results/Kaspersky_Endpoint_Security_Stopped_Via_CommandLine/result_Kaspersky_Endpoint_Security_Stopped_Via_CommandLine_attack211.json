@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-3444-696a-1d98-4cce6b610000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-R4686XLV.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-U21DYB5G.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-3444-696a-cddb-5c57e5630000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-R4686XLV.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-U21DYB5G.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-3446-696a-f1a5-9f3f8b620000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-R4686XLV.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-U21DYB5G.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-3446-696a-f1a5-9f3f8b620000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-R4686XLV.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack211.log-U21DYB5G.json"
     }
   ]
 }]

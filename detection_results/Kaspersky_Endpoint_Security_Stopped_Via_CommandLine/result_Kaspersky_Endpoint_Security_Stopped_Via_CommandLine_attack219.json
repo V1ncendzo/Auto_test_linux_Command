@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-3469-696a-1d08-5ff277640000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-3469-696a-cd2b-58c38a640000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-f105-5befd5600000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-f105-5befd5600000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json"
     }
   ]
 },
@@ -218,7 +218,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-1dd8-3637af5d0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -277,7 +277,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-7df7-b2565a5d0000}",
       "Image": "/tmp/0xdead",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -319,7 +319,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-7df7-b2565a5d0000}",
       "Image": "/tmp/0xdead",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json"
     },
     {
       "row_id": 15,
@@ -343,7 +343,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-7de7-b7a53f5a0000}",
       "Image": "/tmp/0xdead",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -385,7 +385,7 @@
       "ProcessGuid": "{8b8a9dc4-346a-696a-7de7-b7a53f5a0000}",
       "Image": "/tmp/0xdead",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-TVSIE4GI.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack219.log-92A2CHIS.json"
     }
   ]
 }]

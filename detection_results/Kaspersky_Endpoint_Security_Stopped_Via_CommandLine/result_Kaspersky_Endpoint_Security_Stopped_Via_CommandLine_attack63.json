@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-31d3-696a-1d98-93a8ae580000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-ENG2EE0Y.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-JUES2YA7.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-31d3-696a-cdab-0413cd5c0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-ENG2EE0Y.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-JUES2YA7.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-31d4-696a-f125-805ccd5c0000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-ENG2EE0Y.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-JUES2YA7.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-31d4-696a-f125-805ccd5c0000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-ENG2EE0Y.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-JUES2YA7.json"
     }
   ]
 },
@@ -218,7 +218,7 @@
       "ProcessGuid": "{8b8a9dc4-31d4-696a-7df7-4a7dfd600000}",
       "Image": "/usr/bin/systemctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-ENG2EE0Y.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack63.log-JUES2YA7.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",

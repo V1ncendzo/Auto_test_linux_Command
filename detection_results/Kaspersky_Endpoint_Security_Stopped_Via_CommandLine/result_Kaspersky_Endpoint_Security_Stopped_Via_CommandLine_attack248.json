@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-34eb-696a-1d98-4c0156600000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-U3LSADNI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-VEOZYVAG.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-34eb-696a-cdcb-32640c590000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-U3LSADNI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-VEOZYVAG.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-34ec-696a-f105-b3117f5e0000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-U3LSADNI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-VEOZYVAG.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-34ec-696a-f105-b3117f5e0000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-U3LSADNI.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack248.log-VEOZYVAG.json"
     }
   ]
 }]

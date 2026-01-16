@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-3457-696a-1d08-51c043570000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-50SH53UI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-BRGDR4R0.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-3457-696a-cd3b-bc3e2b5b0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-50SH53UI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-BRGDR4R0.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-3458-696a-f1f5-a76f75620000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-50SH53UI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-BRGDR4R0.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-3458-696a-f1f5-a76f75620000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-50SH53UI.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-BRGDR4R0.json"
     }
   ]
 },
@@ -218,7 +218,7 @@
       "ProcessGuid": "{8b8a9dc4-3458-696a-1d98-1e03ac550000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-50SH53UI.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack215.log-BRGDR4R0.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",

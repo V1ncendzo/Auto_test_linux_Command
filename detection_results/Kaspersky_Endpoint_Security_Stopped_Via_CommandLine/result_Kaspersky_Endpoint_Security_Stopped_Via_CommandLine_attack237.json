@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-34b9-696a-1d98-2c5180630000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-34b9-696a-cdcb-3c92e3610000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-34bb-696a-f125-477576600000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-34bb-696a-f125-477576600000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json"
     }
   ]
 },
@@ -218,7 +218,7 @@
       "ProcessGuid": "{8b8a9dc4-34ba-696a-1d28-8e43f0620000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -277,7 +277,7 @@
       "ProcessGuid": "{8b8a9dc4-34ba-696a-7d27-694693570000}",
       "Image": "/tmp/xz",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -319,7 +319,7 @@
       "ProcessGuid": "{8b8a9dc4-34ba-696a-7d27-694693570000}",
       "Image": "/tmp/xz",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json"
     },
     {
       "row_id": 15,
@@ -343,7 +343,7 @@
       "ProcessGuid": "{8b8a9dc4-34ba-696a-7d47-ef966c610000}",
       "Image": "/tmp/xz",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -385,7 +385,7 @@
       "ProcessGuid": "{8b8a9dc4-34ba-696a-7d47-ef966c610000}",
       "Image": "/tmp/xz",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-67H7DC04.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack237.log-55GKMRL9.json"
     }
   ]
 }]

@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-3367-696a-1d38-a9a9155f0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-3367-696a-cd3b-e722d2560000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -137,7 +137,7 @@
       "ProcessGuid": "{8b8a9dc4-3368-696a-2d73-2b7a93580000}",
       "Image": "/usr/bin/bash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -196,7 +196,7 @@
       "ProcessGuid": "{8b8a9dc4-3368-696a-f1e5-094f86580000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -238,7 +238,7 @@
       "ProcessGuid": "{8b8a9dc4-3368-696a-f1e5-094f86580000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json"
     }
   ]
 },
@@ -278,7 +278,7 @@
       "ProcessGuid": "{8b8a9dc4-3368-696a-7d27-6e52e95b0000}",
       "Image": "/usr/bin/systemctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-TJAXMK33.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack158.log-QQVYDCG2.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",

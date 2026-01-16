@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-326e-696a-1da8-9ce050630000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-326e-696a-cd4b-7782fb5b0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -137,7 +137,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-2d13-1655eb590000}",
       "Image": "/usr/bin/bash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -179,7 +179,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-7d27-00439a620000}",
       "Image": "/usr/bin/systemctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -238,7 +238,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-c17c-5e5db45c0000}",
       "Image": "/usr/bin/find",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -280,7 +280,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-c17c-5e5db45c0000}",
       "Image": "/usr/bin/find",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 904,
@@ -304,7 +304,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-c10c-04b70a650000}",
       "Image": "/usr/bin/find",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -346,7 +346,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-c10c-04b70a650000}",
       "Image": "/usr/bin/find",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     }
   ]
 },
@@ -387,7 +387,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-f195-e7ac64610000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -429,7 +429,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-f195-e7ac64610000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     }
   ]
 },
@@ -470,7 +470,7 @@
       "ProcessGuid": "{8b8a9dc4-3270-696a-412a-938caf610000}",
       "Image": "/usr/bin/rm",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -512,7 +512,7 @@
       "ProcessGuid": "{8b8a9dc4-3270-696a-412a-938caf610000}",
       "Image": "/usr/bin/rm",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 375,
@@ -536,7 +536,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-410a-42f1f45b0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -578,7 +578,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-410a-42f1f45b0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 419,
@@ -602,7 +602,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-417a-b9d16e640000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -644,7 +644,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-417a-b9d16e640000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 475,
@@ -668,7 +668,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-41ca-57cc37610000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -710,7 +710,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-41ca-57cc37610000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 531,
@@ -734,7 +734,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-416a-66f7c85d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -776,7 +776,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-416a-66f7c85d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 587,
@@ -800,7 +800,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-417a-ee49235d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -842,7 +842,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-417a-ee49235d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 643,
@@ -866,7 +866,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-41ba-64dcf1600000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -908,7 +908,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-41ba-64dcf1600000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 699,
@@ -932,7 +932,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-411a-f606475e0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -974,7 +974,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-411a-f606475e0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 776,
@@ -998,7 +998,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-41ca-46d47e5c0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1040,7 +1040,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-41ca-46d47e5c0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 876,
@@ -1064,7 +1064,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-419a-29153b5d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1106,7 +1106,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-419a-29153b5d0000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 910,
@@ -1130,7 +1130,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-416a-4da7da620000}",
       "Image": "/usr/bin/rm",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1172,7 +1172,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-416a-4da7da620000}",
       "Image": "/usr/bin/rm",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     },
     {
       "row_id": 969,
@@ -1196,7 +1196,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-41da-916f6b590000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1238,7 +1238,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-41da-916f6b590000}",
       "Image": "/usr/bin/rm",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     }
   ]
 },
@@ -1279,7 +1279,7 @@
       "ProcessGuid": "{8b8a9dc4-3270-696a-012f-868d665e0000}",
       "Image": "/usr/bin/id",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1321,7 +1321,7 @@
       "ProcessGuid": "{8b8a9dc4-3270-696a-012f-868d665e0000}",
       "Image": "/usr/bin/id",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json"
     }
   ]
 },
@@ -1362,7 +1362,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d1cf-9703ee5e0000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1404,7 +1404,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d16f-8c8b9e600000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1446,7 +1446,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d14f-310fc3550000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1488,7 +1488,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d19f-de7b3a5e0000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1530,7 +1530,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d1cf-6c1f78570000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1572,7 +1572,7 @@
       "ProcessGuid": "{8b8a9dc4-3271-696a-d10f-538b98560000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1614,7 +1614,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-d19f-5fe769610000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1656,7 +1656,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-d1df-fe862a600000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1698,7 +1698,7 @@
       "ProcessGuid": "{8b8a9dc4-3272-696a-d12f-8e6cad5a0000}",
       "Image": "/usr/bin/chmod",
       "User": "_apt",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1756,7 +1756,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-7d27-00439a620000}",
       "Image": "/usr/bin/systemctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -1798,7 +1798,7 @@
       "ProcessGuid": "{8b8a9dc4-326f-696a-7d67-0fdc2d5b0000}",
       "Image": "/usr/bin/systemctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-6449QD6D.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack98.log-BQW2IGOW.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",

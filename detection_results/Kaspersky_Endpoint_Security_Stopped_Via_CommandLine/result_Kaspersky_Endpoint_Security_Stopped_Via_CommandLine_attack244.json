@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-34d9-696a-1db8-7c0aa2580000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-34d9-696a-cd2b-1875735a0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-34da-696a-f135-4671d0580000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -178,7 +178,7 @@
       "ProcessGuid": "{8b8a9dc4-34da-696a-f135-4671d0580000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json"
     }
   ]
 },
@@ -218,7 +218,7 @@
       "ProcessGuid": "{8b8a9dc4-34da-696a-7d87-05dace600000}",
       "Image": "/home/vincenzolog/Auto_test/service",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -260,7 +260,7 @@
       "ProcessGuid": "{8b8a9dc4-34da-696a-7d07-8ca8be5d0000}",
       "Image": "/home/vincenzolog/Auto_test/service",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-YFDDKH4G.json",
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack244.log-HC2ILMPI.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",

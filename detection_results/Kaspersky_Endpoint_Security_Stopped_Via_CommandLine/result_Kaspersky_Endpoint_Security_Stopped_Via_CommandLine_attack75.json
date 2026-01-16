@@ -53,7 +53,7 @@
       "ParentImage": "/usr/bin/python3.12",
       "ParentCommandLine": "python3",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     },
     {
       "row_id": 8,
@@ -95,7 +95,7 @@
       "ParentImage": "/usr/bin/dash",
       "ParentCommandLine": "/bin/sh",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     }
   ]
 },
@@ -155,7 +155,7 @@
       "ParentImage": "/usr/bin/dash",
       "ParentCommandLine": "/bin/sh",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     },
     {
       "row_id": 25,
@@ -197,7 +197,7 @@
       "ParentImage": "/usr/bin/bash",
       "ParentCommandLine": "/bin/bash",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     }
   ]
 },
@@ -256,7 +256,7 @@
       "ParentImage": "/usr/bin/dash",
       "ParentCommandLine": "/bin/sh",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     },
     {
       "row_id": 174,
@@ -280,7 +280,7 @@
       "ProcessGuid": "{8b8a9dc4-320a-696a-f105-ba13b0600000}",
       "Image": "/usr/bin/uname",
       "User": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     }
   ]
 },
@@ -338,7 +338,7 @@
       "ParentImage": "/usr/bin/bash",
       "ParentCommandLine": "/bin/bash",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     },
     {
       "row_id": 35,
@@ -380,7 +380,7 @@
       "ParentImage": "/usr/bin/dash",
       "ParentCommandLine": "/bin/sh",
       "ParentUser": "root",
-      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-UOEWTAUT.json"
+      "OriginalLogfile": "Kaspersky_Endpoint_Security_Stopped_Via_CommandLine_attack75.log-GUCKSHMJ.json"
     }
   ]
 }]
