@@ -90,6 +90,8 @@ def main():
 
         # === TẤN CÔNG ===
         try:
+            # Loại bỏ sudo vì script đã chạy root
+            attack_cmd = attack_cmd.replace("sudo ", "")
             # Sysmon đang chạy nền nên sẽ bắt được ngay
             subprocess.run(attack_cmd, shell=True, timeout=5, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except subprocess.TimeoutExpired:
