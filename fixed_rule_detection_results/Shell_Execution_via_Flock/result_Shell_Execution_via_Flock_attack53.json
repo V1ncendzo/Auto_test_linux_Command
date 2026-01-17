@@ -1,0 +1,60 @@
+[{
+  "title": "Shell Execution via Flock - Linux (Hardened)",
+  "id": "4b09c71e-4269-4111-9cdd-107d8867f0cc",
+  "description": "Detects the use of \"flock\" to execute a shell or suspicious commands. \nEnhanced to detect execution without the \"-u\" flag and with flexible shell paths.\n",
+  "sigmafile": "",
+  "sigma": [
+    "SELECT * FROM logs WHERE Image LIKE '%/flock' ESCAPE '\\' AND ((CommandLine REGEXP '\\s(/bin/|/usr/bin/)?(bash|sh|zsh|dash|fish|ksh)\\b' OR CommandLine REGEXP '\\s.*\\ssh\\b') OR CommandLine LIKE '% -c %' ESCAPE '\\')"
+  ],
+  "rule_level": "high",
+  "tags": [
+    "attack.discovery",
+    "attack.t1083",
+    "attack.execution"
+  ],
+  "count": 1,
+  "matches": [
+    {
+      "row_id": 30,
+      "Provider_Name": "Linux-Sysmon",
+      "Guid": "{ff032593-a8d3-4f13-b0d6-01fc615a0f97}",
+      "EventID": 1,
+      "Version": 5,
+      "Level": 4,
+      "Task": 1,
+      "Opcode": 0,
+      "Keywords": "0x8000000000000000",
+      "SystemTime": "2026-01-17T01:17:29.638226000Z",
+      "EventRecordID": 1640001,
+      "ProcessID": "1624",
+      "ThreadID": "1624",
+      "Channel": "Linux-Sysmon/Operational",
+      "Computer": "vincenzolog-VMware-Virtual-Platform",
+      "UserId": "0",
+      "RuleName": "-",
+      "UtcTime": "2026-01-17 00:15:32.144",
+      "ProcessGuid": "{8b8a9dc4-d4a4-696a-6167-34dad7620000}",
+      "Image": "/usr/bin/flock",
+      "User": "root",
+      "OriginalLogfile": "Shell_Execution_via_Flock_attack53.log-140ND5UP.json",
+      "FileVersion": "-",
+      "Description": "-",
+      "Product": "-",
+      "Company": "-",
+      "OriginalFileName": "-",
+      "CommandLine": "flock -u / /bin/sh",
+      "CurrentDirectory": "/home/vincenzolog/Auto_test",
+      "LogonGuid": "{8b8a9dc4-0000-0000-0000-000005000000}",
+      "LogonId": 0,
+      "TerminalSessionId": 3,
+      "IntegrityLevel": "no level",
+      "SHA256": "a33947017bae8eccb11068bdd1f36d3addd52ef3d54327a273c9d8363b99ac85",
+      "Hashes": "SHA256=a33947017bae8eccb11068bdd1f36d3addd52ef3d54327a273c9d8363b99ac85",
+      "ParentProcessGuid": "{8b8a9dc4-d4a4-696a-1d28-485f90570000}",
+      "ParentProcessId": 746532,
+      "ParentImage": "/usr/bin/dash",
+      "ParentCommandLine": "/bin/sh",
+      "ParentUser": "root"
+    }
+  ]
+}]

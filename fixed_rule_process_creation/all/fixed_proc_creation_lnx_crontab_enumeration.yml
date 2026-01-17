@@ -1,5 +1,5 @@
 title: Sensitive Crontab File Access
-id: new-rule-id-placeholder
+id: 403ed92c-b7ec-4edd-9947-5b535ee12d46
 description: Detects direct access to system crontab files using shell utilities.
 logsource:
     category: process_creation
