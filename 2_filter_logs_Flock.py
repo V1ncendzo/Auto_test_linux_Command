@@ -60,13 +60,22 @@ def filter_logs():
                 content = f.read()
             
             # Extract ALL CommandLines and Images
-            command_lines = re.findall(r'CommandLine">(.*?)</Data>', content)
-            images = re.findall(r'Image">(.*?)</Data>', content)
+            # Use strict tag matching to avoid ParentCommandLine/ParentImage
+            command_lines = re.findall(r'<Data Name="CommandLine">(.*?)</Data>', content)
+            images = re.findall(r'<Data Name="Image">(.*?)</Data>', content)
             
             file_is_right_meaning = False
             file_is_trigger = False
             
             for cmd in command_lines:
+                # Filter out known "Noise" from the test infrastructure
+                # These commands invoke shells but are NOT the attack we are looking for.
+                # Also exclude the test harness wrapper "/bin/sh -c flock..."
+                if any(noise in cmd for noise in ['journalctl', 'cpuUsage.sh', 'git ', '/usr/bin/git', 'which ps', 'check_mapping.py']):
+                    continue
+                if re.search(r'(sh|bash|dash|zsh|fish)\s+-c\s+.*flock', cmd):
+                    continue
+
                 # Check "Right Meaning": Invokes a shell?
                 if shell_pattern.search(cmd):
                     # To be "Right Meaning" for *Flock*, it should involve flock-like behavior.
