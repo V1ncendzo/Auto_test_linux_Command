@@ -11,18 +11,18 @@ ID,Command,Log File,Result,All Detected Rules
 10,crontab --action=-r,Remove_Scheduled_Cron_Task_checklog_attack10.log,Log Error (Result Not Found),
 11,crontab - -r,Remove_Scheduled_Cron_Task_checklog_attack11.log,Log Error (Result Not Found),
 12,crontab -- --r,Remove_Scheduled_Cron_Task_checklog_attack12.log,Log Error (Result Not Found),
-13,crontab -r --option=1,Remove_Scheduled_Cron_Task_checklog_attack13.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+13,crontab -r --option=1,Remove_Scheduled_Cron_Task_checklog_attack13.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 14,crontab --remove_current -r,Remove_Scheduled_Cron_Task_checklog_attack14.log,Log Error (Result Not Found),
 15,crontab -/r,Remove_Scheduled_Cron_Task_checklog_attack15.log,Log Error (Result Not Found),
 16,crontab -r --comment,Remove_Scheduled_Cron_Task_checklog_attack16.log,Log Error (Result Not Found),
 17,crontab -r --foo=bar,Remove_Scheduled_Cron_Task_checklog_attack17.log,Log Error (Result Not Found),
-18,crontab -r --ignore,Remove_Scheduled_Cron_Task_checklog_attack18.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+18,crontab -r --ignore,Remove_Scheduled_Cron_Task_checklog_attack18.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 19,crontab -r --exec,Remove_Scheduled_Cron_Task_checklog_attack19.log,Log Error (Result Not Found),
 20,crontab --delete -r,Remove_Scheduled_Cron_Task_checklog_attack20.log,Log Error (Result Not Found),
 21,crontab --quiet -r,Remove_Scheduled_Cron_Task_checklog_attack21.log,Log Error (Result Not Found),
 22,crontab -r --verbose,Remove_Scheduled_Cron_Task_checklog_attack22.log,Log Error (Result Not Found),
 23,crontab -r --test,Remove_Scheduled_Cron_Task_checklog_attack23.log,Log Error (Result Not Found),
-24,crontab -r --dry-run,Remove_Scheduled_Cron_Task_checklog_attack24.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+24,crontab -r --dry-run,Remove_Scheduled_Cron_Task_checklog_attack24.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 25,crontab -r --none,Remove_Scheduled_Cron_Task_checklog_attack25.log,Log Error (Result Not Found),
 26,crontab -r --log,Remove_Scheduled_Cron_Task_checklog_attack26.log,Log Error (Result Not Found),
 27,crontab --run -r,Remove_Scheduled_Cron_Task_checklog_attack27.log,Log Error (Result Not Found),
@@ -32,33 +32,33 @@ ID,Command,Log File,Result,All Detected Rules
 31,crontab --fake-flag -r,Remove_Scheduled_Cron_Task_checklog_attack31.log,Log Error (Result Not Found),
 32,crontab -r --no-preserve-root,Remove_Scheduled_Cron_Task_checklog_attack32.log,Log Error (Result Not Found),
 33,crontab -r --trace,Remove_Scheduled_Cron_Task_checklog_attack33.log,Log Error (Result Not Found),
-34,crontab -r --simulate,Remove_Scheduled_Cron_Task_checklog_attack34.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+34,crontab -r --simulate,Remove_Scheduled_Cron_Task_checklog_attack34.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 35,crontab -r --null,Remove_Scheduled_Cron_Task_checklog_attack35.log,Log Error (Result Not Found),
 36,crontab -r --hidden,Remove_Scheduled_Cron_Task_checklog_attack36.log,Log Error (Result Not Found),
 37,crontab -r --skip-checks,Remove_Scheduled_Cron_Task_checklog_attack37.log,Log Error (Result Not Found),
 38,crontab -r --now,Remove_Scheduled_Cron_Task_checklog_attack38.log,Log Error (Result Not Found),
-39,crontab -r --backup,Remove_Scheduled_Cron_Task_checklog_attack39.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+39,crontab -r --backup,Remove_Scheduled_Cron_Task_checklog_attack39.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 40,crontab -r --temp,Remove_Scheduled_Cron_Task_checklog_attack40.log,Log Error (Result Not Found),
 41,crontab -r --list,Remove_Scheduled_Cron_Task_checklog_attack41.log,Log Error (Result Not Found),
 42,crontab -r --system,Remove_Scheduled_Cron_Task_checklog_attack42.log,Log Error (Result Not Found),
 43,crontab --bypass -r,Remove_Scheduled_Cron_Task_checklog_attack43.log,Log Error (Result Not Found),
 44,crontab -r --secure,Remove_Scheduled_Cron_Task_checklog_attack44.log,Log Error (Result Not Found),
-45,crontab -r --logoff,Remove_Scheduled_Cron_Task_checklog_attack45.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+45,crontab -r --logoff,Remove_Scheduled_Cron_Task_checklog_attack45.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 46,crontab -r --clean,Remove_Scheduled_Cron_Task_checklog_attack46.log,Log Error (Result Not Found),
 47,crontab -r --metadata,Remove_Scheduled_Cron_Task_checklog_attack47.log,Log Error (Result Not Found),
 48,crontab -r --audit,Remove_Scheduled_Cron_Task_checklog_attack48.log,Log Error (Result Not Found),
 49,crontab -r --session,Remove_Scheduled_Cron_Task_checklog_attack49.log,Log Error (Result Not Found),
-50,crontab -r --revoke,Remove_Scheduled_Cron_Task_checklog_attack50.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+50,crontab -r --revoke,Remove_Scheduled_Cron_Task_checklog_attack50.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 51,crontab --inject -r,Remove_Scheduled_Cron_Task_checklog_attack51.log,Log Error (Result Not Found),
 52,crontab -r --snapshot,Remove_Scheduled_Cron_Task_checklog_attack52.log,Log Error (Result Not Found),
 53,crontab -r --hook,Remove_Scheduled_Cron_Task_checklog_attack53.log,Log Error (Result Not Found),
 54,crontab -r --info,Remove_Scheduled_Cron_Task_checklog_attack54.log,Log Error (Result Not Found),
-55,crontab -r --file=/dev/null,Remove_Scheduled_Cron_Task_checklog_attack55.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+55,crontab -r --file=/dev/null,Remove_Scheduled_Cron_Task_checklog_attack55.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 56,crontab -r --uid=0,Remove_Scheduled_Cron_Task_checklog_attack56.log,Log Error (Result Not Found),
 57,crontab -r --gid=0,Remove_Scheduled_Cron_Task_checklog_attack57.log,Log Error (Result Not Found),
 58,crontab -r --config=/tmp/null,Remove_Scheduled_Cron_Task_checklog_attack58.log,Log Error (Result Not Found),
 59,crontab -r --env=PROD,Remove_Scheduled_Cron_Task_checklog_attack59.log,Log Error (Result Not Found),
-60,crontab -r --debug,Remove_Scheduled_Cron_Task_checklog_attack60.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+60,crontab -r --debug,Remove_Scheduled_Cron_Task_checklog_attack60.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 61,crontab --remove,Remove_Scheduled_Cron_Task_checklog_attack61.log,Log Error (Result Not Found),
 62,crontab -remove,Remove_Scheduled_Cron_Task_checklog_attack62.log,Log Error (Result Not Found),
 63,crontab --rm,Remove_Scheduled_Cron_Task_checklog_attack63.log,Log Error (Result Not Found),
@@ -142,7 +142,7 @@ ID,Command,Log File,Result,All Detected Rules
 141,crontab /r,Remove_Scheduled_Cron_Task_checklog_attack141.log,Log Error (Result Not Found),
 142,crontab --r,Remove_Scheduled_Cron_Task_checklog_attack142.log,Log Error (Result Not Found),
 143,crontab -d,Remove_Scheduled_Cron_Task_checklog_attack143.log,Log Error (Result Not Found),
-144,crontab -R,Remove_Scheduled_Cron_Task_checklog_attack144.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+144,crontab -R,Remove_Scheduled_Cron_Task_checklog_attack144.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 145,crontab --delete,Remove_Scheduled_Cron_Task_checklog_attack145.log,Log Error (Result Not Found),
 146,crontab remove,Remove_Scheduled_Cron_Task_checklog_attack146.log,Log Error (Result Not Found),
 147,crontab --clean,Remove_Scheduled_Cron_Task_checklog_attack147.log,Log Error (Result Not Found),
@@ -163,12 +163,12 @@ ID,Command,Log File,Result,All Detected Rules
 162,crontab --null,Remove_Scheduled_Cron_Task_checklog_attack162.log,Log Error (Result Not Found),
 163,crontab -r>/dev/null,Remove_Scheduled_Cron_Task_checklog_attack163.log,Log Error (Result Not Found),
 164,crontab -r 2>/dev/null,Remove_Scheduled_Cron_Task_checklog_attack164.log,Log Error (Result Not Found),
-165,crontab -r >/tmp/null,Remove_Scheduled_Cron_Task_checklog_attack165.log,Trigger: Remove Scheduled Cron Task/Job,Execution Of Script Located In Potentially Suspicious Directory | Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+165,crontab -r >/tmp/null,Remove_Scheduled_Cron_Task_checklog_attack165.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job | Execution Of Script Located In Potentially Suspicious Directory
 166,crontab --r --force,Remove_Scheduled_Cron_Task_checklog_attack166.log,Log Error (Result Not Found),
 167,crontab -f -r,Remove_Scheduled_Cron_Task_checklog_attack167.log,Log Error (Result Not Found),
 168,crontab -r --now,Remove_Scheduled_Cron_Task_checklog_attack168.log,Log Error (Result Not Found),
 169,crontab -r --quiet,Remove_Scheduled_Cron_Task_checklog_attack169.log,Log Error (Result Not Found),
-170,crontab -r --no-confirm,Remove_Scheduled_Cron_Task_checklog_attack170.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+170,crontab -r --no-confirm,Remove_Scheduled_Cron_Task_checklog_attack170.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 171,crontab --r -q,Remove_Scheduled_Cron_Task_checklog_attack171.log,Log Error (Result Not Found),
 172,crontab --silent-r,Remove_Scheduled_Cron_Task_checklog_attack172.log,Log Error (Result Not Found),
 173,crontab -r-now,Remove_Scheduled_Cron_Task_checklog_attack173.log,Log Error (Result Not Found),
@@ -195,7 +195,7 @@ ID,Command,Log File,Result,All Detected Rules
 194,crontab '-r' --,Remove_Scheduled_Cron_Task_checklog_attack194.log,Log Error (Result Not Found),
 195,crontab -- '-r',Remove_Scheduled_Cron_Task_checklog_attack195.log,Log Error (Result Not Found),
 196,'crontab' -r,Remove_Scheduled_Cron_Task_checklog_attack196.log,Log Error (Result Not Found),
-197,"""crontab"" -r",Remove_Scheduled_Cron_Task_checklog_attack197.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+197,"""crontab"" -r",Remove_Scheduled_Cron_Task_checklog_attack197.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 198,"r ""crontab""",Remove_Scheduled_Cron_Task_checklog_attack198.log,Log Error (Result Not Found),
 199,-help crontab -r,Remove_Scheduled_Cron_Task_checklog_attack199.log,Log Error (Result Not Found),
 200,crontab -r --fakeflag,Remove_Scheduled_Cron_Task_checklog_attack200.log,Log Error (Result Not Found),
@@ -232,12 +232,12 @@ ID,Command,Log File,Result,All Detected Rules
 231,sleep 0 && crontab -r,Remove_Scheduled_Cron_Task_checklog_attack231.log,Log Error (Result Not Found),
 232,crontab -r &,Remove_Scheduled_Cron_Task_checklog_attack232.log,Log Error (Result Not Found),
 233,setsid crontab -r,Remove_Scheduled_Cron_Task_checklog_attack233.log,Log Error (Result Not Found),
-234,(crontab -r),Remove_Scheduled_Cron_Task_checklog_attack234.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+234,(crontab -r),Remove_Scheduled_Cron_Task_checklog_attack234.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 235,{ crontab -r; },Remove_Scheduled_Cron_Task_checklog_attack235.log,Log Error (Result Not Found),
 236,$(which crontab) -r,Remove_Scheduled_Cron_Task_checklog_attack236.log,Log Error (Result Not Found),
 237,crontab -r,Remove_Scheduled_Cron_Task_checklog_attack237.log,Log Error (Result Not Found),
 238,crontab --remove-now,Remove_Scheduled_Cron_Task_checklog_attack238.log,Log Error (Result Not Found),
-239,crontab -r --log,Remove_Scheduled_Cron_Task_checklog_attack239.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+239,crontab -r --log,Remove_Scheduled_Cron_Task_checklog_attack239.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 240,crontab -r;,Remove_Scheduled_Cron_Task_checklog_attack240.log,Log Error (Result Not Found),
 241,crontab -0x72,Remove_Scheduled_Cron_Task_checklog_attack241.log,Log Error (Result Not Found),
 242,crontab -0b1110010,Remove_Scheduled_Cron_Task_checklog_attack242.log,Log Error (Result Not Found),
@@ -248,7 +248,7 @@ ID,Command,Log File,Result,All Detected Rules
 247,crontab -0172,Remove_Scheduled_Cron_Task_checklog_attack247.log,Log Error (Result Not Found),
 248,crontab -U+0072,Remove_Scheduled_Cron_Task_checklog_attack248.log,Log Error (Result Not Found),
 249,crontab -\u0072,Remove_Scheduled_Cron_Task_checklog_attack249.log,Log Error (Result Not Found),
-250,crontab -r,Remove_Scheduled_Cron_Task_checklog_attack250.log,Trigger: Remove Scheduled Cron Task/Job,Remove Scheduled Cron Task/Job | Syslog Clearing or Removal Via System Utilities
+250,crontab -r,Remove_Scheduled_Cron_Task_checklog_attack250.log,Trigger: Remove Scheduled Cron Task/Job,Syslog Clearing or Removal Via System Utilities | Remove Scheduled Cron Task/Job
 251,crontab -\x72,Remove_Scheduled_Cron_Task_checklog_attack251.log,Log Error (Result Not Found),
 252,crontab -$'\x72',Remove_Scheduled_Cron_Task_checklog_attack252.log,Log Error (Result Not Found),
 253,crontab -$'\162',Remove_Scheduled_Cron_Task_checklog_attack253.log,Log Error (Result Not Found),
@@ -362,9 +362,13 @@ ID,Command,Log File,Result,All Detected Rules
 ,,,,
 ,,,,
 === SUMMARY REPORT ===,,,,
-Total Commands (File),360,,,
-Triggered Target,16,,,
-TOTAL BYPASS RATE,1 / 360 (0.28%),,,
-  > Bypass All,0,,,
-  > Bypass Target Rule,1,,,
+Calculation Base (Source: All Commands),,,,
+Total Meaningful Logs (Denominator),360,,,
+Triggered Target (Detections),16,,,
+Bypass Logs (Numerator),1,,,
+BYPASS RATE (Bypass/Meaningful),1 / 360 (0.28%),,,
+,,,,
+--- DETAILS (From raw scan) ---,,,,
+  > Bypass All (Raw),0,,,
+  > Bypass Target Rule (Raw),1,,,
 Missing/Not Run,343,,,

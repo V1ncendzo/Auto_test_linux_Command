@@ -35,9 +35,7 @@ def normalize_text(text):
     if not text: return ""
     return text.lower().replace("_", " ").replace("-", " ").strip()
 
-def main():
-    rule_name = get_rule_selection() # Tên thư mục bạn chọn
-    
+def generate_report(rule_name):
     # 1. Tên sạch (bỏ _checklog) để tìm file txt và json
     rule_name_clean = rule_name.replace("_checklog", "") 
     
@@ -61,7 +59,7 @@ def main():
     # --- IN THÔNG TIN TRẠNG THÁI (NHƯ BẠN YÊU CẦU) ---
     print(f"\n[*] Đang tạo báo cáo: {report_file}")
     print(f"[*] Đang đọc lệnh từ: {rule_name_clean}.txt ({len(commands)} lệnh)")
-    print(f"[*] Đang quét kết quả trong: {rule_result_dir}")
+    # print(f"[*] Đang quét kết quả trong: {rule_result_dir}")
     # -------------------------------------------------
     
     report_data = []
@@ -137,10 +135,68 @@ def main():
             "All Detected Rules": detected_list_str 
         })
 
+    # --- ĐỌC STATS TỪ FILTERED_SUMMARY.TXT (NẾU CÓ) ---
+    summary_txt_path = os.path.join(LOG_BASE_DIR, rule_name, "filtered_summary.txt")
+    fs_total_kept = 0
+    fs_bypass_cnt = 0
+    fs_trigger_cnt = 0
+    fs_found = False
+
+    if os.path.exists(summary_txt_path):
+        try:
+            with open(summary_txt_path, 'r') as f:
+                content = f.read()
+                # Parse Filtered (Kept)
+                import re
+                m_kept = re.search(r"Filtered \(Kept\): (\d+)", content)
+                if m_kept:
+                    fs_total_kept = int(m_kept.group(1))
+                    
+                # Parse Bypass
+                m_bypass = re.search(r"Bypass \(Right Meaning.*?\): (\d+)", content)
+                if m_bypass:
+                    fs_bypass_cnt = int(m_bypass.group(1))
+                    
+                # Parse Trigger
+                m_trigger = re.search(r"Trigger \(Sigma Match\): (\d+)", content)
+                if m_trigger:
+                    fs_trigger_cnt = int(m_trigger.group(1))
+
+                fs_found = True
+        except Exception as e:
+            print(f"[WARN] Lỗi đọc filtered_summary.txt: {e}")
+
     # --- TÍNH TOÁN VÀ GHI FILE ---
-    total_bypass = stats["bypass_all"] + stats["bypass_target_rule"]
-    total_cmds = stats["total"]
-    rate_percent = (total_bypass / total_cmds * 100) if total_cmds > 0 else 0
+    
+    # Logic cũ
+    old_total_bypass = stats["bypass_all"] + stats["bypass_target_rule"]
+    old_total_cmds = stats["total"]
+    
+    # Logic mới
+    if fs_found and fs_total_kept > 0:
+        # Fallback Logic: If filtered_summary.txt didn't have explicit breakdown, infer it.
+        # We assume 'Total Kept' is accurate.
+        # If fs_trigger_cnt is missing (0), use the actual detection trigger count.
+        if fs_trigger_cnt == 0:
+             fs_trigger_cnt = stats['trigger_target']
+        
+        # If fs_bypass_cnt is missing (0), calculate it: Kept - Trigger
+        if fs_bypass_cnt == 0:
+             fs_bypass_cnt = fs_total_kept - fs_trigger_cnt
+             # Sanity check: prevent negative bypasses if something is weird
+             if fs_bypass_cnt < 0: fs_bypass_cnt = 0
+
+        final_bypass_num = fs_bypass_cnt
+        final_total_base = fs_total_kept
+        summary_source = "(Source: filtered_summary.txt)"
+        rate_percent = (final_bypass_num / final_total_base * 100)
+    else:
+        final_bypass_num = old_total_bypass
+        final_total_base = old_total_cmds
+        summary_source = "(Source: All Commands)"
+        rate_percent = (final_bypass_num / final_total_base * 100) if final_total_base > 0 else 0
+
+    ratio_val = (final_bypass_num / fs_trigger_cnt) if (fs_found and fs_trigger_cnt > 0) else 0.0
 
     with open(report_file, 'w', newline='', encoding='utf-8') as f:
         fieldnames = ["ID", "Command", "Log File", "Result", "All Detected Rules"]
@@ -151,29 +207,44 @@ def main():
         writer.writerow({})
         writer.writerow({})
         writer.writerow({"ID": "=== SUMMARY REPORT ==="})
-        writer.writerow({"ID": "Total Commands (File)", "Command": total_cmds})
-        writer.writerow({"ID": "Triggered Target", "Command": stats["trigger_target"]})
+        writer.writerow({"ID": f"Calculation Base {summary_source}", "Command": ""})
+        writer.writerow({"ID": "Total Meaningful Logs (Denominator)", "Command": final_total_base})
+        writer.writerow({"ID": "Triggered Target (Detections)", "Command": fs_trigger_cnt if fs_found else stats["trigger_target"]})
+        writer.writerow({"ID": "Bypass Logs (Numerator)", "Command": final_bypass_num})
         
-        summary_bypass = f"{total_bypass} / {total_cmds} ({rate_percent:.2f}%)"
-        writer.writerow({"ID": "TOTAL BYPASS RATE", "Command": summary_bypass})
+        summary_bypass = f"{final_bypass_num} / {final_total_base} ({rate_percent:.2f}%)"
+        writer.writerow({"ID": "BYPASS RATE (Bypass/Meaningful)", "Command": summary_bypass})
         
-        writer.writerow({"ID": "  > Bypass All", "Command": stats["bypass_all"]})
-        writer.writerow({"ID": "  > Bypass Target Rule", "Command": stats["bypass_target_rule"]})
+        if fs_found and fs_trigger_cnt > 0:
+             writer.writerow({"ID": "BYPASS RAIO (Bypass/Detections)", "Command": f"{ratio_val:.2f}"})
+        
+        writer.writerow({})
+        writer.writerow({"ID": "--- DETAILS (From raw scan) ---"})
+        writer.writerow({"ID": "  > Bypass All (Raw)", "Command": stats["bypass_all"]})
+        writer.writerow({"ID": "  > Bypass Target Rule (Raw)", "Command": stats["bypass_target_rule"]})
         
         if stats["missing"] > 0:
              writer.writerow({"ID": "Missing/Not Run", "Command": stats["missing"]})
         if stats["errors"] > 0:
-            writer.writerow({"ID": "Errors", "Command": stats["errors"]})
+             writer.writerow({"ID": "Errors", "Command": stats["errors"]})
 
-    # --- IN TỔNG KẾT RA MÀN HÌNH ---
-    print(f"[SUCCESS] Đã xuất báo cáo tại: {os.path.abspath(report_file)}")
-    print("-" * 40)
-    print(f" TỔNG KẾT ({rule_name})")
-    print("-" * 40)
-    print(f" [+] Tổng số lệnh:      {total_cmds}")
-    print(f" [+] Số lệnh Bypass:    {total_bypass}")
-    print(f" [+] Tỉ lệ Bypass:      {total_bypass}/{total_cmds} ({rate_percent:.2f}%)")
-    print("-" * 40)
+    print(f"[SUCCESS] {report_file}")
+    print(f" TỔNG KẾT ({rule_name}) {summary_source}")
+    print(f" [+] Meaningful: {final_total_base} | Trigger: {fs_trigger_cnt if fs_found else stats['trigger_target']} | Bypass: {final_bypass_num} | Rate: {rate_percent:.2f}%")
+
+
+def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "all":
+        if not os.path.exists(RESULT_BASE_DIR):
+            print("Chưa có kết quả detect nào.")
+            sys.exit(1)
+        rules = sorted([f for f in os.listdir(RESULT_BASE_DIR) if os.path.isdir(os.path.join(RESULT_BASE_DIR, f))])
+        print(f"Found {len(rules)} rules. Generating reports for ALL...")
+        for r in rules:
+            generate_report(r)
+    else:
+        rule_name = get_rule_selection() 
+        generate_report(rule_name)
 
 if __name__ == "__main__":
     main()

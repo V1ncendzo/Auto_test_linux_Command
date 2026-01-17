@@ -3,81 +3,81 @@ ID,Command,Log File,Result,All Detected Rules
 2,"sudo sh -c '/sbin/modprobe ms""r"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack2.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 3,"sudo sh -c '/sbin/modprobe m""sr"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack3.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 4,"sudo sh -c '/sbin/modprobe msr allow_""writes""=on'",Linux_Crypto_Mining_Indicators_attack4.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-5,"sudo sh -c '/sbin/modprobe msr ""allow""_writes=on'",Linux_Crypto_Mining_Indicators_attack5.log,Log Error (Missing Result),
+5,"sudo sh -c '/sbin/modprobe msr ""allow""_writes=on'",Linux_Crypto_Mining_Indicators_attack5.log,Log Error (Result Not Found),
 6,"sudo sh -c '/sbin/modprobe msr allow_writes=""on""'",Linux_Crypto_Mining_Indicators_attack6.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 7,"sudo sh -c '/sbin/modprobe msr allo""w""_writes=on'",Linux_Crypto_Mining_Indicators_attack7.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 8,"sudo sh -c '/sbin/modprobe msr allow_wri""t""es=on'",Linux_Crypto_Mining_Indicators_attack8.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-9,sudo sh -c '/sbin/modprobe msr allo--w_writes=on',Linux_Crypto_Mining_Indicators_attack9.log,Log Error (Missing Result),
+9,sudo sh -c '/sbin/modprobe msr allo--w_writes=on',Linux_Crypto_Mining_Indicators_attack9.log,Log Error (Result Not Found),
 10,"sudo sh -c '/sbin/modprobe ""m""""s""""r"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack10.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 11,sudo sh -c '/sbin/modprobe $(echo msr) allow_writes=on',Linux_Crypto_Mining_Indicators_attack11.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 12,"sudo sh -c ""/sbin/modprobe 'msr' allow_writes=on""",Linux_Crypto_Mining_Indicators_attack12.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 13,"sudo sh -c '/sbin/modprobe msr al""""low_writes=on'",Linux_Crypto_Mining_Indicators_attack13.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 14,"sudo sh -c '/sbin/modprobe msr allow_writes=o""""n'",Linux_Crypto_Mining_Indicators_attack14.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 15,sudo sh -c '/sbin/modprobe m\sr allow_writes=on',Linux_Crypto_Mining_Indicators_attack15.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-16,sudo sh -c '/sbin/modprobe msr allow=write:s on',Linux_Crypto_Mining_Indicators_attack16.log,Log Error (Missing Result),
-17,sudo sh -c '/sbin/modprobe msr allow_writes==on',Linux_Crypto_Mining_Indicators_attack17.log,Log Error (Missing Result),
-18,sudo sh -c '/sbin/modprobe msr allow_writes=on;#',Linux_Crypto_Mining_Indicators_attack18.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-19,sudo sh -c '/sbin/modprobe msr allow_writes=on || true',Linux_Crypto_Mining_Indicators_attack19.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-20,sudo sh -c '/sbin/modprobe msr allow_writes=on # legit',Linux_Crypto_Mining_Indicators_attack20.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-21,sudo sh -c '/sbin/modprobe msr allow_writes=on; sleep 0',Linux_Crypto_Mining_Indicators_attack21.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-22,sudo sh -c '/sbin/modprobe --verbose msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack22.log,Log Error (Missing Result),
+16,sudo sh -c '/sbin/modprobe msr allow=write:s on',Linux_Crypto_Mining_Indicators_attack16.log,Log Error (Result Not Found),
+17,sudo sh -c '/sbin/modprobe msr allow_writes==on',Linux_Crypto_Mining_Indicators_attack17.log,Log Error (Result Not Found),
+18,sudo sh -c '/sbin/modprobe msr allow_writes=on;#',Linux_Crypto_Mining_Indicators_attack18.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+19,sudo sh -c '/sbin/modprobe msr allow_writes=on || true',Linux_Crypto_Mining_Indicators_attack19.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+20,sudo sh -c '/sbin/modprobe msr allow_writes=on # legit',Linux_Crypto_Mining_Indicators_attack20.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+21,sudo sh -c '/sbin/modprobe msr allow_writes=on; sleep 0',Linux_Crypto_Mining_Indicators_attack21.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+22,sudo sh -c '/sbin/modprobe --verbose msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack22.log,Log Error (Result Not Found),
 23,"sudo sh -c '/sbin/modprobe ""ms""""r"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack23.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-24,"sudo sh -c '/sbin/modprobe m""""s""""r allow=write:s=on'",Linux_Crypto_Mining_Indicators_attack24.log,Log Error (Missing Result),
+24,"sudo sh -c '/sbin/modprobe m""""s""""r allow=write:s=on'",Linux_Crypto_Mining_Indicators_attack24.log,Log Error (Result Not Found),
 25,"sudo sh -c '/sbin/modprobe ""msr"" allo""""w_writes=on'",Linux_Crypto_Mining_Indicators_attack25.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-26,sudo sh -c '/sbin/modprobe --help msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack26.log,Log Error (Missing Result),
+26,sudo sh -c '/sbin/modprobe --help msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack26.log,Log Error (Result Not Found),
 27,"sudo sh -c '/sbin/modprobe ""msr"" allow_writes=on #comment'",Linux_Crypto_Mining_Indicators_attack27.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-28,sudo sh -c '/sbin/modprobe msr allow_writes=on; echo done',Linux_Crypto_Mining_Indicators_attack28.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-29,sudo sh -c '/sbin/modprobe msr; allow_writes=on',Linux_Crypto_Mining_Indicators_attack29.log,Log Error (Missing Result),
-30,sudo sh -c '/sbin/modprobe msr && echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack30.log,Log Error (Missing Result),
-31,sudo sh -c '/sbin/modprobe m''sr allow_writes=on',Linux_Crypto_Mining_Indicators_attack31.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+28,sudo sh -c '/sbin/modprobe msr allow_writes=on; echo done',Linux_Crypto_Mining_Indicators_attack28.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+29,sudo sh -c '/sbin/modprobe msr; allow_writes=on',Linux_Crypto_Mining_Indicators_attack29.log,Log Error (Result Not Found),
+30,sudo sh -c '/sbin/modprobe msr && echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack30.log,Log Error (Result Not Found),
+31,sudo sh -c '/sbin/modprobe m''sr allow_writes=on',Linux_Crypto_Mining_Indicators_attack31.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 32,sudo sh -c '/sbin/modprobe msr allo\w_writes=on',Linux_Crypto_Mining_Indicators_attack32.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 33,sudo sh -c '/sbin/modprobe m\sr allow_writes=\on',Linux_Crypto_Mining_Indicators_attack33.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 34,"sudo sh -c '/sbin/modprobe msr al""""low_writes=on'",Linux_Crypto_Mining_Indicators_attack34.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-35,"sudo sh -c '/sbin/modprobe msr allow=""writes=on""'",Linux_Crypto_Mining_Indicators_attack35.log,Log Error (Missing Result),
-36,sudo sh -c '/sbin/modprobe msr all_ow_writes=on',Linux_Crypto_Mining_Indicators_attack36.log,Log Error (Missing Result),
-37,sudo sh -c '/sbin/modprobe msr allow_writes==on',Linux_Crypto_Mining_Indicators_attack37.log,Log Error (Missing Result),
-38,"sudo sh -c '/sbin/modprobe msr allow_writes:=""on""'",Linux_Crypto_Mining_Indicators_attack38.log,Log Error (Missing Result),
+35,"sudo sh -c '/sbin/modprobe msr allow=""writes=on""'",Linux_Crypto_Mining_Indicators_attack35.log,Log Error (Result Not Found),
+36,sudo sh -c '/sbin/modprobe msr all_ow_writes=on',Linux_Crypto_Mining_Indicators_attack36.log,Log Error (Result Not Found),
+37,sudo sh -c '/sbin/modprobe msr allow_writes==on',Linux_Crypto_Mining_Indicators_attack37.log,Log Error (Result Not Found),
+38,"sudo sh -c '/sbin/modprobe msr allow_writes:=""on""'",Linux_Crypto_Mining_Indicators_attack38.log,Log Error (Result Not Found),
 39,sudo sh -c '/sbin/modprobe msr allo\w_writes=on',Linux_Crypto_Mining_Indicators_attack39.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 40,"sudo sh -c '/sbin/modprobe ""m""""sr"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack40.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 41,"sudo sh -c '/sbin/modprobe msr allow_write""""s=on'",Linux_Crypto_Mining_Indicators_attack41.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-42,sudo sh -c '/sbin/modprobe msr allow_write=true',Linux_Crypto_Mining_Indicators_attack42.log,Log Error (Missing Result),
-43,sudo sh -c '/sbin/modprobe msr allow_writes yes',Linux_Crypto_Mining_Indicators_attack43.log,Log Error (Missing Result),
-44,sudo sh -c '/sbin/modprobe msr enable_write=1',Linux_Crypto_Mining_Indicators_attack44.log,Log Error (Missing Result),
-45,sudo sh -c '/sbin/modprobe msr enable-msr-writes',Linux_Crypto_Mining_Indicators_attack45.log,Log Error (Missing Result),
-46,sudo sh -c '/sbin/modprobe msr write-enable=1',Linux_Crypto_Mining_Indicators_attack46.log,Log Error (Missing Result),
-47,sudo sh -c '/sbin/modprobe msr set_write_permission=on',Linux_Crypto_Mining_Indicators_attack47.log,Log Error (Missing Result),
-48,sudo sh -c '/sbin/modprobe msr allow_writes=1',Linux_Crypto_Mining_Indicators_attack48.log,Log Error (Missing Result),
-49,sudo sh -c '/sbin/modprobe msr --config allow_writes=on',Linux_Crypto_Mining_Indicators_attack49.log,Log Error (Missing Result),
-50,"sudo sh -c ""/sbin/modprobe msr allow-writes=on""",Linux_Crypto_Mining_Indicators_attack50.log,Log Error (Missing Result),
-51,"sudo sh -c ""/sbin/modprobe msr allow.writes=on""",Linux_Crypto_Mining_Indicators_attack51.log,Log Error (Missing Result),
-52,"sudo sh -c ""/sbin/modprobe msr allow_writes yes""",Linux_Crypto_Mining_Indicators_attack52.log,Log Error (Missing Result),
-53,"sudo sh -c ""/sbin/modprobe msr allow_writes 1""",Linux_Crypto_Mining_Indicators_attack53.log,Log Error (Missing Result),
-54,"sudo sh -c ""/sbin/modprobe msr enable_write_mode=on""",Linux_Crypto_Mining_Indicators_attack54.log,Log Error (Missing Result),
-55,"sudo sh -c ""/sbin/modprobe msr write_control=allow""",Linux_Crypto_Mining_Indicators_attack55.log,Log Error (Missing Result),
-56,"sudo sh -c ""/sbin/modprobe msr write_perm=enabled""",Linux_Crypto_Mining_Indicators_attack56.log,Log Error (Missing Result),
-57,"sudo sh -c ""/sbin/modprobe msr +allow_writes=on""",Linux_Crypto_Mining_Indicators_attack57.log,Log Error (Missing Result),
-58,"sudo sh -c ""/sbin/modprobe msr allow_writes==on""",Linux_Crypto_Mining_Indicators_attack58.log,Log Error (Missing Result),
-59,"sudo sh -c ""/sbin/modprobe msr allow_writes:on""",Linux_Crypto_Mining_Indicators_attack59.log,Log Error (Missing Result),
-60,"sudo sh -c ""/sbin/modprobe msr allowWrites=on""",Linux_Crypto_Mining_Indicators_attack60.log,Log Error (Missing Result),
-61,"sudo sh -c ""/sbin/modprobe msr allow_writes = on""",Linux_Crypto_Mining_Indicators_attack61.log,Log Error (Missing Result),
-62,"sudo sh -c ""/sbin/modprobe msr allow_writes true""",Linux_Crypto_Mining_Indicators_attack62.log,Log Error (Missing Result),
-63,"sudo sh -c ""/sbin/modprobe msr allow_writes enabled""",Linux_Crypto_Mining_Indicators_attack63.log,Log Error (Missing Result),
-64,"sudo sh -c ""/sbin/modprobe msr allow_writes=enabled""",Linux_Crypto_Mining_Indicators_attack64.log,Log Error (Missing Result),
-65,"sudo sh -c ""/sbin/modprobe msr +set allow_writes=on""",Linux_Crypto_Mining_Indicators_attack65.log,Log Error (Missing Result),
+42,sudo sh -c '/sbin/modprobe msr allow_write=true',Linux_Crypto_Mining_Indicators_attack42.log,Log Error (Result Not Found),
+43,sudo sh -c '/sbin/modprobe msr allow_writes yes',Linux_Crypto_Mining_Indicators_attack43.log,Log Error (Result Not Found),
+44,sudo sh -c '/sbin/modprobe msr enable_write=1',Linux_Crypto_Mining_Indicators_attack44.log,Log Error (Result Not Found),
+45,sudo sh -c '/sbin/modprobe msr enable-msr-writes',Linux_Crypto_Mining_Indicators_attack45.log,Log Error (Result Not Found),
+46,sudo sh -c '/sbin/modprobe msr write-enable=1',Linux_Crypto_Mining_Indicators_attack46.log,Log Error (Result Not Found),
+47,sudo sh -c '/sbin/modprobe msr set_write_permission=on',Linux_Crypto_Mining_Indicators_attack47.log,Log Error (Result Not Found),
+48,sudo sh -c '/sbin/modprobe msr allow_writes=1',Linux_Crypto_Mining_Indicators_attack48.log,Log Error (Result Not Found),
+49,sudo sh -c '/sbin/modprobe msr --config allow_writes=on',Linux_Crypto_Mining_Indicators_attack49.log,Log Error (Result Not Found),
+50,"sudo sh -c ""/sbin/modprobe msr allow-writes=on""",Linux_Crypto_Mining_Indicators_attack50.log,Log Error (Result Not Found),
+51,"sudo sh -c ""/sbin/modprobe msr allow.writes=on""",Linux_Crypto_Mining_Indicators_attack51.log,Log Error (Result Not Found),
+52,"sudo sh -c ""/sbin/modprobe msr allow_writes yes""",Linux_Crypto_Mining_Indicators_attack52.log,Log Error (Result Not Found),
+53,"sudo sh -c ""/sbin/modprobe msr allow_writes 1""",Linux_Crypto_Mining_Indicators_attack53.log,Log Error (Result Not Found),
+54,"sudo sh -c ""/sbin/modprobe msr enable_write_mode=on""",Linux_Crypto_Mining_Indicators_attack54.log,Log Error (Result Not Found),
+55,"sudo sh -c ""/sbin/modprobe msr write_control=allow""",Linux_Crypto_Mining_Indicators_attack55.log,Log Error (Result Not Found),
+56,"sudo sh -c ""/sbin/modprobe msr write_perm=enabled""",Linux_Crypto_Mining_Indicators_attack56.log,Log Error (Result Not Found),
+57,"sudo sh -c ""/sbin/modprobe msr +allow_writes=on""",Linux_Crypto_Mining_Indicators_attack57.log,Log Error (Result Not Found),
+58,"sudo sh -c ""/sbin/modprobe msr allow_writes==on""",Linux_Crypto_Mining_Indicators_attack58.log,Log Error (Result Not Found),
+59,"sudo sh -c ""/sbin/modprobe msr allow_writes:on""",Linux_Crypto_Mining_Indicators_attack59.log,Log Error (Result Not Found),
+60,"sudo sh -c ""/sbin/modprobe msr allowWrites=on""",Linux_Crypto_Mining_Indicators_attack60.log,Log Error (Result Not Found),
+61,"sudo sh -c ""/sbin/modprobe msr allow_writes = on""",Linux_Crypto_Mining_Indicators_attack61.log,Log Error (Result Not Found),
+62,"sudo sh -c ""/sbin/modprobe msr allow_writes true""",Linux_Crypto_Mining_Indicators_attack62.log,Log Error (Result Not Found),
+63,"sudo sh -c ""/sbin/modprobe msr allow_writes enabled""",Linux_Crypto_Mining_Indicators_attack63.log,Log Error (Result Not Found),
+64,"sudo sh -c ""/sbin/modprobe msr allow_writes=enabled""",Linux_Crypto_Mining_Indicators_attack64.log,Log Error (Result Not Found),
+65,"sudo sh -c ""/sbin/modprobe msr +set allow_writes=on""",Linux_Crypto_Mining_Indicators_attack65.log,Log Error (Result Not Found),
 66,sudo /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack66.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-67,"sh -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack67.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-68,sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack68.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-69,/sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack69.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-70,modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack70.log,Log Error (Missing Result),
-71,bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack71.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-72,"bash -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack72.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-73,sudo bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack73.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-74,"sudo bash -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack74.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-75,sudo modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack75.log,Log Error (Missing Result),
-76,/bin/sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack76.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-77,/bin/bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack77.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+67,"sh -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack67.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+68,sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack68.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+69,/sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack69.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+70,modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack70.log,Log Error (Result Not Found),
+71,bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack71.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+72,"bash -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack72.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+73,sudo bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack73.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+74,"sudo bash -c ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack74.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+75,sudo modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack75.log,Log Error (Result Not Found),
+76,/bin/sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack76.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+77,/bin/bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack77.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 78,setsid /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack78.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-79,nohup /sbin/modprobe msr allow_writes=on &,Linux_Crypto_Mining_Indicators_attack79.log,Bypass Target Rule,Nohup Execution | Syslog Clearing or Removal Via System Utilities
+79,nohup /sbin/modprobe msr allow_writes=on &,Linux_Crypto_Mining_Indicators_attack79.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Nohup Execution
 80,timeout 1 /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack80.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 81,nice -n -10 /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack81.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 82,"sudo env ""A=1"" /sbin/modprobe msr allow_writes=on",Linux_Crypto_Mining_Indicators_attack82.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -87,19 +87,19 @@ ID,Command,Log File,Result,All Detected Rules
 86,command /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack86.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 87,"eval ""/sbin/modprobe msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack87.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 88,sudo -n /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack88.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-89,sudo su -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack89.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-90,sudo /bin/sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack90.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+89,sudo su -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack89.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+90,sudo /bin/sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack90.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 91,sudo /usr/bin/env /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack91.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-92,sudo --preserve-env /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack92.log,Log Error (Missing Result),
+92,sudo --preserve-env /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack92.log,Log Error (Result Not Found),
 93,sudo env --ignore-environment /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack93.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-94,sudo $(which modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack94.log,Log Error (Missing Result),
-95,sudo `which modprobe` msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack95.log,Log Error (Missing Result),
+94,sudo $(which modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack94.log,Log Error (Result Not Found),
+95,sudo `which modprobe` msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack95.log,Log Error (Result Not Found),
 96,sudo -E /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack96.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-97,sudo -i /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack97.log,Log Error (Missing Result),
+97,sudo -i /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack97.log,Log Error (Result Not Found),
 98,/usr/bin/env sudo /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack98.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 99,sudo $(echo /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack99.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 100,"sudo $(printf ""/%s/%s"" ""sbin"" ""modprobe"") msr allow_writes=on",Linux_Crypto_Mining_Indicators_attack100.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-101,sudo $(basename /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack101.log,Log Error (Missing Result),
+101,sudo $(basename /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack101.log,Log Error (Result Not Found),
 102,sudo /sbin/modprobe $(echo msr) allow_writes=on,Linux_Crypto_Mining_Indicators_attack102.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 103,sudo /sbin/modprobe msr $(echo allow_writes=on),Linux_Crypto_Mining_Indicators_attack103.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 104,"sudo /sbin/modprobe ""msr"" ""allow_writes=on""",Linux_Crypto_Mining_Indicators_attack104.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -107,90 +107,94 @@ ID,Command,Log File,Result,All Detected Rules
 106,"sudo /sbin/modprobe ""msr"" allow_writes=on",Linux_Crypto_Mining_Indicators_attack106.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 107,"sudo /sbin/modprobe msr ""allow_writes=on""",Linux_Crypto_Mining_Indicators_attack107.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 108,"sudo ""$(echo /sbin/modprobe)"" msr allow_writes=on",Linux_Crypto_Mining_Indicators_attack108.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-109,sudo $(cat <<< /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack109.log,Log Error (Missing Result),
-110,sudo `cat <<< /sbin/modprobe` msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack110.log,Log Error (Missing Result),
-111,sudo $'/sbin/modprobe' msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack111.log,Log Error (Missing Result),
-112,sudo /sbin/modprobe msr$IFS$allow_writes=on,Linux_Crypto_Mining_Indicators_attack112.log,Log Error (Missing Result),
+109,sudo $(cat <<< /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack109.log,Log Error (Result Not Found),
+110,sudo `cat <<< /sbin/modprobe` msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack110.log,Log Error (Result Not Found),
+111,sudo $'/sbin/modprobe' msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack111.log,Log Error (Result Not Found),
+112,sudo /sbin/modprobe msr$IFS$allow_writes=on,Linux_Crypto_Mining_Indicators_attack112.log,Log Error (Result Not Found),
 113,sudo /sbin/modprobe msr `echo allow_writes=on`,Linux_Crypto_Mining_Indicators_attack113.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 114,sudo /sbin/modprobe `echo msr` `echo allow_writes=on`,Linux_Crypto_Mining_Indicators_attack114.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 115,sudo `echo /sbin/modprobe` msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack115.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 116,sudo $(echo -n /sbin/modprobe) msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack116.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 117,sudo true && /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack117.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 118,sudo ifconfig >/dev/null; /sbin/modprobe msr allow_writes=on,Linux_Crypto_Mining_Indicators_attack118.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-119,sudo sh -c 'allow_writes=on /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack119.log,Log Error (Missing Result),
-120,sudo sh -c 'writes=on /sbin/modprobe msr enable',Linux_Crypto_Mining_Indicators_attack120.log,Log Error (Missing Result),
-121,sudo sh -c 'modprobe msr /sbin/allow_writes=on',Linux_Crypto_Mining_Indicators_attack121.log,Log Error (Missing Result),
-122,sudo sh -c 'modprobe msr /sbin allow_writes=on',Linux_Crypto_Mining_Indicators_attack122.log,Log Error (Missing Result),
-123,sudo sh -c 'modprobe msr allow_writes=on /sbin',Linux_Crypto_Mining_Indicators_attack123.log,Log Error (Missing Result),
-124,sudo sh -c 'modprobe msr /sbin allow_writes=on',Linux_Crypto_Mining_Indicators_attack124.log,Log Error (Missing Result),
-125,sudo sh -c 'echo allow_writes=on && /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack125.log,Log Error (Missing Result),
-126,sudo sh -c '/sbin/modprobe msr && echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack126.log,Log Error (Missing Result),
-127,sudo sh -c '/sbin/modprobe msr; echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack127.log,Log Error (Missing Result),
-128,sudo sh -c 'modprobe /sbin msr; allow_writes=on',Linux_Crypto_Mining_Indicators_attack128.log,Log Error (Missing Result),
-129,sudo sh -c 'allow_writes=on; /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack129.log,Log Error (Missing Result),
-130,sudo sh -c 'modprobe msr allow_writes=on /sbin',Linux_Crypto_Mining_Indicators_attack130.log,Log Error (Missing Result),
-131,sudo sh -c '/sbin/modprobe msr && : # allow_writes=on',Linux_Crypto_Mining_Indicators_attack131.log,Log Error (Missing Result),
+119,sudo sh -c 'allow_writes=on /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack119.log,Log Error (Result Not Found),
+120,sudo sh -c 'writes=on /sbin/modprobe msr enable',Linux_Crypto_Mining_Indicators_attack120.log,Log Error (Result Not Found),
+121,sudo sh -c 'modprobe msr /sbin/allow_writes=on',Linux_Crypto_Mining_Indicators_attack121.log,Log Error (Result Not Found),
+122,sudo sh -c 'modprobe msr /sbin allow_writes=on',Linux_Crypto_Mining_Indicators_attack122.log,Log Error (Result Not Found),
+123,sudo sh -c 'modprobe msr allow_writes=on /sbin',Linux_Crypto_Mining_Indicators_attack123.log,Log Error (Result Not Found),
+124,sudo sh -c 'modprobe msr /sbin allow_writes=on',Linux_Crypto_Mining_Indicators_attack124.log,Log Error (Result Not Found),
+125,sudo sh -c 'echo allow_writes=on && /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack125.log,Log Error (Result Not Found),
+126,sudo sh -c '/sbin/modprobe msr && echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack126.log,Log Error (Result Not Found),
+127,sudo sh -c '/sbin/modprobe msr; echo allow_writes=on',Linux_Crypto_Mining_Indicators_attack127.log,Log Error (Result Not Found),
+128,sudo sh -c 'modprobe /sbin msr; allow_writes=on',Linux_Crypto_Mining_Indicators_attack128.log,Log Error (Result Not Found),
+129,sudo sh -c 'allow_writes=on; /sbin/modprobe msr',Linux_Crypto_Mining_Indicators_attack129.log,Log Error (Result Not Found),
+130,sudo sh -c 'modprobe msr allow_writes=on /sbin',Linux_Crypto_Mining_Indicators_attack130.log,Log Error (Result Not Found),
+131,sudo sh -c '/sbin/modprobe msr && : # allow_writes=on',Linux_Crypto_Mining_Indicators_attack131.log,Log Error (Result Not Found),
 132,sudo sh -c ': | /sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack132.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 133,sudo sh -c 'true && /sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack133.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 134,sudo sh -c 'exec /sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack134.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 135,sudo sh -c 'ALLOW=/sbin/modprobe; $ALLOW msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack135.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 136,sudo sh -c 'MOD=/sbin/modprobe; $MOD msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack136.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 137,"sudo sh -c 'eval ""/sbin/modprobe msr allow_writes=on""'",Linux_Crypto_Mining_Indicators_attack137.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-138,"sudo sh -c 'bash -c ""/sbin/modprobe msr allow_writes=on""'",Linux_Crypto_Mining_Indicators_attack138.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+138,"sudo sh -c 'bash -c ""/sbin/modprobe msr allow_writes=on""'",Linux_Crypto_Mining_Indicators_attack138.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 139,sudo sh -c '/sbin/modprobe $(echo bXNy | base64 -d) allow_writes=on',Linux_Crypto_Mining_Indicators_attack139.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text
 140,sudo sh -c '/sbin/modprobe $(echo 6d 73 72 | xxd -r -p) allow_writes=on',Linux_Crypto_Mining_Indicators_attack140.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-141,"sudo sh -c ""/sbin/modprobe $(tr -d '\n' <<< 'msr') allow_writes=on""",Linux_Crypto_Mining_Indicators_attack141.log,Log Error (Missing Result),
+141,"sudo sh -c ""/sbin/modprobe $(tr -d '\n' <<< 'msr') allow_writes=on""",Linux_Crypto_Mining_Indicators_attack141.log,Log Error (Result Not Found),
 142,sudo sh -c '/sbin/modprobe msr $(echo YWxsb3dfd3JpdGVzPW9u | base64 -d)',Linux_Crypto_Mining_Indicators_attack142.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text
-143,sudo sh -c '/sbin/modprobe msr $(echo \x61\x6c\x6c\x6f\x77\x5f\x77\x72\x69\x74\x65\x73\x3d\x6f\x6e)',Linux_Crypto_Mining_Indicators_attack143.log,Log Error (Missing Result),
-144,"sudo sh -c ""/sbin/modprobe msr $(cat <<< 'allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack144.log,Log Error (Missing Result),
-145,"sudo sh -c ""/sbin/modprobe msr $(tr -d '\n' <<< 'allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack145.log,Log Error (Missing Result),
-146,"sudo sh -c ""/sbin/modprobe msr $((97))$((108))$((108))$((111))$((119))_writes=on""",Linux_Crypto_Mining_Indicators_attack146.log,Log Error (Missing Result),
-147,"sudo sh -c ""/sbin/modprobe msr $(echo allow_writes=on | rev | rev)""",Linux_Crypto_Mining_Indicators_attack147.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+143,sudo sh -c '/sbin/modprobe msr $(echo \x61\x6c\x6c\x6f\x77\x5f\x77\x72\x69\x74\x65\x73\x3d\x6f\x6e)',Linux_Crypto_Mining_Indicators_attack143.log,Log Error (Result Not Found),
+144,"sudo sh -c ""/sbin/modprobe msr $(cat <<< 'allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack144.log,Log Error (Result Not Found),
+145,"sudo sh -c ""/sbin/modprobe msr $(tr -d '\n' <<< 'allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack145.log,Log Error (Result Not Found),
+146,"sudo sh -c ""/sbin/modprobe msr $((97))$((108))$((108))$((111))$((119))_writes=on""",Linux_Crypto_Mining_Indicators_attack146.log,Log Error (Result Not Found),
+147,"sudo sh -c ""/sbin/modprobe msr $(echo allow_writes=on | rev | rev)""",Linux_Crypto_Mining_Indicators_attack147.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 148,"sudo sh -c '/sbin/modprobe ""ms""""r"" allow_writes=on'",Linux_Crypto_Mining_Indicators_attack148.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-149,"sudo sh -c ""/sbin/modprobe m$(echo s)r allow_writes=on""",Linux_Crypto_Mining_Indicators_attack149.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-150,"sudo sh -c ""/sbin/modprobe msr allo$(echo w_)writes=on""",Linux_Crypto_Mining_Indicators_attack150.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-151,"sudo sh -c ""/sbin/modprobe msr all""""ow""""_writes=on""",Linux_Crypto_Mining_Indicators_attack151.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-152,"sudo sh -c ""/sbin/modprobe msr $(echo 'allow'_'writes=on')""",Linux_Crypto_Mining_Indicators_attack152.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
+149,"sudo sh -c ""/sbin/modprobe m$(echo s)r allow_writes=on""",Linux_Crypto_Mining_Indicators_attack149.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+150,"sudo sh -c ""/sbin/modprobe msr allo$(echo w_)writes=on""",Linux_Crypto_Mining_Indicators_attack150.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+151,"sudo sh -c ""/sbin/modprobe msr all""""ow""""_writes=on""",Linux_Crypto_Mining_Indicators_attack151.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+152,"sudo sh -c ""/sbin/modprobe msr $(echo 'allow'_'writes=on')""",Linux_Crypto_Mining_Indicators_attack152.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
 153,sudo sh -c '/sbin/modprobe msr al\l\ow\_w\ri\te\s=on',Linux_Crypto_Mining_Indicators_attack153.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-154,sudo sh -c '/sbin/modprobe msr al\x6cow\x5fwr\x69tes=on',Linux_Crypto_Mining_Indicators_attack154.log,Log Error (Missing Result),
-155,sudo sh -c '/sbin/modprobe msr all'$'\x6f\x77''_writes=on',Linux_Crypto_Mining_Indicators_attack155.log,Log Error (Missing Result),
+154,sudo sh -c '/sbin/modprobe msr al\x6cow\x5fwr\x69tes=on',Linux_Crypto_Mining_Indicators_attack154.log,Log Error (Result Not Found),
+155,sudo sh -c '/sbin/modprobe msr all'$'\x6f\x77''_writes=on',Linux_Crypto_Mining_Indicators_attack155.log,Log Error (Result Not Found),
 156,sudo sh -c '/sbin/modprobe msr $(printf allow_writes)=$(echo b24= | base64 -d)',Linux_Crypto_Mining_Indicators_attack156.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text
-157,sudo sh -c '/sbin/modprobe msr allow_writes=$((0x6f))$((0x6e))',Linux_Crypto_Mining_Indicators_attack157.log,Log Error (Missing Result),
+157,sudo sh -c '/sbin/modprobe msr allow_writes=$((0x6f))$((0x6e))',Linux_Crypto_Mining_Indicators_attack157.log,Log Error (Result Not Found),
 158,sudo sh -c '/sbin/modprobe msr $(echo YWxsb3dfd3JpdGVzPW9uCg== | base64 -d)',Linux_Crypto_Mining_Indicators_attack158.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text
-159,sudo sh -c '/sbin/modprobe msr allow_writes=0x1',Linux_Crypto_Mining_Indicators_attack159.log,Log Error (Missing Result),
-160,sudo sh -c '/sbin/modprobe msr allow_writes=1',Linux_Crypto_Mining_Indicators_attack160.log,Log Error (Missing Result),
-161,sudo sh -c '/sbin/modprobe msr allow_writes=true',Linux_Crypto_Mining_Indicators_attack161.log,Log Error (Missing Result),
-162,sudo sh -c '/sbin/modprobe msr allow_writes=0b1',Linux_Crypto_Mining_Indicators_attack162.log,Log Error (Missing Result),
-163,sudo sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack163.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-164,sudo sh -c '/sbin/modprobe msr allow_writes=0x00000001',Linux_Crypto_Mining_Indicators_attack164.log,Log Error (Missing Result),
-165,sudo sh -c '/sbin/modprobe msr allow_writes=0o1',Linux_Crypto_Mining_Indicators_attack165.log,Log Error (Missing Result),
+159,sudo sh -c '/sbin/modprobe msr allow_writes=0x1',Linux_Crypto_Mining_Indicators_attack159.log,Log Error (Result Not Found),
+160,sudo sh -c '/sbin/modprobe msr allow_writes=1',Linux_Crypto_Mining_Indicators_attack160.log,Log Error (Result Not Found),
+161,sudo sh -c '/sbin/modprobe msr allow_writes=true',Linux_Crypto_Mining_Indicators_attack161.log,Log Error (Result Not Found),
+162,sudo sh -c '/sbin/modprobe msr allow_writes=0b1',Linux_Crypto_Mining_Indicators_attack162.log,Log Error (Result Not Found),
+163,sudo sh -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack163.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+164,sudo sh -c '/sbin/modprobe msr allow_writes=0x00000001',Linux_Crypto_Mining_Indicators_attack164.log,Log Error (Result Not Found),
+165,sudo sh -c '/sbin/modprobe msr allow_writes=0o1',Linux_Crypto_Mining_Indicators_attack165.log,Log Error (Result Not Found),
 166,"sudo sh -c ""/sbin/modprobe msr allow_writes='on'""",Linux_Crypto_Mining_Indicators_attack166.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 167,"sudo sh -c ""/sbin/modprobe msr 'allow_writes=on'""",Linux_Crypto_Mining_Indicators_attack167.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-168,"sudo sh -c ""/sbin/modprobe msr allow_writes=$((1))""",Linux_Crypto_Mining_Indicators_attack168.log,Log Error (Missing Result),
-169,sudo sh -c '/sbin/modprobe msr allow_writes=0x1UL',Linux_Crypto_Mining_Indicators_attack169.log,Log Error (Missing Result),
-170,sudo sh -c '/sbin/modprobe msr allow_writes=0X01',Linux_Crypto_Mining_Indicators_attack170.log,Log Error (Missing Result),
-171,sudo sh -c '/sbin/modprobe msr allow_writes=0001',Linux_Crypto_Mining_Indicators_attack171.log,Log Error (Missing Result),
-172,sudo sh -c '/sbin/modprobe msr allow_writes=\x6f\x6e',Linux_Crypto_Mining_Indicators_attack172.log,Log Error (Missing Result),
-173,sudo sh -c '/sbin/modprobe msr allow_writes=\157\156',Linux_Crypto_Mining_Indicators_attack173.log,Log Error (Missing Result),
+168,"sudo sh -c ""/sbin/modprobe msr allow_writes=$((1))""",Linux_Crypto_Mining_Indicators_attack168.log,Log Error (Result Not Found),
+169,sudo sh -c '/sbin/modprobe msr allow_writes=0x1UL',Linux_Crypto_Mining_Indicators_attack169.log,Log Error (Result Not Found),
+170,sudo sh -c '/sbin/modprobe msr allow_writes=0X01',Linux_Crypto_Mining_Indicators_attack170.log,Log Error (Result Not Found),
+171,sudo sh -c '/sbin/modprobe msr allow_writes=0001',Linux_Crypto_Mining_Indicators_attack171.log,Log Error (Result Not Found),
+172,sudo sh -c '/sbin/modprobe msr allow_writes=\x6f\x6e',Linux_Crypto_Mining_Indicators_attack172.log,Log Error (Result Not Found),
+173,sudo sh -c '/sbin/modprobe msr allow_writes=\157\156',Linux_Crypto_Mining_Indicators_attack173.log,Log Error (Result Not Found),
 174,sudo sh -c '/sbin/modprobe msr allow_writes=$(echo on)',Linux_Crypto_Mining_Indicators_attack174.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 175,"sudo sh -c '/sbin/modprobe msr allow_writes=$(printf ""on"")'",Linux_Crypto_Mining_Indicators_attack175.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-176,sudo sh -c '/sbin/modprobe msr allow_writes=$(echo 1)',Linux_Crypto_Mining_Indicators_attack176.log,Log Error (Missing Result),
+176,sudo sh -c '/sbin/modprobe msr allow_writes=$(echo 1)',Linux_Crypto_Mining_Indicators_attack176.log,Log Error (Result Not Found),
 177,sudo sh -c '/sbin/modprobe msr allow_writes=`echo on`',Linux_Crypto_Mining_Indicators_attack177.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 178,"sudo sh -c '/sbin/modprobe msr allow_writes=`printf ""on""`'",Linux_Crypto_Mining_Indicators_attack178.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-179,"sudo sh -c ""$(echo /sbin/modprobe) msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack179.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-180,"sudo sh -c ""$(echo '/sbin/modprobe msr allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack180.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-181,sudo sh -c 'modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack181.log,Log Error (Missing Result),
-182,sudo bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack182.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-183,sudo su -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack183.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-184,"sudo sh -c ""$(printf '/sbin/modprobe msr allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack184.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities
-185,"sudo sh -c ""$(echo L3NiaW4vbW9kcHJvYmUgbXNyIGFsbG93X3dyaXRlcz1vbg== | base64 -d)""",Linux_Crypto_Mining_Indicators_attack185.log,Trigger: Linux Crypto Mining Indicators,Linux Crypto Mining Indicators | Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text
+179,"sudo sh -c ""$(echo /sbin/modprobe) msr allow_writes=on""",Linux_Crypto_Mining_Indicators_attack179.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+180,"sudo sh -c ""$(echo '/sbin/modprobe msr allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack180.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+181,sudo sh -c 'modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack181.log,Log Error (Result Not Found),
+182,sudo bash -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack182.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+183,sudo su -c '/sbin/modprobe msr allow_writes=on',Linux_Crypto_Mining_Indicators_attack183.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+184,"sudo sh -c ""$(printf '/sbin/modprobe msr allow_writes=on')""",Linux_Crypto_Mining_Indicators_attack184.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Linux Crypto Mining Indicators
+185,"sudo sh -c ""$(echo L3NiaW4vbW9kcHJvYmUgbXNyIGFsbG93X3dyaXRlcz1vbg== | base64 -d)""",Linux_Crypto_Mining_Indicators_attack185.log,Trigger: Linux Crypto Mining Indicators,Syslog Clearing or Removal Via System Utilities | Decode Base64 Encoded Text | Linux Crypto Mining Indicators
 186,echo '/sbin/modprobe msr allow_writes=on' | sudo sh,Linux_Crypto_Mining_Indicators_attack186.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 ,,,,
 ,,,,
 === SUMMARY REPORT ===,,,,
-Total Commands,186,,,
-Total Triggered Target,30,,,
-Total Bypass Target,73 (39.2%),,,
-  > Bypass All (Silent),0,,,
-  > Bypass Target Rule (Noisy),73,,,
-Errors,83,,,
+Calculation Base (Source: All Commands),,,,
+Total Meaningful Logs (Denominator),186,,,
+Triggered Target (Detections),30,,,
+Bypass Logs (Numerator),73,,,
+BYPASS RATE (Bypass/Meaningful),73 / 186 (39.25%),,,
+,,,,
+--- DETAILS (From raw scan) ---,,,,
+  > Bypass All (Raw),0,,,
+  > Bypass Target Rule (Raw),73,,,
+Missing/Not Run,83,,,

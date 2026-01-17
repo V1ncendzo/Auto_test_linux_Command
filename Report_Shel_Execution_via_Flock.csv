@@ -1,0 +1,404 @@
+ID,Command,Log File,Result,All Detected Rules
+1,flock -u / /bin/'sh',Shel_Execution_via_Flock_attack1.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+2,"flock -u / /bin/s""h""",Shel_Execution_via_Flock_attack2.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+3,flock -u / /b'in'/sh,Shel_Execution_via_Flock_attack3.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+4,flock -u / /bin//sh,Shel_Execution_via_Flock_attack4.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+5,flock -u / //bin/sh,Shel_Execution_via_Flock_attack5.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+6,"flock -u / /b""i""n/sh",Shel_Execution_via_Flock_attack6.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+7,flock -u / /bin/s'h',Shel_Execution_via_Flock_attack7.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+8,"flock -u / ""/bin/sh""",Shel_Execution_via_Flock_attack8.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+9,flock -u / '/bin/sh',Shel_Execution_via_Flock_attack9.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+10,"flock -u / /bin/s""h""",Shel_Execution_via_Flock_attack10.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+11,flock -u / /bi'n'/sh,Shel_Execution_via_Flock_attack11.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+12,"flock -u / /b""i""n//sh",Shel_Execution_via_Flock_attack12.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+13,flock -u / //b'in'/sh,Shel_Execution_via_Flock_attack13.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+14,flock -u / /b\in/sh,Shel_Execution_via_Flock_attack14.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+15,flock -u / /bin\sh,Shel_Execution_via_Flock_attack15.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+16,flock -u / /bin/s\h,Shel_Execution_via_Flock_attack16.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+17,flock -u / /bin/sh\,Shel_Execution_via_Flock_attack17.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+18,flock -u / /bin/sh/,Shel_Execution_via_Flock_attack18.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+19,flock -u / /bin/sh/.,Shel_Execution_via_Flock_attack19.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+20,flock -u / /bin/.sh,Shel_Execution_via_Flock_attack20.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+21,flock -u / /bi\n/sh,Shel_Execution_via_Flock_attack21.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+22,flock -u / /b\i\n/s\h,Shel_Execution_via_Flock_attack22.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+23,flock -u / /bin/'s''h',Shel_Execution_via_Flock_attack23.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+24,"flock -u / /bin/s""""h",Shel_Execution_via_Flock_attack24.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+25,"flock -u / /bi""n""/s""h""",Shel_Execution_via_Flock_attack25.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+26,"flock -u / /bin/s""h",Shel_Execution_via_Flock_attack26.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+27,flock -u / /b'in'//sh,Shel_Execution_via_Flock_attack27.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+28,flock -u / //bin//sh,Shel_Execution_via_Flock_attack28.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+29,flock -u / /bin////sh,Shel_Execution_via_Flock_attack29.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+30,flock -u / /b'i'n/s'h',Shel_Execution_via_Flock_attack30.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+31,"flock -u / /b""""in/sh",Shel_Execution_via_Flock_attack31.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+32,flock -u / /bi'n'/'sh',Shel_Execution_via_Flock_attack32.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+33,"flock -u / /bin/s""h""'",Shel_Execution_via_Flock_attack33.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+34,"flock -u / /bin/'s""h""'",Shel_Execution_via_Flock_attack34.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+35,"flock -u / /""bin""/""sh""",Shel_Execution_via_Flock_attack35.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+36,flock -u / /b'in//sh,Shel_Execution_via_Flock_attack36.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+37,"flock -u / /b""in/""sh""",Shel_Execution_via_Flock_attack37.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+38,"flock -u / /bin///""sh""",Shel_Execution_via_Flock_attack38.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+39,flock -u / /bin/./sh,Shel_Execution_via_Flock_attack39.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+40,flock -u / /b''in/sh,Shel_Execution_via_Flock_attack40.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+41,flock -u / /bi''n/sh,Shel_Execution_via_Flock_attack41.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+42,flock -u / /bin/s'h',Shel_Execution_via_Flock_attack42.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+43,"flock -u / /bin/s""h""'",Shel_Execution_via_Flock_attack43.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+44,flock -u / /bin//s'h',Shel_Execution_via_Flock_attack44.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+45,"flock -u / /b""in/sh""",Shel_Execution_via_Flock_attack45.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+46,flock -u / /b'in/sh',Shel_Execution_via_Flock_attack46.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+47,"flock -u / /bi'n/s""h""",Shel_Execution_via_Flock_attack47.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+48,"flock -u / /bin/s""h\",Shel_Execution_via_Flock_attack48.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+49,"flock -u / /bin\s""h""",Shel_Execution_via_Flock_attack49.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+50,flock -u / /bin\s\h,Shel_Execution_via_Flock_attack50.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+51,flock -u / /b\in\sh,Shel_Execution_via_Flock_attack51.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+52,flock -u / /bin/s\h\,Shel_Execution_via_Flock_attack52.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+53,"flock -u / /bi""n""/s'h'",Shel_Execution_via_Flock_attack53.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+54,"flock -u / /bin/s""h""\",Shel_Execution_via_Flock_attack54.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+55,"flock -u / /bin/s""h""",Shel_Execution_via_Flock_attack55.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+56,flock -u / /bi'n/./sh,Shel_Execution_via_Flock_attack56.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+57,"flock -u / /bi""n""/./sh",Shel_Execution_via_Flock_attack57.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+58,flock -u / /bin/.//sh,Shel_Execution_via_Flock_attack58.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+59,"flock -u / /bi""""n/s""""h",Shel_Execution_via_Flock_attack59.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+60,"flock -u / /""b""""in""/""sh""",Shel_Execution_via_Flock_attack60.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+61,flock --unlock / /bin/sh,Shel_Execution_via_Flock_attack61.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+62,flock -s / /bin/sh,Shel_Execution_via_Flock_attack62.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+63,flock --shared / /bin/sh,Shel_Execution_via_Flock_attack63.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+64,flock -x / /bin/sh,Shel_Execution_via_Flock_attack64.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+65,flock --exclusive / /bin/sh,Shel_Execution_via_Flock_attack65.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+66,flock -n -x / /bin/sh,Shel_Execution_via_Flock_attack66.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+67,flock --nonblock --exclusive / /bin/sh,Shel_Execution_via_Flock_attack67.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+68,flock -n --exclusive / /bin/sh,Shel_Execution_via_Flock_attack68.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+69,flock --exclusive -n / /bin/sh,Shel_Execution_via_Flock_attack69.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+70,flock --shared -n / /bin/sh,Shel_Execution_via_Flock_attack70.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+71,flock --nonblock -s / /bin/sh,Shel_Execution_via_Flock_attack71.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+72,flock -s -n / /bin/sh,Shel_Execution_via_Flock_attack72.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+73,"flock /bin/sh -c ""echo 1"" & flock --exclusive /bin/sh",Shel_Execution_via_Flock_attack73.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+74,flock -E 0 / /bin/sh,Shel_Execution_via_Flock_attack74.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+75,flock --conflict-exit-code=0 / /bin/sh,Shel_Execution_via_Flock_attack75.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+76,flock -w 0 / /bin/sh,Shel_Execution_via_Flock_attack76.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+77,flock --timeout=0 / /bin/sh,Shel_Execution_via_Flock_attack77.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+78,flock -x -w 0 / /bin/sh,Shel_Execution_via_Flock_attack78.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+79,flock --exclusive --timeout=0 / /bin/sh,Shel_Execution_via_Flock_attack79.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+80,flock -s -w 0 / /bin/sh,Shel_Execution_via_Flock_attack80.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+81,flock --shared --timeout=0 / /bin/sh,Shel_Execution_via_Flock_attack81.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+82,flock --verbose -x / /bin/sh,Shel_Execution_via_Flock_attack82.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+83,flock -v -x / /bin/sh,Shel_Execution_via_Flock_attack83.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+84,flock --verbose --exclusive / /bin/sh,Shel_Execution_via_Flock_attack84.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+85,flock --verbose --shared / /bin/sh,Shel_Execution_via_Flock_attack85.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+86,flock --verbose --unlock / /bin/sh,Shel_Execution_via_Flock_attack86.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+87,flock -s --verbose / /bin/sh,Shel_Execution_via_Flock_attack87.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+88,flock -x --verbose / /bin/sh,Shel_Execution_via_Flock_attack88.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+89,flock --shared /bin/bash,Shel_Execution_via_Flock_attack89.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+90,flock --exclusive /bin/sh,Shel_Execution_via_Flock_attack90.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+91,flock --unlock /bin /bin/sh,Shel_Execution_via_Flock_attack91.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+92,flock --unlock /tmp /bin/sh,Shel_Execution_via_Flock_attack92.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+93,flock --unlock /dev/null /bin/sh,Shel_Execution_via_Flock_attack93.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+94,flock --unlock /proc/self /bin/sh,Shel_Execution_via_Flock_attack94.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+95,flock --unlock /etc/passwd /bin/sh,Shel_Execution_via_Flock_attack95.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+96,flock -u /dev/shm /bin/sh,Shel_Execution_via_Flock_attack96.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+97,flock --unlock /run/lock /bin/sh,Shel_Execution_via_Flock_attack97.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+98,flock -x /dev/zero /bin/sh,Shel_Execution_via_Flock_attack98.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+99,flock --exclusive /etc/hosts /bin/sh,Shel_Execution_via_Flock_attack99.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+100,flock --shared /tmp/lockfile /bin/sh,Shel_Execution_via_Flock_attack100.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+101,flock -s /dev/random /bin/sh,Shel_Execution_via_Flock_attack101.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+102,flock --shared /proc/version /bin/sh,Shel_Execution_via_Flock_attack102.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+103,flock --exclusive /run/shm/lock /bin/sh,Shel_Execution_via_Flock_attack103.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+104,flock -s /tmp/.X11-unix /bin/sh,Shel_Execution_via_Flock_attack104.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+105,flock --unlock /var/tmp /bin/sh,Shel_Execution_via_Flock_attack105.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+106,flock --exclusive /var/log /bin/sh,Shel_Execution_via_Flock_attack106.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+107,flock --unlock /var/run /bin/sh,Shel_Execution_via_Flock_attack107.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+108,flock --unlock /lib/modules /bin/sh,Shel_Execution_via_Flock_attack108.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+109,flock -x /home/user /bin/sh,Shel_Execution_via_Flock_attack109.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+110,flock --shared /etc/group /bin/sh,Shel_Execution_via_Flock_attack110.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+111,flock -s /etc/shadow /bin/sh,Shel_Execution_via_Flock_attack111.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+112,flock --unlock $(mktemp) /bin/sh,Shel_Execution_via_Flock_attack112.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+113,flock -u $(mktemp -u) /bin/sh,Shel_Execution_via_Flock_attack113.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+114,flock --unlock /bin/sh -c true; /bin/sh,Shel_Execution_via_Flock_attack114.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+115,"flock -x /bin/sh -c "":""; /bin/sh",Shel_Execution_via_Flock_attack115.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+116,flock -s /etc/hostname /bin/sh,Shel_Execution_via_Flock_attack116.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+117,flock -x /etc/issue /bin/sh,Shel_Execution_via_Flock_attack117.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+118,flock -s /etc/motd /bin/sh,Shel_Execution_via_Flock_attack118.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+119,flock --exclusive /proc/cpuinfo /bin/sh,Shel_Execution_via_Flock_attack119.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+120,flock --shared /proc/meminfo /bin/sh,Shel_Execution_via_Flock_attack120.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+121,flock --unlock /bin /bin/sh,Shel_Execution_via_Flock_attack121.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+122,flock --unlock /tmp /bin/sh,Shel_Execution_via_Flock_attack122.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+123,flock --unlock /dev/null /bin/sh,Shel_Execution_via_Flock_attack123.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+124,flock --unlock /proc/self /bin/sh,Shel_Execution_via_Flock_attack124.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+125,flock --unlock /etc/passwd /bin/sh,Shel_Execution_via_Flock_attack125.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+126,flock -u /dev/shm /bin/sh,Shel_Execution_via_Flock_attack126.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+127,flock --unlock /run/lock /bin/sh,Shel_Execution_via_Flock_attack127.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+128,flock -x /dev/zero /bin/sh,Shel_Execution_via_Flock_attack128.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+129,flock --exclusive /etc/hosts /bin/sh,Shel_Execution_via_Flock_attack129.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+130,flock --shared /tmp/lockfile /bin/sh,Shel_Execution_via_Flock_attack130.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+131,flock -s /dev/random /bin/sh,Shel_Execution_via_Flock_attack131.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+132,flock --shared /proc/version /bin/sh,Shel_Execution_via_Flock_attack132.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+133,flock --exclusive /run/shm/lock /bin/sh,Shel_Execution_via_Flock_attack133.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+134,flock -s /tmp/.X11-unix /bin/sh,Shel_Execution_via_Flock_attack134.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+135,flock --unlock /var/tmp /bin/sh,Shel_Execution_via_Flock_attack135.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+136,flock --exclusive /var/log /bin/sh,Shel_Execution_via_Flock_attack136.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+137,flock --unlock /var/run /bin/sh,Shel_Execution_via_Flock_attack137.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+138,flock --unlock /lib/modules /bin/sh,Shel_Execution_via_Flock_attack138.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+139,flock -x /home/user /bin/sh,Shel_Execution_via_Flock_attack139.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+140,flock --shared /etc/group /bin/sh,Shel_Execution_via_Flock_attack140.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+141,flock -s /etc/shadow /bin/sh,Shel_Execution_via_Flock_attack141.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+142,flock --unlock $(mktemp) /bin/sh,Shel_Execution_via_Flock_attack142.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+143,flock -u $(mktemp -u) /bin/sh,Shel_Execution_via_Flock_attack143.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+144,flock --unlock /bin/sh -c true; /bin/sh,Shel_Execution_via_Flock_attack144.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+145,"flock -x /bin/sh -c "":""; /bin/sh",Shel_Execution_via_Flock_attack145.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+146,flock -s /etc/hostname /bin/sh,Shel_Execution_via_Flock_attack146.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+147,flock -x /etc/issue /bin/sh,Shel_Execution_via_Flock_attack147.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+148,flock -s /etc/motd /bin/sh,Shel_Execution_via_Flock_attack148.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+149,flock --exclusive /proc/cpuinfo /bin/sh,Shel_Execution_via_Flock_attack149.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+150,flock --shared /proc/meminfo /bin/sh,Shel_Execution_via_Flock_attack150.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+151,flock / /bin/sh,Shel_Execution_via_Flock_attack151.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+152,flock / /bin/bash,Shel_Execution_via_Flock_attack152.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+153,flock / /bin/dash,Shel_Execution_via_Flock_attack153.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+154,flock / /bin/zsh,Shel_Execution_via_Flock_attack154.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+155,flock / /bin/fish,Shel_Execution_via_Flock_attack155.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+156,flock / /usr/bin/sh,Shel_Execution_via_Flock_attack156.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+157,flock / /usr/bin/bash,Shel_Execution_via_Flock_attack157.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+158,flock / /usr/bin/dash,Shel_Execution_via_Flock_attack158.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+159,flock / /usr/bin/zsh,Shel_Execution_via_Flock_attack159.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+160,flock / /usr/bin/fish,Shel_Execution_via_Flock_attack160.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+161,flock / -- /bin/sh,Shel_Execution_via_Flock_attack161.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+162,flock / -- /bin/bash,Shel_Execution_via_Flock_attack162.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+163,flock / -- /bin/dash,Shel_Execution_via_Flock_attack163.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+164,flock / -- /bin/zsh,Shel_Execution_via_Flock_attack164.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+165,flock / -- /bin/fish,Shel_Execution_via_Flock_attack165.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+166,flock -x / /bin/sh,Shel_Execution_via_Flock_attack166.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+167,flock -x / /bin/bash,Shel_Execution_via_Flock_attack167.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+168,flock -x / /bin/dash,Shel_Execution_via_Flock_attack168.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+169,flock -x / /bin/zsh,Shel_Execution_via_Flock_attack169.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+170,flock -x / /bin/fish,Shel_Execution_via_Flock_attack170.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+171,flock -n / /bin/sh,Shel_Execution_via_Flock_attack171.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+172,flock -n / /bin/bash,Shel_Execution_via_Flock_attack172.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+173,flock -xn / /bin/sh,Shel_Execution_via_Flock_attack173.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+174,flock -nx / /bin/bash,Shel_Execution_via_Flock_attack174.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+175,flock -x -n / /bin/sh,Shel_Execution_via_Flock_attack175.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+176,flock -n -x / /bin/bash,Shel_Execution_via_Flock_attack176.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+177,flock --exclusive / /bin/sh,Shel_Execution_via_Flock_attack177.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+178,flock --exclusive / /bin/bash,Shel_Execution_via_Flock_attack178.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+179,flock -- /usr/bin/sh,Shel_Execution_via_Flock_attack179.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+180,flock -xn / -- /bin/sh,Shel_Execution_via_Flock_attack180.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+181,flock /bin /bin/sh,Shel_Execution_via_Flock_attack181.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+182,flock -x /tmp/lockfile /bin/sh,Shel_Execution_via_Flock_attack182.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+183,flock -x /tmp/lockfile -- /bin/sh,Shel_Execution_via_Flock_attack183.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+184,flock --timeout 5 / /bin/sh,Shel_Execution_via_Flock_attack184.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+185,flock --nonblock / /bin/sh,Shel_Execution_via_Flock_attack185.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+186,flock --conflict-exit-code 99 / /bin/sh,Shel_Execution_via_Flock_attack186.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+187,flock -E 1 / /bin/sh,Shel_Execution_via_Flock_attack187.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+188,flock -x /var/lock/lockfile /bin/sh,Shel_Execution_via_Flock_attack188.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+189,flock /dev/shm/lock /bin/sh,Shel_Execution_via_Flock_attack189.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+190,flock /tmp/.X11-lock /bin/sh,Shel_Execution_via_Flock_attack190.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+191,flock /etc/passwd /bin/sh,Shel_Execution_via_Flock_attack191.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+192,flock -x -n /etc/hosts /bin/sh,Shel_Execution_via_Flock_attack192.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+193,flock -- /usr/bin/bash,Shel_Execution_via_Flock_attack193.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+194,flock -x /tmp/lock -- /usr/bin/bash,Shel_Execution_via_Flock_attack194.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+195,flock /tmp/l /bin/bash,Shel_Execution_via_Flock_attack195.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+196,flock -x /tmp/l -- /bin/bash,Shel_Execution_via_Flock_attack196.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+197,flock /dev/null /bin/sh,Shel_Execution_via_Flock_attack197.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+198,flock /tmp/.X0-lock /bin/bash,Shel_Execution_via_Flock_attack198.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+199,flock /etc/shadow /bin/sh,Shel_Execution_via_Flock_attack199.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+200,flock /tmp/lock sh,Shel_Execution_via_Flock_attack200.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+201,flock /tmp/lockfile bash,Shel_Execution_via_Flock_attack201.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+202,flock --nonblock /etc/hosts -- /bin/sh,Shel_Execution_via_Flock_attack202.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+203,flock -- /usr/bin/zsh,Shel_Execution_via_Flock_attack203.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+204,flock -xn /tmp/lock /bin/dash,Shel_Execution_via_Flock_attack204.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+205,flock -x -- /bin/zsh,Shel_Execution_via_Flock_attack205.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+206,flock -x /tmp/f -- /bin/fish,Shel_Execution_via_Flock_attack206.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+207,flock /tmp/lockfile /usr/bin/sh,Shel_Execution_via_Flock_attack207.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+208,flock /tmp/lockfile /usr/bin/dash,Shel_Execution_via_Flock_attack208.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+209,flock -- /usr/bin/fish,Shel_Execution_via_Flock_attack209.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+210,flock -x /tmp/a /usr/bin/bash,Shel_Execution_via_Flock_attack210.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+211,flock -un / /bin/sh,Shel_Execution_via_Flock_attack211.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+212,flock -nu / /bin/sh,Shel_Execution_via_Flock_attack212.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+213,flock -un / /bin/bash,Shel_Execution_via_Flock_attack213.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+214,flock -nu / /bin/bash,Shel_Execution_via_Flock_attack214.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+215,flock -un / /bin/dash,Shel_Execution_via_Flock_attack215.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+216,flock -nu / /bin/dash,Shel_Execution_via_Flock_attack216.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+217,flock -un / /bin/zsh,Shel_Execution_via_Flock_attack217.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+218,flock -nu / /bin/zsh,Shel_Execution_via_Flock_attack218.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+219,flock -un / /bin/fish,Shel_Execution_via_Flock_attack219.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+220,flock -nu / /bin/fish,Shel_Execution_via_Flock_attack220.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+221,flock -nu -- /bin/sh,Shel_Execution_via_Flock_attack221.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+222,flock -un -- /bin/sh,Shel_Execution_via_Flock_attack222.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+223,flock -- -un /bin/sh,Shel_Execution_via_Flock_attack223.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+224,flock -- -nu /bin/sh,Shel_Execution_via_Flock_attack224.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+225,flock -un / -- /bin/sh,Shel_Execution_via_Flock_attack225.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+226,flock -nu / -- /bin/sh,Shel_Execution_via_Flock_attack226.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+227,flock -n -u / /bin/sh,Shel_Execution_via_Flock_attack227.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+228,flock -u -n / /bin/sh,Shel_Execution_via_Flock_attack228.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+229,flock -nu /bin/sh,Shel_Execution_via_Flock_attack229.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+230,flock -un /bin/sh,Shel_Execution_via_Flock_attack230.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+231,flock -un /bin/bash,Shel_Execution_via_Flock_attack231.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+232,flock -nu /bin/bash,Shel_Execution_via_Flock_attack232.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+233,flock -nu /tmp/lock /bin/sh,Shel_Execution_via_Flock_attack233.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+234,flock -un /tmp/lock /bin/sh,Shel_Execution_via_Flock_attack234.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+235,flock -un /tmp/lock -- /bin/sh,Shel_Execution_via_Flock_attack235.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+236,flock -nu /tmp/lock -- /bin/sh,Shel_Execution_via_Flock_attack236.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+237,flock -un / -- /bin/bash,Shel_Execution_via_Flock_attack237.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+238,flock -nu / -- /bin/bash,Shel_Execution_via_Flock_attack238.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+239,flock -un -- /bin/zsh,Shel_Execution_via_Flock_attack239.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+240,flock -nu -- /bin/zsh,Shel_Execution_via_Flock_attack240.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+241,flock -un /tmp/lockfile /bin/dash,Shel_Execution_via_Flock_attack241.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+242,flock -nu /tmp/lockfile /bin/dash,Shel_Execution_via_Flock_attack242.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+243,flock -un /var/lock/x /bin/sh,Shel_Execution_via_Flock_attack243.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+244,flock -nu /var/lock/x /bin/sh,Shel_Execution_via_Flock_attack244.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+245,flock -un /var/lock/x -- /bin/sh,Shel_Execution_via_Flock_attack245.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+246,flock -nu /var/lock/x -- /bin/sh,Shel_Execution_via_Flock_attack246.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+247,flock -un /dev/shm/lock /bin/sh,Shel_Execution_via_Flock_attack247.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+248,flock -nu /dev/shm/lock /bin/sh,Shel_Execution_via_Flock_attack248.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+249,flock -nu /dev/shm/lock -- /bin/sh,Shel_Execution_via_Flock_attack249.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+250,flock -un /dev/shm/lock -- /bin/sh,Shel_Execution_via_Flock_attack250.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+251,flock -un / -- /bin/'sh',Shel_Execution_via_Flock_attack251.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+252,"flock -nu / -- /bin/""sh""",Shel_Execution_via_Flock_attack252.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+253,flock -un / -- /bin/s'h',Shel_Execution_via_Flock_attack253.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+254,flock -nu / -- /bin/sh$IFS,Shel_Execution_via_Flock_attack254.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+255,flock -un / -- //bin//sh,Shel_Execution_via_Flock_attack255.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+256,flock -nu / -- //bin///sh,Shel_Execution_via_Flock_attack256.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+257,flock -un / -- /bin/s\\h,Shel_Execution_via_Flock_attack257.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+258,flock -nu / -- /bin/sh\,Shel_Execution_via_Flock_attack258.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+259,flock -un / -- $(which sh),Shel_Execution_via_Flock_attack259.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+260,flock -nu / -- $(which sh),Shel_Execution_via_Flock_attack260.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+261,flock -un / -- /proc/self/exe,Shel_Execution_via_Flock_attack261.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+262,flock -nu / -- /proc/self/exe,Shel_Execution_via_Flock_attack262.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+263,flock -un / -- /bin/sh -c true,Shel_Execution_via_Flock_attack263.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+264,flock -nu / -- /bin/sh -c true,Shel_Execution_via_Flock_attack264.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+265,flock -un / -- bash -i,Shel_Execution_via_Flock_attack265.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+266,flock -nu / -- bash -i,Shel_Execution_via_Flock_attack266.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+267,flock -un /bin /bin/sh,Shel_Execution_via_Flock_attack267.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+268,flock -nu /bin /bin/sh,Shel_Execution_via_Flock_attack268.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+269,flock -un /tmp /bin/sh,Shel_Execution_via_Flock_attack269.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+270,flock -nu /tmp /bin/sh,Shel_Execution_via_Flock_attack270.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+271,flock -u / /bin/'sh',Shel_Execution_via_Flock_attack271.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+272,"flock -u / /bin/""sh""",Shel_Execution_via_Flock_attack272.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+273,flock -u / /bin/s'h',Shel_Execution_via_Flock_attack273.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+274,"flock -u / /bin/s""h""",Shel_Execution_via_Flock_attack274.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+275,flock -u / /bin//sh,Shel_Execution_via_Flock_attack275.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+276,flock -u / //bin/sh,Shel_Execution_via_Flock_attack276.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+277,flock -u / //bin//sh,Shel_Execution_via_Flock_attack277.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+278,flock -u / /bin///sh,Shel_Execution_via_Flock_attack278.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+279,flock -u / ///bin/sh,Shel_Execution_via_Flock_attack279.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+280,flock -u / /bin////sh,Shel_Execution_via_Flock_attack280.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+281,flock -u / /b'in'/sh,Shel_Execution_via_Flock_attack281.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+282,"flock -u / /b""in""/sh",Shel_Execution_via_Flock_attack282.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+283,flock -u / /bi'n'/sh,Shel_Execution_via_Flock_attack283.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+284,"flock -u / /bi""n""/sh",Shel_Execution_via_Flock_attack284.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+285,flock -u / /bin/s''h,Shel_Execution_via_Flock_attack285.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+286,"flock -u / /bin/s""""h",Shel_Execution_via_Flock_attack286.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+287,flock -u / /bin/'s''h',Shel_Execution_via_Flock_attack287.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+288,"flock -u / /bin/""s""""h""",Shel_Execution_via_Flock_attack288.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+289,flock -u / /bin//s'h',Shel_Execution_via_Flock_attack289.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+290,"flock -u / //bin/s""h""",Shel_Execution_via_Flock_attack290.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+291,flock -u / ///bin//'sh',Shel_Execution_via_Flock_attack291.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+292,flock -u / /bin////'sh',Shel_Execution_via_Flock_attack292.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+293,flock -u / //b'in'//sh,Shel_Execution_via_Flock_attack293.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+294,"flock -u / //b""in""//sh",Shel_Execution_via_Flock_attack294.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+295,flock -u / ///bi'n'///sh,Shel_Execution_via_Flock_attack295.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+296,"flock -u / ///bi""n""///sh",Shel_Execution_via_Flock_attack296.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+297,flock -u / /bin/s\h,Shel_Execution_via_Flock_attack297.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+298,flock -u / //bin/s\h,Shel_Execution_via_Flock_attack298.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+299,flock -u / /bin///s\h,Shel_Execution_via_Flock_attack299.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+300,flock -u / ///bin////s\h,Shel_Execution_via_Flock_attack300.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+301,flock -u / /b/i/n/sh,Shel_Execution_via_Flock_attack301.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+302,flock -u / /bin/./sh,Shel_Execution_via_Flock_attack302.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+303,flock -u / /bin/../bin/sh,Shel_Execution_via_Flock_attack303.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+304,flock -u / /bin/sh\,Shel_Execution_via_Flock_attack304.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+305,"flock -u / ""$(echo /bin/sh)""",Shel_Execution_via_Flock_attack305.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+306,flock -u / $(echo /bin/sh),Shel_Execution_via_Flock_attack306.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+307,flock -u /` echo /bin/sh`,Shel_Execution_via_Flock_attack307.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+308,flock -u / /$(echo bin)/sh,Shel_Execution_via_Flock_attack308.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+309,flock -u / /bin/$(echo sh),Shel_Execution_via_Flock_attack309.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+310,flock -u / /$(echo bin/sh),Shel_Execution_via_Flock_attack310.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+311,flock -u / /bi$(echo n)/sh,Shel_Execution_via_Flock_attack311.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+312,flock -u / /bin/s$(echo h),Shel_Execution_via_Flock_attack312.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+313,flock -u / /b$(echo in)/sh,Shel_Execution_via_Flock_attack313.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+314,flock -u / /bin/$(echo s)h,Shel_Execution_via_Flock_attack314.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+315,flock -u / /bin/sh\0,Shel_Execution_via_Flock_attack315.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+316,flock -u / /bin/sh$IFS,Shel_Execution_via_Flock_attack316.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+317,flock -u / /bin/sh$'\x00',Shel_Execution_via_Flock_attack317.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+318,flock -u / /bin/$'s''h',Shel_Execution_via_Flock_attack318.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+319,flock -u / $'/'bin/'s'h',Shel_Execution_via_Flock_attack319.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+320,flock -u / $'/'bin/sh',Shel_Execution_via_Flock_attack320.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+321,flock -u / $'//bin//sh',Shel_Execution_via_Flock_attack321.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+322,flock -u / /bin/$'sh',Shel_Execution_via_Flock_attack322.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+323,flock -u / /bin/sh$'\n',Shel_Execution_via_Flock_attack323.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+324,flock -u / $'/bin/sh',Shel_Execution_via_Flock_attack324.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+325,flock -u / $(printf /bin/sh),Shel_Execution_via_Flock_attack325.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+326,flock -u /` /bin/echo /bin/sh`,Shel_Execution_via_Flock_attack326.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+327,"flock -u / $(cat <<< ""/bin/sh"")",Shel_Execution_via_Flock_attack327.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+328,flock -u / $(echo -n /bin/; echo sh),Shel_Execution_via_Flock_attack328.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+329,flock -u / $(echo /bin/sh | tr -d '\n'),Shel_Execution_via_Flock_attack329.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+330,"flock -u / ""$(printf '/bin/%s' sh)""",Shel_Execution_via_Flock_attack330.log,Bypass Target Rule,Shell Execution via Flock - Linux | Syslog Clearing or Removal Via System Utilities
+331,cp /usr/bin/flock /tmp/f && /tmp/f -u / /bin/sh,Shel_Execution_via_Flock_attack331.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+332,cp $(which flock) ./f; ./f -u / /bin/sh,Shel_Execution_via_Flock_attack332.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+333,install /usr/bin/flock /tmp/locky && /tmp/locky -u / /bin/sh,Shel_Execution_via_Flock_attack333.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+334,cp /usr/bin/flock /dev/shm/l; /dev/shm/l -u / /bin/sh,Shel_Execution_via_Flock_attack334.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+335,cp /usr/bin/flock /tmp/.fl; /tmp/.fl -u / /bin/sh,Shel_Execution_via_Flock_attack335.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+336,cp /usr/bin/flock /tmp/runlock; /tmp/runlock -u / /bin/sh,Shel_Execution_via_Flock_attack336.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+337,cp /usr/bin/flock /tmp/ls; /tmp/ls -u / /bin/sh,Shel_Execution_via_Flock_attack337.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+338,cp /usr/bin/flock /tmp/init; /tmp/init -u / /bin/sh,Shel_Execution_via_Flock_attack338.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+339,cp /usr/bin/flock /tmp/fd; /tmp/fd -u / /bin/sh,Shel_Execution_via_Flock_attack339.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+340,cp /usr/bin/flock /tmp/daemon; /tmp/daemon -u / /bin/sh,Shel_Execution_via_Flock_attack340.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+341,cp /usr/bin/flock /tmp/kworker; /tmp/kworker -u / /bin/sh,Shel_Execution_via_Flock_attack341.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+342,cp /usr/bin/flock /tmp/logger; /tmp/logger -u / /bin/sh,Shel_Execution_via_Flock_attack342.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+343,cp /usr/bin/flock /tmp/nologin; /tmp/nologin -u / /bin/sh,Shel_Execution_via_Flock_attack343.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+344,cp /usr/bin/flock /tmp/tty; /tmp/tty -u / /bin/sh,Shel_Execution_via_Flock_attack344.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+345,cp /usr/bin/flock /tmp/tar; /tmp/tar -u / /bin/sh,Shel_Execution_via_Flock_attack345.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+346,cp /usr/bin/flock /tmp/fcron; /tmp/fcron -u / /bin/sh,Shel_Execution_via_Flock_attack346.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+347,cp /usr/bin/flock /tmp/getty; /tmp/getty -u / /bin/sh,Shel_Execution_via_Flock_attack347.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+348,cp /usr/bin/flock /tmp/netcat; /tmp/netcat -u / /bin/sh,Shel_Execution_via_Flock_attack348.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Linux Network Service Scanning Tools Execution | Execution Of Script Located In Potentially Suspicious Directory | Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder
+349,cp /usr/bin/flock /tmp/awk; /tmp/awk -u / /bin/sh,Shel_Execution_via_Flock_attack349.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+350,cp /usr/bin/flock /tmp/python; /tmp/python -u / /bin/sh,Shel_Execution_via_Flock_attack350.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+351,cp /usr/bin/flock /tmp/cronjob; /tmp/cronjob -u / /bin/sh,Shel_Execution_via_Flock_attack351.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+352,cp /usr/bin/flock /tmp/.hidden; /tmp/.hidden -u / /bin/sh,Shel_Execution_via_Flock_attack352.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+353,cp /usr/bin/flock /tmp/bashful; /tmp/bashful -u / /bin/sh,Shel_Execution_via_Flock_attack353.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+354,cp /usr/bin/flock /tmp/snap; /tmp/snap -u / /bin/sh,Shel_Execution_via_Flock_attack354.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+355,cp /usr/bin/flock /tmp/nginx; /tmp/nginx -u / /bin/sh,Shel_Execution_via_Flock_attack355.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+356,cp /usr/bin/flock /tmp/syslog; /tmp/syslog -u / /bin/sh,Shel_Execution_via_Flock_attack356.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+357,cp /usr/bin/flock /tmp/journal; /tmp/journal -u / /bin/sh,Shel_Execution_via_Flock_attack357.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+358,cp /usr/bin/flock /tmp/initd; /tmp/initd -u / /bin/sh,Shel_Execution_via_Flock_attack358.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+359,cp /usr/bin/flock /tmp/mysqld; /tmp/mysqld -u / /bin/sh,Shel_Execution_via_Flock_attack359.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+360,cp /usr/bin/flock /tmp/httpd; /tmp/httpd -u / /bin/sh,Shel_Execution_via_Flock_attack360.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+361,cp /usr/bin/flock /tmp/x && /tmp/x -u / /bin/sh,Shel_Execution_via_Flock_attack361.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+362,cp /usr/bin/flock /tmp/_flock && /tmp/_flock -u / /bin/sh,Shel_Execution_via_Flock_attack362.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+363,cp /usr/bin/flock /tmp/locktool && /tmp/locktool -u / /bin/sh,Shel_Execution_via_Flock_attack363.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+364,cp /usr/bin/flock /tmp/busybox && /tmp/busybox -u / /bin/sh,Shel_Execution_via_Flock_attack364.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+365,cp /usr/bin/flock /tmp/.systemd && /tmp/.systemd -u / /bin/sh,Shel_Execution_via_Flock_attack365.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+366,cp /usr/bin/flock /tmp/.dockerd && /tmp/.dockerd -u / /bin/sh,Shel_Execution_via_Flock_attack366.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+367,cp /usr/bin/flock /tmp/dnsmasq && /tmp/dnsmasq -u / /bin/sh,Shel_Execution_via_Flock_attack367.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+368,cp /usr/bin/flock /tmp/mountd && /tmp/mountd -u / /bin/sh,Shel_Execution_via_Flock_attack368.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+369,cp /usr/bin/flock /tmp/binfmt_misc && /tmp/binfmt_misc -u / /bin/sh,Shel_Execution_via_Flock_attack369.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+370,cp /usr/bin/flock /tmp/u && /tmp/u -u / /bin/sh,Shel_Execution_via_Flock_attack370.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+371,cp /usr/bin/flock /tmp/shinit && /tmp/shinit -u / /bin/sh,Shel_Execution_via_Flock_attack371.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+372,cp /usr/bin/flock /tmp/sysctl && /tmp/sysctl -u / /bin/sh,Shel_Execution_via_Flock_attack372.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+373,cp /usr/bin/flock /tmp/locky.sh && /tmp/locky.sh -u / /bin/sh,Shel_Execution_via_Flock_attack373.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+374,cp /usr/bin/flock /tmp/serv && /tmp/serv -u / /bin/sh,Shel_Execution_via_Flock_attack374.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+375,cp /usr/bin/flock /tmp/pid1 && /tmp/pid1 -u / /bin/sh,Shel_Execution_via_Flock_attack375.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+376,cp /usr/bin/flock /tmp/conf && /tmp/conf -u / /bin/sh,Shel_Execution_via_Flock_attack376.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+377,cp /usr/bin/flock /tmp/resolver && /tmp/resolver -u / /bin/sh,Shel_Execution_via_Flock_attack377.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+378,cp /usr/bin/flock /tmp/wrapper && /tmp/wrapper -u / /bin/sh,Shel_Execution_via_Flock_attack378.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+379,cp /usr/bin/flock /tmp/update && /tmp/update -u / /bin/sh,Shel_Execution_via_Flock_attack379.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+380,cp /usr/bin/flock /tmp/startup && /tmp/startup -u / /bin/sh,Shel_Execution_via_Flock_attack380.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+381,cp /usr/bin/flock /tmp/shellrunner && /tmp/shellrunner -u / /bin/sh,Shel_Execution_via_Flock_attack381.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory | Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | File Deletion
+382,cp /usr/bin/flock /tmp/binx && /tmp/binx -u / /bin/sh,Shel_Execution_via_Flock_attack382.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+383,cp /usr/bin/flock /tmp/shbin && /tmp/shbin -u / /bin/sh,Shel_Execution_via_Flock_attack383.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+384,cp /usr/bin/flock /tmp/tmpx && /tmp/tmpx -u / /bin/sh,Shel_Execution_via_Flock_attack384.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+385,cp /usr/bin/flock /tmp/tasker && /tmp/tasker -u / /bin/sh,Shel_Execution_via_Flock_attack385.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+386,cp /usr/bin/flock /tmp/fsync && /tmp/fsync -u / /bin/sh,Shel_Execution_via_Flock_attack386.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+387,cp /usr/bin/flock /tmp/proxy && /tmp/proxy -u / /bin/sh,Shel_Execution_via_Flock_attack387.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+388,cp /usr/bin/flock /tmp/syncd && /tmp/syncd -u / /bin/sh,Shel_Execution_via_Flock_attack388.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+389,cp /usr/bin/flock /tmp/.bashrc && /tmp/.bashrc -u / /bin/sh,Shel_Execution_via_Flock_attack389.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+390,cp /usr/bin/flock /tmp/jobctl && /tmp/jobctl -u / /bin/sh,Shel_Execution_via_Flock_attack390.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+,,,,
+,,,,
+=== SUMMARY REPORT ===,,,,
+Calculation Base (Source: filtered_summary.txt),,,,
+Total Meaningful Logs (Denominator),390,,,
+Triggered Target (Detections),319,,,
+Bypass Logs (Numerator),71,,,
+BYPASS RATE (Bypass/Meaningful),71 / 390 (18.21%),,,
+BYPASS RAIO (Bypass/Detections),0.22,,,
+,,,,
+--- DETAILS (From raw scan) ---,,,,
+  > Bypass All (Raw),0,,,
+  > Bypass Target Rule (Raw),390,,,
