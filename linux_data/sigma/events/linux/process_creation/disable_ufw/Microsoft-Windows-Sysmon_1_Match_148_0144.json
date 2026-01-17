@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Ufw Force Stop Using Ufw-Init",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "84c9e83c-599a-458a-a0cb-0ecce44e807a",
     "attack_id": "148",
     "original_command": "echo -e \"sudo /usr/sbin/ufw disable\" > /tmp/.cmd && sh /tmp/.cmd",
     "log_file": "Ufw_Force_Stop_Using_Ufw-Init_attack148.log",

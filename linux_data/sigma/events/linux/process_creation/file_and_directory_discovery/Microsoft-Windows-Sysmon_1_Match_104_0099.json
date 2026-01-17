@@ -41,8 +41,8 @@
     }
   },
   "labels": {
-    "sigma_rule_title": "File and Directory Discovery",
-    "sigma_rule_id": null,
+    "sigma_rule_title": "File and Directory Discovery - Linux",
+    "sigma_rule_id": "d3feb4ee-ff1d-4d3d-bd10-5b28a238cc72",
     "attack_id": "104",
     "original_command": "find /etc 2>/dev/null -name \"*.conf\" -print -maxdepth 2",
     "log_file": "File_and_Directory_Discovery_attack104.log",

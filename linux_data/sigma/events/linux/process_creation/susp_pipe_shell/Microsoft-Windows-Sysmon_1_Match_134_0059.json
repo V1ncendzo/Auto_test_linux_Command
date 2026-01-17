@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Linux Shell Pipe to Shell",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "880973f3-9708-491c-a77b-2a35a1921158",
     "attack_id": "134",
     "original_command": "bash -c \"perl -MMIME::Base64 -e 'print decode_base64(\\\"dW5hbWUgLWE=\\\")' | bash #@2130706433\"",
     "log_file": "Linux_Shell_Pipe_to_Shell_attack134.log",

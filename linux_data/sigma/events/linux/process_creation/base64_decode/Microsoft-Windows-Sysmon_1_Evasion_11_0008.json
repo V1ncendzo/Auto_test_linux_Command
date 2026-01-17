@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Decode Base64 Encoded Text",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "e2072cab-8c9a-459b-b63c-40ae79e27031",
     "attack_id": "11",
     "original_command": "perl -MMIME::Base64 -e 'print decode_base64(\"ZWNobyBIZWxsbyBmcm9tIEF0b21pYyBSZWQgVGVhbSAmJiB1bmFtZSAtdgo=\")' > /tmp/art.sh; chmod +x /tmp/art.sh; /tmp/art.sh",
     "log_file": "Decode_Base64_Encoded_Text_attack11.log",

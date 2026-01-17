@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "OMIGOD SCX RunAsProvider ExecuteShellCommand",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "21541900-27a9-4454-9c4c-3f0a4240344a",
     "attack_id": "271",
     "original_command": "cp /bin/sh /tmp/payload; cd /var/opt/microsoft/scx/tmp && sudo /tmp/payload -c \"id\"",
     "log_file": "OMIGOD_SCX_RunAsProvider_ExecuteShellCommand_attack271.log",

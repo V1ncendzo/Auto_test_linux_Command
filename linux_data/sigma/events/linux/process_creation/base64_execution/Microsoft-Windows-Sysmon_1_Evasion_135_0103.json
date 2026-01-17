@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Linux Base64 Encoded Pipe to Shell",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "ba592c6d-6888-43c3-b8c6-689b8fe47337",
     "attack_id": "135",
     "original_command": "/bin/bash -c 'echo \"ZWNobyAiVHJpZ2dlcmluZyBTaWdtYSBSdWxlIiA7IGlkCg==\"| /bin/b\"\"ase64 -d | bash'",
     "log_file": "Linux_Base64_Encoded_Pipe_to_Shell_attack135.log",

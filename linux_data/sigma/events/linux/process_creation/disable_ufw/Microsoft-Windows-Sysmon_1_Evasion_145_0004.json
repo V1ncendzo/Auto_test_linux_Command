@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Ufw Force Stop Using Ufw-Init",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "84c9e83c-599a-458a-a0cb-0ecce44e807a",
     "attack_id": "145",
     "original_command": "printf '\\x73\\x75\\x64\\x6f\\x20\\x2f\\x75\\x73\\x72\\x2f\\x73\\x62\\x69\\x6e\\x2f\\x75\\x66\\x77\\x20\\x64\\x69\\x73\\x61\\x62\\x6c\\x65' | sh",
     "log_file": "Ufw_Force_Stop_Using_Ufw-Init_attack145.log",

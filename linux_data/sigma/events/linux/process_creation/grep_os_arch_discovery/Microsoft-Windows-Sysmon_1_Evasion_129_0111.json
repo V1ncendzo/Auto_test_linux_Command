@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "OS Architecture Discovery Via Grep",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "d27ab432-2199-483f-a297-03633c05bae6",
     "attack_id": "129",
     "original_command": "grep --binary-files=text x86_64 <<< \"$(uname -a)\"",
     "log_file": "OS_Architecture_Discovery_Via_Grep_attack129.log",

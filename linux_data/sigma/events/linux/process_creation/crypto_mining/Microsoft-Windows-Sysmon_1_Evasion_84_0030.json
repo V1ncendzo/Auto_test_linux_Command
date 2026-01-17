@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Linux Crypto Mining Indicators",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "9069ea3c-b213-4c52-be13-86506a227ab1",
     "attack_id": "84",
     "original_command": "exec /sbin/modprobe msr allow_writes=on",
     "log_file": "Linux_Crypto_Mining_Indicators_attack84.log",
