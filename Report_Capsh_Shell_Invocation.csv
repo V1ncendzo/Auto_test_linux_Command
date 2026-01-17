@@ -1,84 +1,30 @@
 ID,Command,Log File,Result,All Detected Rules
-1,/usr/sbin/capsh /--,Capsh_Shell_Invocation_attack1.log,Log Error (Result Not Found),
-2,"/usr/sbin/capsh /""--""",Capsh_Shell_Invocation_attack2.log,Log Error (Result Not Found),
-3,/usr/sbin/capsh /--/,Capsh_Shell_Invocation_attack3.log,Log Error (Result Not Found),
-4,/usr/sbin/capsh /-- --,Capsh_Shell_Invocation_attack4.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+4,/usr/sbin/capsh /-- --,Capsh_Shell_Invocation_attack4.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 5,/usr/sbin/capsh /-- --login,Capsh_Shell_Invocation_attack5.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-6,/usr/sbin/capsh --/,Capsh_Shell_Invocation_attack6.log,Log Error (Result Not Found),
-7,"/usr/sbin/capsh -- ""--""",Capsh_Shell_Invocation_attack7.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+7,"/usr/sbin/capsh -- ""--""",Capsh_Shell_Invocation_attack7.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 8,/usr/sbin/capsh -- --/,Capsh_Shell_Invocation_attack8.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-9,"/usr/sbin/capsh --""/""",Capsh_Shell_Invocation_attack9.log,Log Error (Result Not Found),
-10,/usr/sbin/capsh --/--,Capsh_Shell_Invocation_attack10.log,Log Error (Result Not Found),
-11,"/usr/sbin/capsh --""--""",Capsh_Shell_Invocation_attack11.log,Log Error (Result Not Found),
-12,/usr/sbin/capsh /--shell,Capsh_Shell_Invocation_attack12.log,Log Error (Result Not Found),
-13,/usr/sbin/capsh /--keep=1,Capsh_Shell_Invocation_attack13.log,Log Error (Result Not Found),
-14,/usr/sbin/capsh --/shell,Capsh_Shell_Invocation_attack14.log,Log Error (Result Not Found),
-15,/usr/sbin/capsh /-- -c,Capsh_Shell_Invocation_attack15.log,Log Error (Result Not Found),
-16,/usr/sbin/capsh /-- --help,Capsh_Shell_Invocation_attack16.log,Log Error (Result Not Found),
-17,/usr/sbin/capsh /--interactive,Capsh_Shell_Invocation_attack17.log,Log Error (Result Not Found),
-18,/usr/sbin/capsh /--login,Capsh_Shell_Invocation_attack18.log,Log Error (Result Not Found),
 19,/usr/sbin/capsh -- /--,Capsh_Shell_Invocation_attack19.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-20,"/usr/sbin/capsh --"" --""",Capsh_Shell_Invocation_attack20.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-21,"/usr/sbin/capsh /"" ""--""",Capsh_Shell_Invocation_attack21.log,Log Error (Result Not Found),
-22,"/usr/sbin/capsh /"" ""--login""",Capsh_Shell_Invocation_attack22.log,Log Error (Result Not Found),
-23,"/usr/sbin/capsh /""--login""",Capsh_Shell_Invocation_attack23.log,Log Error (Result Not Found),
-24,/usr/sbin/capsh --/ --,Capsh_Shell_Invocation_attack24.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-25,"/usr/sbin/capsh --/ ""--""",Capsh_Shell_Invocation_attack25.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+20,"/usr/sbin/capsh --"" --""",Capsh_Shell_Invocation_attack20.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+24,/usr/sbin/capsh --/ --,Capsh_Shell_Invocation_attack24.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+25,"/usr/sbin/capsh --/ ""--""",Capsh_Shell_Invocation_attack25.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 26,"/usr/sbin/capsh -- --""/""",Capsh_Shell_Invocation_attack26.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-27,"/usr/sbin/capsh /-- ""--""",Capsh_Shell_Invocation_attack27.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-28,"/usr/sbin/capsh /--""--""",Capsh_Shell_Invocation_attack28.log,Log Error (Result Not Found),
-29,"/usr/sbin/capsh --""--login""",Capsh_Shell_Invocation_attack29.log,Log Error (Result Not Found),
+27,"/usr/sbin/capsh /-- ""--""",Capsh_Shell_Invocation_attack27.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 30,"/usr/sbin/capsh /""--"" --login",Capsh_Shell_Invocation_attack30.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-31,/usr/sbin/capsh / --,Capsh_Shell_Invocation_attack31.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+31,/usr/sbin/capsh / --,Capsh_Shell_Invocation_attack31.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 32,/usr/sbin/capsh -- /,Capsh_Shell_Invocation_attack32.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 33,/usr/sbin/capsh / -- /,Capsh_Shell_Invocation_attack33.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-34,/usr/sbin/capsh /-- --shell,Capsh_Shell_Invocation_attack34.log,Log Error (Result Not Found),
 35,/usr/sbin/capsh -- /--,Capsh_Shell_Invocation_attack35.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-36,"/usr/sbin/capsh --/""--""",Capsh_Shell_Invocation_attack36.log,Log Error (Result Not Found),
-37,/usr/sbin/capsh --/ /--,Capsh_Shell_Invocation_attack37.log,Log Error (Result Not Found),
-38,"/usr/sbin/capsh --"" /""--""",Capsh_Shell_Invocation_attack38.log,Log Error (Result Not Found),
-39,"/usr/sbin/capsh /"" --""",Capsh_Shell_Invocation_attack39.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+39,"/usr/sbin/capsh /"" --""",Capsh_Shell_Invocation_attack39.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 40,"/usr/sbin/capsh -- /""--""",Capsh_Shell_Invocation_attack40.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 41,/usr/sbin/capsh -- / --shell,Capsh_Shell_Invocation_attack41.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-42,/usr/sbin/capsh /-- /--,Capsh_Shell_Invocation_attack42.log,Log Error (Result Not Found),
 43,/usr/sbin/capsh -- /--login,Capsh_Shell_Invocation_attack43.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-44,/usr/sbin/capsh --/--login,Capsh_Shell_Invocation_attack44.log,Log Error (Result Not Found),
-45,/usr/sbin/capsh /-- /--login,Capsh_Shell_Invocation_attack45.log,Log Error (Result Not Found),
-46,"/usr/sbin/capsh /""--keep=1""",Capsh_Shell_Invocation_attack46.log,Log Error (Result Not Found),
-47,"/usr/sbin/capsh /-- ""--shell""",Capsh_Shell_Invocation_attack47.log,Log Error (Result Not Found),
 48,"/usr/sbin/capsh -- ""--/""",Capsh_Shell_Invocation_attack48.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-49,"/usr/sbin/capsh --""--/""",Capsh_Shell_Invocation_attack49.log,Log Error (Result Not Found),
-50,"/usr/sbin/capsh /""--/""",Capsh_Shell_Invocation_attack50.log,Log Error (Result Not Found),
-51,"/usr/sbin/capsh ""--"" --",Capsh_Shell_Invocation_attack51.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-52,"/usr/sbin/capsh /""-- --""",Capsh_Shell_Invocation_attack52.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-53,"/usr/sbin/capsh -- ""-- --""",Capsh_Shell_Invocation_attack53.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-54,"/usr/sbin/capsh ""-- --""",Capsh_Shell_Invocation_attack54.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-55,"/usr/sbin/capsh ""--""--""",Capsh_Shell_Invocation_attack55.log,Log Error (Result Not Found),
-56,"/usr/sbin/capsh /-- /""--""",Capsh_Shell_Invocation_attack56.log,Log Error (Result Not Found),
-57,"/usr/sbin/capsh /--""-- --""",Capsh_Shell_Invocation_attack57.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-58,"/usr/sbin/capsh ""--/""",Capsh_Shell_Invocation_attack58.log,Log Error (Result Not Found),
-59,"/usr/sbin/capsh --""-- /""",Capsh_Shell_Invocation_attack59.log,Log Error (Result Not Found),
-60,"/usr/sbin/capsh /""-- /""",Capsh_Shell_Invocation_attack60.log,Log Error (Result Not Found),
+51,"/usr/sbin/capsh ""--"" --",Capsh_Shell_Invocation_attack51.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+52,"/usr/sbin/capsh /""-- --""",Capsh_Shell_Invocation_attack52.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+53,"/usr/sbin/capsh -- ""-- --""",Capsh_Shell_Invocation_attack53.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+54,"/usr/sbin/capsh ""-- --""",Capsh_Shell_Invocation_attack54.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+57,"/usr/sbin/capsh /--""-- --""",Capsh_Shell_Invocation_attack57.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 61,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack61.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-62,/usr/sbin/capsh --shell,Capsh_Shell_Invocation_attack62.log,Log Error (Result Not Found),
-63,/usr/sbin/capsh --init,Capsh_Shell_Invocation_attack63.log,Log Error (Result Not Found),
-64,/usr/sbin/capsh --user=0,Capsh_Shell_Invocation_attack64.log,Log Error (Result Not Found),
-65,/usr/sbin/capsh --gid=0,Capsh_Shell_Invocation_attack65.log,Log Error (Result Not Found),
-66,/usr/sbin/capsh --uid=0,Capsh_Shell_Invocation_attack66.log,Log Error (Result Not Found),
-67,/usr/sbin/capsh --keep=1,Capsh_Shell_Invocation_attack67.log,Log Error (Result Not Found),
-68,/usr/sbin/capsh --caps=cap_sys_admin+ep,Capsh_Shell_Invocation_attack68.log,Log Error (Result Not Found),
-69,/usr/sbin/capsh --drop=cap_net_raw,Capsh_Shell_Invocation_attack69.log,Log Error (Result Not Found),
-70,/usr/sbin/capsh --print,Capsh_Shell_Invocation_attack70.log,Log Error (Result Not Found),
-71,/usr/sbin/capsh --root=/,Capsh_Shell_Invocation_attack71.log,Log Error (Result Not Found),
-72,/usr/sbin/capsh --chroot=/,Capsh_Shell_Invocation_attack72.log,Log Error (Result Not Found),
-73,/usr/sbin/capsh --secbits=0,Capsh_Shell_Invocation_attack73.log,Log Error (Result Not Found),
-74,/usr/sbin/capsh --inh=cap_setuid,Capsh_Shell_Invocation_attack74.log,Log Error (Result Not Found),
-75,/usr/sbin/capsh --inh=cap_net_sbind_service,Capsh_Shell_Invocation_attack75.log,Log Error (Result Not Found),
-76,/usr/sbin/capsh --addamb=cap_sys_chroot,Capsh_Shell_Invocation_attack76.log,Log Error (Result Not Found),
-77,/usr/sbin/capsh --caps=cap_setuid+ep,Capsh_Shell_Invocation_attack77.log,Log Error (Result Not Found),
-78,/usr/sbin/capsh --forkexec /sbin/bash,Capsh_Shell_Invocation_attack78.log,Log Error (Result Not Found),
-79,/usr/sbin/capsh --exec /sbin/sh,Capsh_Shell_Invocation_attack79.log,Log Error (Result Not Found),
-80,/usr/sbin/capsh --exec=/sbin/bash,Capsh_Shell_Invocation_attack80.log,Log Error (Result Not Found),
 81,/usr/sbin/capsh -- -c /sbin/sh,Capsh_Shell_Invocation_attack81.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 82,/usr/sbin/capsh -- -c /sbin/bash,Capsh_Shell_Invocation_attack82.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 83,/usr/sbin/capsh -- -c 'sh -i',Capsh_Shell_Invocation_attack83.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -89,126 +35,20 @@ ID,Command,Log File,Result,All Detected Rules
 88,"/usr/sbin/capsh -- -c ""/sbin/bash""",Capsh_Shell_Invocation_attack88.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 89,"/usr/sbin/capsh -- -c ""/sbin/sh""",Capsh_Shell_Invocation_attack89.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 90,/usr/sbin/capsh -- -c 'echo hello',Capsh_Shell_Invocation_attack90.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-91,/usr/sbin/capsh --decode,Capsh_Shell_Invocation_attack91.log,Log Error (Result Not Found),
-92,/usr/sbin/capsh --version,Capsh_Shell_Invocation_attack92.log,Log Error (Result Not Found),
-93,/usr/sbin/capsh --help,Capsh_Shell_Invocation_attack93.log,Log Error (Result Not Found),
-94,/usr/sbin/capsh --command=/sbin/sh,Capsh_Shell_Invocation_attack94.log,Log Error (Result Not Found),
-95,"/usr/sbin/capsh --command=""/sbin/bash""",Capsh_Shell_Invocation_attack95.log,Log Error (Result Not Found),
-96,/usr/sbin/capsh --run=/sbin/sh,Capsh_Shell_Invocation_attack96.log,Log Error (Result Not Found),
-97,"/usr/sbin/capsh --run=""/sbin/bash""",Capsh_Shell_Invocation_attack97.log,Log Error (Result Not Found),
-98,/usr/sbin/capsh --launch /sbin/sh,Capsh_Shell_Invocation_attack98.log,Log Error (Result Not Found),
-99,"/usr/sbin/capsh --launch=""/sbin/bash""",Capsh_Shell_Invocation_attack99.log,Log Error (Result Not Found),
-100,/usr/sbin/capsh --invoke /sbin/sh,Capsh_Shell_Invocation_attack100.log,Log Error (Result Not Found),
-101,"/usr/sbin/capsh --invoke=""/sbin/bash""",Capsh_Shell_Invocation_attack101.log,Log Error (Result Not Found),
-102,/usr/sbin/capsh --sbin /sbin/bash,Capsh_Shell_Invocation_attack102.log,Log Error (Result Not Found),
-103,/usr/sbin/capsh --call=/sbin/sh,Capsh_Shell_Invocation_attack103.log,Log Error (Result Not Found),
-104,"/usr/sbin/capsh --call=""/sbin/bash""",Capsh_Shell_Invocation_attack104.log,Log Error (Result Not Found),
-105,/usr/sbin/capsh --execve /sbin/sh,Capsh_Shell_Invocation_attack105.log,Log Error (Result Not Found),
-106,"/usr/sbin/capsh --execve=""/sbin/bash""",Capsh_Shell_Invocation_attack106.log,Log Error (Result Not Found),
-107,/usr/sbin/capsh --trigger=/sbin/sh,Capsh_Shell_Invocation_attack107.log,Log Error (Result Not Found),
-108,"/usr/sbin/capsh --trigger=""/sbin/bash""",Capsh_Shell_Invocation_attack108.log,Log Error (Result Not Found),
-109,/usr/sbin/capsh --sh=/sbin/sh,Capsh_Shell_Invocation_attack109.log,Log Error (Result Not Found),
-110,"/usr/sbin/capsh --sh=""/sbin/bash""",Capsh_Shell_Invocation_attack110.log,Log Error (Result Not Found),
-111,/usr/sbin/capsh --interpret /sbin/sh,Capsh_Shell_Invocation_attack111.log,Log Error (Result Not Found),
-112,"/usr/sbin/capsh --interpret=""/sbin/bash""",Capsh_Shell_Invocation_attack112.log,Log Error (Result Not Found),
-113,/usr/sbin/capsh --boot=/sbin/sh,Capsh_Shell_Invocation_attack113.log,Log Error (Result Not Found),
-114,"/usr/sbin/capsh --boot=""/sbin/bash""",Capsh_Shell_Invocation_attack114.log,Log Error (Result Not Found),
-115,/usr/sbin/capsh --loader /sbin/sh,Capsh_Shell_Invocation_attack115.log,Log Error (Result Not Found),
-116,"/usr/sbin/capsh --loader=""/sbin/bash""",Capsh_Shell_Invocation_attack116.log,Log Error (Result Not Found),
-117,/usr/sbin/capsh --job=/sbin/sh,Capsh_Shell_Invocation_attack117.log,Log Error (Result Not Found),
-118,"/usr/sbin/capsh --job=""/sbin/bash""",Capsh_Shell_Invocation_attack118.log,Log Error (Result Not Found),
-119,/usr/sbin/capsh --core=/sbin/sh,Capsh_Shell_Invocation_attack119.log,Log Error (Result Not Found),
-120,"/usr/sbin/capsh --core=""/sbin/bash""",Capsh_Shell_Invocation_attack120.log,Log Error (Result Not Found),
-121,capsh,Capsh_Shell_Invocation_attack121.log,Log Error (Result Not Found),
-122,/usr/sbin/capsh,Capsh_Shell_Invocation_attack122.log,Log Error (Result Not Found),
 123,capsh --login,Capsh_Shell_Invocation_attack123.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 124,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack124.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-125,capsh --user=,Capsh_Shell_Invocation_attack125.log,Log Error (Result Not Found),
-126,/usr/sbin/capsh --user=,Capsh_Shell_Invocation_attack126.log,Log Error (Result Not Found),
-127,capsh --caps=,Capsh_Shell_Invocation_attack127.log,Log Error (Result Not Found),
-128,/usr/sbin/capsh --caps=,Capsh_Shell_Invocation_attack128.log,Log Error (Result Not Found),
-129,capsh --,Capsh_Shell_Invocation_attack129.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-130,capsh --n,Capsh_Shell_Invocation_attack130.log,Log Error (Result Not Found),
-131,/usr/sbin/capsh --n,Capsh_Shell_Invocation_attack131.log,Log Error (Result Not Found),
-132,capsh --keep=,Capsh_Shell_Invocation_attack132.log,Log Error (Result Not Found),
-133,/usr/sbin/capsh --keep=,Capsh_Shell_Invocation_attack133.log,Log Error (Result Not Found),
-134,capsh --inh=,Capsh_Shell_Invocation_attack134.log,Log Error (Result Not Found),
-135,/usr/sbin/capsh --inh=,Capsh_Shell_Invocation_attack135.log,Log Error (Result Not Found),
-136,capsh --addamb=,Capsh_Shell_Invocation_attack136.log,Log Error (Result Not Found),
-137,/usr/sbin/capsh --addamb=,Capsh_Shell_Invocation_attack137.log,Log Error (Result Not Found),
-138,capsh --uid=,Capsh_Shell_Invocation_attack138.log,Log Error (Result Not Found),
-139,/usr/sbin/capsh --uid=,Capsh_Shell_Invocation_attack139.log,Log Error (Result Not Found),
-140,capsh --gid=,Capsh_Shell_Invocation_attack140.log,Log Error (Result Not Found),
-141,/usr/sbin/capsh --gid=,Capsh_Shell_Invocation_attack141.log,Log Error (Result Not Found),
-142,capsh --root=,Capsh_Shell_Invocation_attack142.log,Log Error (Result Not Found),
-143,/usr/sbin/capsh --root=,Capsh_Shell_Invocation_attack143.log,Log Error (Result Not Found),
-144,capsh --shell=,Capsh_Shell_Invocation_attack144.log,Log Error (Result Not Found),
-145,/usr/sbin/capsh --shell=,Capsh_Shell_Invocation_attack145.log,Log Error (Result Not Found),
-146,capsh --chroot=,Capsh_Shell_Invocation_attack146.log,Log Error (Result Not Found),
-147,/usr/sbin/capsh --chroot=,Capsh_Shell_Invocation_attack147.log,Log Error (Result Not Found),
-148,capsh --inh=0x0,Capsh_Shell_Invocation_attack148.log,Log Error (Result Not Found),
-149,/usr/sbin/capsh --inh=0x0,Capsh_Shell_Invocation_attack149.log,Log Error (Result Not Found),
-150,capsh --securebits=0x0,Capsh_Shell_Invocation_attack150.log,Log Error (Result Not Found),
-151,/usr/sbin/capsh -,Capsh_Shell_Invocation_attack151.log,Log Error (Result Not Found),
-152,/usr/sbin/capsh --drop=,Capsh_Shell_Invocation_attack152.log,Log Error (Result Not Found),
-153,/usr/sbin/capsh --print,Capsh_Shell_Invocation_attack153.log,Log Error (Result Not Found),
-154,/usr/sbin/capsh --decode=,Capsh_Shell_Invocation_attack154.log,Log Error (Result Not Found),
-155,/usr/sbin/capsh -c,Capsh_Shell_Invocation_attack155.log,Log Error (Result Not Found),
-156,/usr/sbin/capsh --getuid,Capsh_Shell_Invocation_attack156.log,Log Error (Result Not Found),
-157,/usr/sbin/capsh --getgid,Capsh_Shell_Invocation_attack157.log,Log Error (Result Not Found),
-158,/usr/sbin/capsh --user,Capsh_Shell_Invocation_attack158.log,Log Error (Result Not Found),
-159,/usr/sbin/capsh --uid,Capsh_Shell_Invocation_attack159.log,Log Error (Result Not Found),
-160,/usr/sbin/capsh --groups,Capsh_Shell_Invocation_attack160.log,Log Error (Result Not Found),
-161,/usr/sbin/capsh --help,Capsh_Shell_Invocation_attack161.log,Log Error (Result Not Found),
-162,/usr/sbin/capsh --version,Capsh_Shell_Invocation_attack162.log,Log Error (Result Not Found),
-163,capsh --getuid,Capsh_Shell_Invocation_attack163.log,Log Error (Result Not Found),
-164,capsh --getgid,Capsh_Shell_Invocation_attack164.log,Log Error (Result Not Found),
-165,capsh --groups,Capsh_Shell_Invocation_attack165.log,Log Error (Result Not Found),
-166,capsh --drop,Capsh_Shell_Invocation_attack166.log,Log Error (Result Not Found),
-167,capsh -c,Capsh_Shell_Invocation_attack167.log,Log Error (Result Not Found),
-168,capsh --securebits,Capsh_Shell_Invocation_attack168.log,Log Error (Result Not Found),
-169,capsh --caps,Capsh_Shell_Invocation_attack169.log,Log Error (Result Not Found),
-170,capsh --inh,Capsh_Shell_Invocation_attack170.log,Log Error (Result Not Found),
-171,capsh --ambient,Capsh_Shell_Invocation_attack171.log,Log Error (Result Not Found),
-172,capsh --keep,Capsh_Shell_Invocation_attack172.log,Log Error (Result Not Found),
-173,capsh --uid=0,Capsh_Shell_Invocation_attack173.log,Log Error (Result Not Found),
-174,capsh --gid=0,Capsh_Shell_Invocation_attack174.log,Log Error (Result Not Found),
+129,capsh --,Capsh_Shell_Invocation_attack129.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 175,capsh --login,Capsh_Shell_Invocation_attack175.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-176,capsh --shell,Capsh_Shell_Invocation_attack176.log,Log Error (Result Not Found),
-177,capsh --fork,Capsh_Shell_Invocation_attack177.log,Log Error (Result Not Found),
-178,capsh --chroot,Capsh_Shell_Invocation_attack178.log,Log Error (Result Not Found),
-179,capsh --mount,Capsh_Shell_Invocation_attack179.log,Log Error (Result Not Found),
-180,capsh --no-drop,Capsh_Shell_Invocation_attack180.log,Log Error (Result Not Found),
-181,- /usr/sbin/capsh,Capsh_Shell_Invocation_attack181.log,Log Error (Result Not Found),
 182,capsh -- /usr/sbin,Capsh_Shell_Invocation_attack182.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 183,/capsh -- /usr/sbin,Capsh_Shell_Invocation_attack183.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-184,/usr/sbin/-- capsh,Capsh_Shell_Invocation_attack184.log,Log Error (Result Not Found),
-185,- capsh /usr/sbin,Capsh_Shell_Invocation_attack185.log,Log Error (Result Not Found),
-186,capsh /usr/sbin --,Capsh_Shell_Invocation_attack186.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-187,/usr/sbin/capsh--,Capsh_Shell_Invocation_attack187.log,Log Error (Result Not Found),
+186,capsh /usr/sbin --,Capsh_Shell_Invocation_attack186.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 188,/usr/sbin -- capsh,Capsh_Shell_Invocation_attack188.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-189,capsh /-- /usr/sbin,Capsh_Shell_Invocation_attack189.log,Log Error (Result Not Found),
-190,/-- /usr/sbin capsh,Capsh_Shell_Invocation_attack190.log,Log Error (Result Not Found),
-191,-/usr/sbin capsh,Capsh_Shell_Invocation_attack191.log,Log Error (Result Not Found),
-192,/usr/sbin --capsh,Capsh_Shell_Invocation_attack192.log,Log Error (Result Not Found),
-193,-/capsh /usr/sbin,Capsh_Shell_Invocation_attack193.log,Log Error (Result Not Found),
-194,capsh --usr/sbin/,Capsh_Shell_Invocation_attack194.log,Log Error (Result Not Found),
-195,- /sbin/usr capsh,Capsh_Shell_Invocation_attack195.log,Log Error (Result Not Found),
 196,/usr/sbin capsh --,Capsh_Shell_Invocation_attack196.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-197,- /usr/sbin capsh,Capsh_Shell_Invocation_attack197.log,Log Error (Result Not Found),
-198,capsh /usr/sbin/ --,Capsh_Shell_Invocation_attack198.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+198,capsh /usr/sbin/ --,Capsh_Shell_Invocation_attack198.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 199,/usr/sbin/ -- capsh,Capsh_Shell_Invocation_attack199.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-200,-capsh /usr/sbin,Capsh_Shell_Invocation_attack200.log,Log Error (Result Not Found),
-201,/usr/sbin capsh--,Capsh_Shell_Invocation_attack201.log,Log Error (Result Not Found),
-202,capsh --/usr/sbin,Capsh_Shell_Invocation_attack202.log,Log Error (Result Not Found),
-203,/usr/sbin-- capsh,Capsh_Shell_Invocation_attack203.log,Log Error (Result Not Found),
 204,/sbin/usr capsh --,Capsh_Shell_Invocation_attack204.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 205,/capsh /usr/sbin --,Capsh_Shell_Invocation_attack205.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-206,/usr/sbin/capsh --shell,Capsh_Shell_Invocation_attack206.log,Log Error (Result Not Found),
-207,/usr/sbin/capsh shell --,Capsh_Shell_Invocation_attack207.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-208,-shell /usr/sbin/capsh,Capsh_Shell_Invocation_attack208.log,Log Error (Result Not Found),
-209,capsh /usr/sbin --shell,Capsh_Shell_Invocation_attack209.log,Log Error (Result Not Found),
-210,/usr/sbin --shell capsh,Capsh_Shell_Invocation_attack210.log,Log Error (Result Not Found),
+207,/usr/sbin/capsh shell --,Capsh_Shell_Invocation_attack207.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 211,/usr/sbin -- capsh --,Capsh_Shell_Invocation_attack211.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 212,- /usr/sbin -- capsh,Capsh_Shell_Invocation_attack212.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 213,capsh -- -- /usr/sbin,Capsh_Shell_Invocation_attack213.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -217,14 +57,11 @@ ID,Command,Log File,Result,All Detected Rules
 216,/usr/sbin capsh -- --,Capsh_Shell_Invocation_attack216.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 217,- /usr/sbin capsh --,Capsh_Shell_Invocation_attack217.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 218,-capsh -- /usr/sbin,Capsh_Shell_Invocation_attack218.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-219,- /usr/sbin/capsh,Capsh_Shell_Invocation_attack219.log,Log Error (Result Not Found),
 220,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack220.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-221,-login /usr/sbin/capsh,Capsh_Shell_Invocation_attack221.log,Log Error (Result Not Found),
 222,capsh /usr/sbin --login,Capsh_Shell_Invocation_attack222.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 223,/usr/sbin capsh --login,Capsh_Shell_Invocation_attack223.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 224,/usr/sbin --login capsh,Capsh_Shell_Invocation_attack224.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 225,/usr/sbin -- capsh --login,Capsh_Shell_Invocation_attack225.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-226,-login capsh /usr/sbin,Capsh_Shell_Invocation_attack226.log,Log Error (Result Not Found),
 227,- -- /usr/sbin/capsh,Capsh_Shell_Invocation_attack227.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 228,- /usr/sbin --login capsh,Capsh_Shell_Invocation_attack228.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 229,- capsh /usr/sbin --login,Capsh_Shell_Invocation_attack229.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -234,24 +71,10 @@ ID,Command,Log File,Result,All Detected Rules
 233,-shell -- /usr/sbin capsh,Capsh_Shell_Invocation_attack233.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 234,capsh /usr/sbin -- --shell,Capsh_Shell_Invocation_attack234.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 235,/usr/sbin --shell -- capsh,Capsh_Shell_Invocation_attack235.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-236,- /usr/sbin/capsh --shell,Capsh_Shell_Invocation_attack236.log,Log Error (Result Not Found),
-237,-capsh /usr/sbin --shell,Capsh_Shell_Invocation_attack237.log,Log Error (Result Not Found),
 238,-shell /usr/sbin capsh --,Capsh_Shell_Invocation_attack238.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-239,capsh --shell /usr/sbin --,Capsh_Shell_Invocation_attack239.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+239,capsh --shell /usr/sbin --,Capsh_Shell_Invocation_attack239.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 240,/usr/sbin/capsh -- --shell,Capsh_Shell_Invocation_attack240.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-241,/usr/sbin/capsh --,Capsh_Shell_Invocation_attack241.log,Trigger: Capsh Shell Invocation - Linux,Local Groups Discovery - Linux | Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-242,/usr/sbin/capsh%20--,Capsh_Shell_Invocation_attack242.log,Log Error (Result Not Found),
-243,/usr/sbin/capsh%09--,Capsh_Shell_Invocation_attack243.log,Log Error (Result Not Found),
-244,/usr/sbin/capsh%0A--,Capsh_Shell_Invocation_attack244.log,Log Error (Result Not Found),
-245,/usr/sbin/capsh\x20--,Capsh_Shell_Invocation_attack245.log,Log Error (Result Not Found),
-246,/usr/sbin/capsh\x09--,Capsh_Shell_Invocation_attack246.log,Log Error (Result Not Found),
-247,/usr/sbin/capsh\x0A--,Capsh_Shell_Invocation_attack247.log,Log Error (Result Not Found),
-248,/usr/sbin/capsh\040--,Capsh_Shell_Invocation_attack248.log,Log Error (Result Not Found),
-249,/usr/sbin/capsh\011--,Capsh_Shell_Invocation_attack249.log,Log Error (Result Not Found),
-250,/usr/sbin/capsh\012--,Capsh_Shell_Invocation_attack250.log,Log Error (Result Not Found),
-251,/usr/sbin/capsh%u0020--,Capsh_Shell_Invocation_attack251.log,Log Error (Result Not Found),
-252,/usr/sbin/capsh%u0009--,Capsh_Shell_Invocation_attack252.log,Log Error (Result Not Found),
-253,/usr/sbin/capsh%u000A--,Capsh_Shell_Invocation_attack253.log,Log Error (Result Not Found),
+241,/usr/sbin/capsh --,Capsh_Shell_Invocation_attack241.log,Trigger: Capsh Shell Invocation - Linux,Local Groups Discovery - Linux | Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 254,/usr/sbin/ca\u0070sh --,Capsh_Shell_Invocation_attack254.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 255,/usr/sbin/\x63apsh --,Capsh_Shell_Invocation_attack255.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 256,/usr/sbin/c\u0061psh --,Capsh_Shell_Invocation_attack256.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
@@ -259,115 +82,85 @@ ID,Command,Log File,Result,All Detected Rules
 258,/usr/sbin/\143apsh --,Capsh_Shell_Invocation_attack258.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 259,/usr/sbin/\x63\x61\x70\x73\x68 --,Capsh_Shell_Invocation_attack259.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 260,/usr/sbin/\u0063\u0061\u0070\u0073\u0068 --,Capsh_Shell_Invocation_attack260.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-261,/usr/sbin/capsh \x2d\x2d,Capsh_Shell_Invocation_attack261.log,Log Error (Result Not Found),
-262,/usr/sbin/capsh \u002d\u002d,Capsh_Shell_Invocation_attack262.log,Log Error (Result Not Found),
-263,/usr/sbin/capsh \055\055,Capsh_Shell_Invocation_attack263.log,Log Error (Result Not Found),
-264,/usr/sbin/capsh \x2D\x2D,Capsh_Shell_Invocation_attack264.log,Log Error (Result Not Found),
-265,/usr/sbin/capsh%2D%2D,Capsh_Shell_Invocation_attack265.log,Log Error (Result Not Found),
-266,/usr/sbin/capsh%2d%2d,Capsh_Shell_Invocation_attack266.log,Log Error (Result Not Found),
-267,/usr/sbin/capsh&#45;&#45;,Capsh_Shell_Invocation_attack267.log,Log Error (Result Not Found),
-268,/usr/sbin/capsh&#x2D;&#x2D;,Capsh_Shell_Invocation_attack268.log,Log Error (Result Not Found),
-269,/usr/sbin/capsh%2520--,Capsh_Shell_Invocation_attack269.log,Log Error (Result Not Found),
-270,/usr/sbin/capsh%2F%2F--,Capsh_Shell_Invocation_attack270.log,Log Error (Result Not Found),
-271,/usr/sbin/./capsh --,Capsh_Shell_Invocation_attack271.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-272,/usr/./sbin/capsh --,Capsh_Shell_Invocation_attack272.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-273,/usr/sbin/capsh --\n,Capsh_Shell_Invocation_attack273.log,Log Error (Result Not Found),
-274,/usr/sbin/capsh --\r,Capsh_Shell_Invocation_attack274.log,Log Error (Result Not Found),
-275,/usr/sbin/capsh --\t,Capsh_Shell_Invocation_attack275.log,Log Error (Result Not Found),
+271,/usr/sbin/./capsh --,Capsh_Shell_Invocation_attack271.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+272,/usr/./sbin/capsh --,Capsh_Shell_Invocation_attack272.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 276,$'\057usr\057sbin\057capsh' --,Capsh_Shell_Invocation_attack276.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 277,$'\x2fusr\x2fsbin\x2fcapsh' --,Capsh_Shell_Invocation_attack277.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 278,$'\u002fusr\u002fsbin\u002fcapsh' --,Capsh_Shell_Invocation_attack278.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-279,$(echo /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack279.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-280,/usr/sbin/`echo capsh` --,Capsh_Shell_Invocation_attack280.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+279,$(echo /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack279.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+280,/usr/sbin/`echo capsh` --,Capsh_Shell_Invocation_attack280.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 281,/usr/sbin/$('capsh') --,Capsh_Shell_Invocation_attack281.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-282,"`/usr/sbin/c""$0""apsh --` (with `$0` resolving to nothing in some contexts)",Capsh_Shell_Invocation_attack282.log,Log Error (Result Not Found),
-283,/usr/sbin/capsh $'-'-,Capsh_Shell_Invocation_attack283.log,Log Error (Result Not Found),
-284,$(printf /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack284.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-285,`/usr/sbin/capsh $@` (if $@ resolves to `-`),Capsh_Shell_Invocation_attack285.log,Log Error (Result Not Found),
-286,"""/usr/sbin/capsh"" --",Capsh_Shell_Invocation_attack286.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+284,$(printf /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack284.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+286,"""/usr/sbin/capsh"" --",Capsh_Shell_Invocation_attack286.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 287,'usr/sbin/capsh' --,Capsh_Shell_Invocation_attack287.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-288,"""/usr""/""sbin""/""capsh"" --",Capsh_Shell_Invocation_attack288.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
+288,"""/usr""/""sbin""/""capsh"" --",Capsh_Shell_Invocation_attack288.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
 289,"/usr/sbin/c""$IFS""apsh --",Capsh_Shell_Invocation_attack289.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-290,/usr/sbin/capsh$IFS--,Capsh_Shell_Invocation_attack290.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-291,/usr/sbin/capsh$'\x20'--,Capsh_Shell_Invocation_attack291.log,Log Error (Result Not Found),
-292,/usr/sbin/capsh$'\n'--,Capsh_Shell_Invocation_attack292.log,Log Error (Result Not Found),
-293,/usr/sbin/capsh$'\t'--,Capsh_Shell_Invocation_attack293.log,Log Error (Result Not Found),
-294,`capsh --` (relying on `$PATH` to resolve full path),Capsh_Shell_Invocation_attack294.log,Log Error (Result Not Found),
-295,/usr//sbin///capsh --,Capsh_Shell_Invocation_attack295.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-296,/usr/sbin/capsh /**/--,Capsh_Shell_Invocation_attack296.log,Log Error (Result Not Found),
-297,/usr/sbin/capsh /*comment*/--,Capsh_Shell_Invocation_attack297.log,Log Error (Result Not Found),
-298,/usr/sbin/capsh --#,Capsh_Shell_Invocation_attack298.log,Log Error (Result Not Found),
-299,/usr/sbin/capsh --;,Capsh_Shell_Invocation_attack299.log,Trigger: Capsh Shell Invocation - Linux,Syslog Clearing or Removal Via System Utilities | Capsh Shell Invocation - Linux
-300,/usr/sbin/capsh --\`echo`,Capsh_Shell_Invocation_attack300.log,Log Error (Result Not Found),
-301,cp /usr/sbin/capsh /tmp/a; /tmp/a --,Capsh_Shell_Invocation_attack301.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+290,/usr/sbin/capsh$IFS--,Capsh_Shell_Invocation_attack290.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+295,/usr//sbin///capsh --,Capsh_Shell_Invocation_attack295.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+299,/usr/sbin/capsh --;,Capsh_Shell_Invocation_attack299.log,Trigger: Capsh Shell Invocation - Linux,Capsh Shell Invocation - Linux | Syslog Clearing or Removal Via System Utilities
+301,cp /usr/sbin/capsh /tmp/a; /tmp/a --,Capsh_Shell_Invocation_attack301.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 302,cp /usr/sbin/capsh /dev/shm/c; /dev/shm/c --,Capsh_Shell_Invocation_attack302.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 303,cp /usr/sbin/capsh ./mysbin; ./mysbin --,Capsh_Shell_Invocation_attack303.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 304,install -m 755 /usr/sbin/capsh ./x; ./x --,Capsh_Shell_Invocation_attack304.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-305,cp /usr/sbin/capsh /tmp/.hidden; /tmp/.hidden --,Capsh_Shell_Invocation_attack305.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+305,cp /usr/sbin/capsh /tmp/.hidden; /tmp/.hidden --,Capsh_Shell_Invocation_attack305.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 306,cp /usr/sbin/capsh /usr/local/sbin/cx; /usr/local/sbin/cx --,Capsh_Shell_Invocation_attack306.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 307,cp /usr/sbin/capsh cap; ./cap --,Capsh_Shell_Invocation_attack307.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 308,cp /usr/sbin/capsh capsh.fake; ./capsh.fake --,Capsh_Shell_Invocation_attack308.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 309,ln /usr/sbin/capsh ./custom; ./custom --,Capsh_Shell_Invocation_attack309.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-310,cp /usr/sbin/capsh /var/tmp/exec; /var/tmp/exec --,Capsh_Shell_Invocation_attack310.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-311,cp /usr/sbin/capsh /tmp/.cap_runner; /tmp/.cap_runner --,Capsh_Shell_Invocation_attack311.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+310,cp /usr/sbin/capsh /var/tmp/exec; /var/tmp/exec --,Capsh_Shell_Invocation_attack310.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+311,cp /usr/sbin/capsh /tmp/.cap_runner; /tmp/.cap_runner --,Capsh_Shell_Invocation_attack311.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 312,cp /usr/sbin/capsh cap_runner; ./cap_runner --,Capsh_Shell_Invocation_attack312.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 313,cp /usr/sbin/capsh /mnt/capsh_exec; /mnt/capsh_exec --,Capsh_Shell_Invocation_attack313.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-314,cp /usr/sbin/capsh /tmp/systemd; /tmp/systemd --,Capsh_Shell_Invocation_attack314.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+314,cp /usr/sbin/capsh /tmp/systemd; /tmp/systemd --,Capsh_Shell_Invocation_attack314.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 315,cp /usr/sbin/capsh /opt/update; /opt/update --,Capsh_Shell_Invocation_attack315.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-316,cp /usr/sbin/capsh /tmp/init; /tmp/init --,Capsh_Shell_Invocation_attack316.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-317,cp /usr/sbin/capsh /tmp/dbus-daemon; /tmp/dbus-daemon --,Capsh_Shell_Invocation_attack317.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+316,cp /usr/sbin/capsh /tmp/init; /tmp/init --,Capsh_Shell_Invocation_attack316.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+317,cp /usr/sbin/capsh /tmp/dbus-daemon; /tmp/dbus-daemon --,Capsh_Shell_Invocation_attack317.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 318,cp /usr/sbin/capsh ./runner; ./runner --,Capsh_Shell_Invocation_attack318.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 319,cp /usr/sbin/capsh ./sbin; ./sbin --,Capsh_Shell_Invocation_attack319.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-320,cp /usr/sbin/capsh /var/tmp/.x; /var/tmp/.x --,Capsh_Shell_Invocation_attack320.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-321,cp /usr/sbin/capsh /tmp/cp1; /tmp/cp1 --,Capsh_Shell_Invocation_attack321.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+320,cp /usr/sbin/capsh /var/tmp/.x; /var/tmp/.x --,Capsh_Shell_Invocation_attack320.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+321,cp /usr/sbin/capsh /tmp/cp1; /tmp/cp1 --,Capsh_Shell_Invocation_attack321.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 322,cp /usr/sbin/capsh ./update_engine; ./update_engine --,Capsh_Shell_Invocation_attack322.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 323,cp /usr/sbin/capsh /usr/local/sbin/syncd; /usr/local/sbin/syncd --,Capsh_Shell_Invocation_attack323.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-324,cp /usr/sbin/capsh /tmp/netd; /tmp/netd --,Capsh_Shell_Invocation_attack324.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-325,cp /usr/sbin/capsh /tmp/shell; /tmp/shell --,Capsh_Shell_Invocation_attack325.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-326,cp /usr/sbin/capsh /var/tmp/bootd; /var/tmp/bootd --,Capsh_Shell_Invocation_attack326.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+324,cp /usr/sbin/capsh /tmp/netd; /tmp/netd --,Capsh_Shell_Invocation_attack324.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+325,cp /usr/sbin/capsh /tmp/shell; /tmp/shell --,Capsh_Shell_Invocation_attack325.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+326,cp /usr/sbin/capsh /var/tmp/bootd; /var/tmp/bootd --,Capsh_Shell_Invocation_attack326.log,Bypass Target Rule,Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 327,cp /usr/sbin/capsh ./x0; ./x0 --,Capsh_Shell_Invocation_attack327.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
 328,cp /usr/sbin/capsh ./a.out; ./a.out --,Capsh_Shell_Invocation_attack328.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
-329,cp /usr/sbin/capsh /tmp/.sysinit; /tmp/.sysinit --,Capsh_Shell_Invocation_attack329.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-330,cp /usr/sbin/capsh /tmp/ld-linux; /tmp/ld-linux --,Capsh_Shell_Invocation_attack330.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-331,cp /usr/sbin/capsh /tmp/logrotate; /tmp/logrotate --,Capsh_Shell_Invocation_attack331.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-332,cp /usr/sbin/capsh /tmp/kmod; /tmp/kmod --,Capsh_Shell_Invocation_attack332.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-333,cp /usr/sbin/capsh /tmp/user-helper; /tmp/user-helper --,Capsh_Shell_Invocation_attack333.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-334,cp /usr/sbin/capsh /tmp/cronjob; /tmp/cronjob --,Capsh_Shell_Invocation_attack334.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-335,cp /usr/sbin/capsh /tmp/udevd; /tmp/udevd --,Capsh_Shell_Invocation_attack335.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-336,cp /usr/sbin/capsh /tmp/sysctl; /tmp/sysctl --,Capsh_Shell_Invocation_attack336.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-337,cp /usr/sbin/capsh /tmp/resolvconf; /tmp/resolvconf --,Capsh_Shell_Invocation_attack337.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-338,cp /usr/sbin/capsh /tmp/pam_exec; /tmp/pam_exec --,Capsh_Shell_Invocation_attack338.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-339,cp /usr/sbin/capsh /tmp/system-upgrade; /tmp/system-upgrade --,Capsh_Shell_Invocation_attack339.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-340,cp /usr/sbin/capsh /tmp/tmpfs_exec; /tmp/tmpfs_exec --,Capsh_Shell_Invocation_attack340.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-341,cp /usr/sbin/capsh /tmp/libcap; /tmp/libcap --,Capsh_Shell_Invocation_attack341.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-342,cp /usr/sbin/capsh /tmp/bootctl; /tmp/bootctl --,Capsh_Shell_Invocation_attack342.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-343,cp /usr/sbin/capsh /tmp/mountd; /tmp/mountd --,Capsh_Shell_Invocation_attack343.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-344,cp /usr/sbin/capsh /tmp/devscan; /tmp/devscan --,Capsh_Shell_Invocation_attack344.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-345,cp /usr/sbin/capsh /tmp/ifreload; /tmp/ifreload --,Capsh_Shell_Invocation_attack345.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-346,cp /usr/sbin/capsh /tmp/netwatch; /tmp/netwatch --,Capsh_Shell_Invocation_attack346.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-347,cp /usr/sbin/capsh /tmp/svcctl; /tmp/svcctl --,Capsh_Shell_Invocation_attack347.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-348,cp /usr/sbin/capsh /tmp/eventd; /tmp/eventd --,Capsh_Shell_Invocation_attack348.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-349,cp /usr/sbin/capsh /tmp/rsyslog; /tmp/rsyslog --,Capsh_Shell_Invocation_attack349.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-350,cp /usr/sbin/capsh /tmp/inetutils; /tmp/inetutils --,Capsh_Shell_Invocation_attack350.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-351,cp /usr/sbin/capsh /tmp/update-init; /tmp/update-init --,Capsh_Shell_Invocation_attack351.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-352,cp /usr/sbin/capsh /tmp/daemonize; /tmp/daemonize --,Capsh_Shell_Invocation_attack352.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-353,cp /usr/sbin/capsh /tmp/watchdog; /tmp/watchdog --,Capsh_Shell_Invocation_attack353.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-354,cp /usr/sbin/capsh /tmp/sysrunner; /tmp/sysrunner --,Capsh_Shell_Invocation_attack354.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-355,cp /usr/sbin/capsh /tmp/bridge-utils; /tmp/bridge-utils --,Capsh_Shell_Invocation_attack355.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-356,cp /usr/sbin/capsh /tmp/dhcp-helper; /tmp/dhcp-helper --,Capsh_Shell_Invocation_attack356.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-357,cp /usr/sbin/capsh /tmp/firewalld; /tmp/firewalld --,Capsh_Shell_Invocation_attack357.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
-358,cp /usr/sbin/capsh /tmp/capwrap; /tmp/capwrap --,Capsh_Shell_Invocation_attack358.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Syslog Clearing or Removal Via System Utilities | Execution Of Script Located In Potentially Suspicious Directory
+329,cp /usr/sbin/capsh /tmp/.sysinit; /tmp/.sysinit --,Capsh_Shell_Invocation_attack329.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+330,cp /usr/sbin/capsh /tmp/ld-linux; /tmp/ld-linux --,Capsh_Shell_Invocation_attack330.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+331,cp /usr/sbin/capsh /tmp/logrotate; /tmp/logrotate --,Capsh_Shell_Invocation_attack331.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+332,cp /usr/sbin/capsh /tmp/kmod; /tmp/kmod --,Capsh_Shell_Invocation_attack332.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+333,cp /usr/sbin/capsh /tmp/user-helper; /tmp/user-helper --,Capsh_Shell_Invocation_attack333.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+334,cp /usr/sbin/capsh /tmp/cronjob; /tmp/cronjob --,Capsh_Shell_Invocation_attack334.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+335,cp /usr/sbin/capsh /tmp/udevd; /tmp/udevd --,Capsh_Shell_Invocation_attack335.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+336,cp /usr/sbin/capsh /tmp/sysctl; /tmp/sysctl --,Capsh_Shell_Invocation_attack336.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+337,cp /usr/sbin/capsh /tmp/resolvconf; /tmp/resolvconf --,Capsh_Shell_Invocation_attack337.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+338,cp /usr/sbin/capsh /tmp/pam_exec; /tmp/pam_exec --,Capsh_Shell_Invocation_attack338.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+339,cp /usr/sbin/capsh /tmp/system-upgrade; /tmp/system-upgrade --,Capsh_Shell_Invocation_attack339.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+340,cp /usr/sbin/capsh /tmp/tmpfs_exec; /tmp/tmpfs_exec --,Capsh_Shell_Invocation_attack340.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+341,cp /usr/sbin/capsh /tmp/libcap; /tmp/libcap --,Capsh_Shell_Invocation_attack341.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+342,cp /usr/sbin/capsh /tmp/bootctl; /tmp/bootctl --,Capsh_Shell_Invocation_attack342.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+343,cp /usr/sbin/capsh /tmp/mountd; /tmp/mountd --,Capsh_Shell_Invocation_attack343.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+344,cp /usr/sbin/capsh /tmp/devscan; /tmp/devscan --,Capsh_Shell_Invocation_attack344.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+345,cp /usr/sbin/capsh /tmp/ifreload; /tmp/ifreload --,Capsh_Shell_Invocation_attack345.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+346,cp /usr/sbin/capsh /tmp/netwatch; /tmp/netwatch --,Capsh_Shell_Invocation_attack346.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+347,cp /usr/sbin/capsh /tmp/svcctl; /tmp/svcctl --,Capsh_Shell_Invocation_attack347.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+348,cp /usr/sbin/capsh /tmp/eventd; /tmp/eventd --,Capsh_Shell_Invocation_attack348.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+349,cp /usr/sbin/capsh /tmp/rsyslog; /tmp/rsyslog --,Capsh_Shell_Invocation_attack349.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+350,cp /usr/sbin/capsh /tmp/inetutils; /tmp/inetutils --,Capsh_Shell_Invocation_attack350.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+351,cp /usr/sbin/capsh /tmp/update-init; /tmp/update-init --,Capsh_Shell_Invocation_attack351.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+352,cp /usr/sbin/capsh /tmp/daemonize; /tmp/daemonize --,Capsh_Shell_Invocation_attack352.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+353,cp /usr/sbin/capsh /tmp/watchdog; /tmp/watchdog --,Capsh_Shell_Invocation_attack353.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+354,cp /usr/sbin/capsh /tmp/sysrunner; /tmp/sysrunner --,Capsh_Shell_Invocation_attack354.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+355,cp /usr/sbin/capsh /tmp/bridge-utils; /tmp/bridge-utils --,Capsh_Shell_Invocation_attack355.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+356,cp /usr/sbin/capsh /tmp/dhcp-helper; /tmp/dhcp-helper --,Capsh_Shell_Invocation_attack356.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+357,cp /usr/sbin/capsh /tmp/firewalld; /tmp/firewalld --,Capsh_Shell_Invocation_attack357.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+358,cp /usr/sbin/capsh /tmp/capwrap; /tmp/capwrap --,Capsh_Shell_Invocation_attack358.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
 ,,,,
 ,,,,
 === SUMMARY REPORT ===,,,,
-Calculation Base (Source: filtered_summary.txt),,,,
+Calculation Base (Source: Detection Results),,,,
 Total Meaningful Logs (Denominator),157,,,
 Triggered Target (Detections),29,,,
 Bypass Logs (Numerator),128,,,
 BYPASS RATE (Bypass/Meaningful),128 / 157 (81.53%),,,
-BYPASS RAIO (Bypass/Detections),4.41,,,
-,,,,
---- DETAILS (From raw scan) ---,,,,
-  > Bypass All (Raw),0,,,
-  > Bypass Target Rule (Raw),128,,,
-Missing/Not Run,201,,,
