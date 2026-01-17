@@ -1,0 +1,123 @@
+# Filtering Summary for Clear Linux Logs
+
+- **Total Logs**: 322
+- **Kept**: 210
+- **Dropped**: 112
+- **Rate**: 65.2%
+
+## Dropped Files Details
+
+| File | Status | Reason |
+|---|---|---|
+| Clear_Linux_Logs_attack182.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack183.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack184.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack185.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack188.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack189.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack190.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack192.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack194.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack195.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack197.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack198.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack201.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack203.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack204.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack205.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack207.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack209.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack210.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack211.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack212.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack213.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack215.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack216.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack217.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack219.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack220.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack222.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack223.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack224.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack226.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack228.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack230.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack232.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack233.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack234.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack236.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack237.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack238.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack239.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack240.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack253.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack257.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack259.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack263.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack264.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack265.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack269.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack278.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack279.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack280.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack281.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack287.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack296.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack297.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack298.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack301.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack302.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack303.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack304.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack305.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack306.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack307.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack308.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack309.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack310.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack311.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack312.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack313.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack314.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack315.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack316.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack317.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack319.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack320.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack322.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack323.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack324.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack325.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack326.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack327.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack328.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack329.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack330.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack331.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack332.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack333.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack335.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack336.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack337.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack338.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack339.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack340.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack341.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack342.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack343.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack344.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack345.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack346.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack347.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack348.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack349.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack350.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack351.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack352.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack353.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack354.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack355.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack357.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack358.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack359.log | Dropped | No valid log clearing process found |
+| Clear_Linux_Logs_attack360.log | Dropped | No valid log clearing process found |
