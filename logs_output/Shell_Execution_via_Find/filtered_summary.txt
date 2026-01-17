@@ -1,0 +1,12 @@
+Filter Summary for Shell_Execution_via_Find
+===========================================
+Total Logs: 360
+Filtered (Kept): 352
+  - Trigger (Sigma Match): 202
+  - Bypass (Right Meaning, No Match): 150
+Discarded (Wrong Meaning): 8
+
+Definitions:
+- Trigger: Image ends in /find, contains ' . ', '-exec', and exact shell path.
+- Bypass: Uses -exec/-ok to invoke shell but evades one of the above constraints (e.g., no space-dot-space, obfuscated shell name, copied binary).
+- Wrong Meaning: No -exec/-ok or benign command execution (triggering no shell).

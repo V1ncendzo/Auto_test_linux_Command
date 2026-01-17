@@ -1,0 +1,12 @@
+Filter Summary for Shell_Execution_via_Flock
+===========================================
+Total Logs: 390
+Filtered (Kept): 390
+  - Trigger (Sigma Match): 319
+  - Bypass (Right Meaning, No Match): 71
+Discarded (Wrong Meaning): 0
+
+Definitions:
+- Trigger: Image ends in /flock, CLI contains ' -u ' AND exact shell path.
+- Bypass: Invokes shell via flock but avoids ' -u ' (uses -x, -s, -n, etc) or obfuscates shell path.
+- Wrong Meaning: No shell invocation found.

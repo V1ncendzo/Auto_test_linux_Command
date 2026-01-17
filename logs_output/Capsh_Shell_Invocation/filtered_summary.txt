@@ -1,0 +1,12 @@
+Filter Summary for Capsh_Shell_Invocation
+=========================================
+Total Logs: 358
+Filtered (Kept): 157
+Discarded (Wrong Meaning): 201
+
+Rationale:
+- Right Meaning: Commands containing ' --' (shell trigger) or '--login'.
+- Wrong Meaning: Informational commands (e.g., --print, --help) or syntax errors.
+
+Note on Trigger/Bypass:
+Logs kept include both Sigma rule triggers (ending in ' --') and potential bypasses (valid shell flags followed by arguments).
