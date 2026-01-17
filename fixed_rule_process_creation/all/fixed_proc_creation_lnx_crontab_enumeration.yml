@@ -1,0 +1,26 @@
+title: Sensitive Crontab File Access
+id: new-rule-id-placeholder
+description: Detects direct access to system crontab files using shell utilities.
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    selection_tools:
+        Image|endswith: 
+            - '/cat'
+            - '/less'
+            - '/more'
+            - '/head'
+            - '/tail'
+            - '/vim'
+            - '/nano'
+            - '/grep'
+    selection_files:
+        CommandLine|contains:
+            - '/etc/crontab'
+            - '/var/spool/cron/'
+            - '/etc/cron.d/'
+            - '/etc/cron.daily/'
+            - '/etc/cron.hourly/'
+    condition: selection_tools and selection_files
+level: medium

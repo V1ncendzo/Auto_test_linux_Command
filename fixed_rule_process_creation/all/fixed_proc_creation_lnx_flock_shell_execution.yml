@@ -1,0 +1,35 @@
+title: Shell Execution via Flock - Linux (Hardened)
+id: 4b09c71e-4269-4111-9cdd-107d8867f0cc
+status: stable
+description: |
+    Detects the use of "flock" to execute a shell or suspicious commands. 
+    Enhanced to detect execution without the "-u" flag and with flexible shell paths.
+references:
+    - https://gtfobins.github.io/gtfobins/flock/#shell
+author: Bloomberg L.P., Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.discovery
+    - attack.t1083
+    - attack.execution
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    selection_img:
+        Image|endswith: '/flock'
+    
+    # Selection 2: Detect Shell execution (Flexible regex)
+    selection_shell:
+        CommandLine|re: 
+            - '\s(/bin/|/usr/bin/)?(bash|sh|zsh|dash|fish|ksh)\b'
+            - '\s.*\ssh\b' # Matches "flock ... sh"
+
+    # Selection 3: Detect "flock" executing ANY command via -c (Common in exploits)
+    selection_command_flag:
+        CommandLine|contains: ' -c '
+
+    condition: selection_img and (selection_shell or selection_command_flag)
+falsepositives:
+    - Admin scripts using flock to manage lockfiles for shell scripts. (Filter by ParentProcess if necessary).
+level: high
