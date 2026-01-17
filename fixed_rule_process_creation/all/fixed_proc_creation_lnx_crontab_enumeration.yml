@@ -1,26 +1,59 @@
-title: Sensitive Crontab File Access
-id: 403ed92c-b7ec-4edd-9947-5b535ee12d46
-description: Detects direct access to system crontab files using shell utilities.
+title: Crontab Enumeration (Hardened)
+id: 403ed92c-b7ec-4edd-9947-5b535ee12d47
+status: stable
+description: |
+    Detects suspicious enumeration of scheduled tasks using the 'crontab' utility (list, edit, user targeting) 
+    AND direct access to sensitive cron configuration files (behavioral detection).
+references:
+    - https://attack.mitre.org/techniques/T1053/003/
+author: Joseliyo Sanchez, Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.discovery
+    - attack.execution
+    - attack.t1053.003
 logsource:
-    category: process_creation
     product: linux
+    category: process_creation
 detection:
+    # --- BLOCK 1: Crontab Binary Usage ---
+    selection_binary:
+        Image|endswith: '/crontab'
+    
+    # Bắt list (-l), edit (-e), user target (-u)
+    # Dùng regex để bắt cả trường hợp có/không có dấu cách hoặc quotes: crontab "-l", crontab -u root
+    selection_flags_regex:
+        CommandLine|re: 
+            - '\s-[leu]\b'           # Matches -l, -e, -u
+            - '\s-[a-z]*l[a-z]*\b'   # Matches combined flags like -ul (rare but possible)
+            - '["'']-[leu]["'']'     # Matches quoted flags "-l"
+
+    # --- BLOCK 2: Direct File Access (Behavioral) ---
+    # Bắt hành vi đọc file cấu hình cron bằng các tool phổ biến
     selection_tools:
-        Image|endswith: 
+        Image|endswith:
             - '/cat'
-            - '/less'
+            - '/grep'
             - '/more'
-            - '/head'
+            - '/less'
             - '/tail'
+            - '/head'
+            - '/vi'
             - '/vim'
             - '/nano'
-            - '/grep'
-    selection_files:
+            - '/awk'
+            - '/sed'
+    
+    selection_cron_files:
         CommandLine|contains:
             - '/etc/crontab'
-            - '/var/spool/cron/'
+            - '/var/spool/cron'
             - '/etc/cron.d/'
-            - '/etc/cron.daily/'
-            - '/etc/cron.hourly/'
-    condition: selection_tools and selection_files
-level: medium
+            - '/etc/cron.daily'
+            - '/etc/cron.hourly'
+
+    condition: (selection_binary and selection_flags_regex) or (selection_tools and selection_cron_files)
+falsepositives:
+    - System Administration (Backup scripts reading crontabs)
+    - CM Tools (Ansible/Saltstack checking cron state)
+level: high

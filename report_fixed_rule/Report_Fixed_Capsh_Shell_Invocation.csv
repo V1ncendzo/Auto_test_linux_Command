@@ -1,0 +1,166 @@
+ID,Command,Log File,Result,All Detected Rules
+4,/usr/sbin/capsh /-- --,Capsh_Shell_Invocation_attack4.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+5,/usr/sbin/capsh /-- --login,Capsh_Shell_Invocation_attack5.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+7,"/usr/sbin/capsh -- ""--""",Capsh_Shell_Invocation_attack7.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+8,/usr/sbin/capsh -- --/,Capsh_Shell_Invocation_attack8.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+19,/usr/sbin/capsh -- /--,Capsh_Shell_Invocation_attack19.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+20,"/usr/sbin/capsh --"" --""",Capsh_Shell_Invocation_attack20.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+24,/usr/sbin/capsh --/ --,Capsh_Shell_Invocation_attack24.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+25,"/usr/sbin/capsh --/ ""--""",Capsh_Shell_Invocation_attack25.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+26,"/usr/sbin/capsh -- --""/""",Capsh_Shell_Invocation_attack26.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+27,"/usr/sbin/capsh /-- ""--""",Capsh_Shell_Invocation_attack27.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+30,"/usr/sbin/capsh /""--"" --login",Capsh_Shell_Invocation_attack30.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+31,/usr/sbin/capsh / --,Capsh_Shell_Invocation_attack31.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+32,/usr/sbin/capsh -- /,Capsh_Shell_Invocation_attack32.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+33,/usr/sbin/capsh / -- /,Capsh_Shell_Invocation_attack33.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+35,/usr/sbin/capsh -- /--,Capsh_Shell_Invocation_attack35.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+39,"/usr/sbin/capsh /"" --""",Capsh_Shell_Invocation_attack39.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+40,"/usr/sbin/capsh -- /""--""",Capsh_Shell_Invocation_attack40.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+41,/usr/sbin/capsh -- / --shell,Capsh_Shell_Invocation_attack41.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+43,/usr/sbin/capsh -- /--login,Capsh_Shell_Invocation_attack43.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+48,"/usr/sbin/capsh -- ""--/""",Capsh_Shell_Invocation_attack48.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+51,"/usr/sbin/capsh ""--"" --",Capsh_Shell_Invocation_attack51.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+52,"/usr/sbin/capsh /""-- --""",Capsh_Shell_Invocation_attack52.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+53,"/usr/sbin/capsh -- ""-- --""",Capsh_Shell_Invocation_attack53.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+54,"/usr/sbin/capsh ""-- --""",Capsh_Shell_Invocation_attack54.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+57,"/usr/sbin/capsh /--""-- --""",Capsh_Shell_Invocation_attack57.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+61,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack61.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+81,/usr/sbin/capsh -- -c /sbin/sh,Capsh_Shell_Invocation_attack81.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+82,/usr/sbin/capsh -- -c /sbin/bash,Capsh_Shell_Invocation_attack82.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+83,/usr/sbin/capsh -- -c 'sh -i',Capsh_Shell_Invocation_attack83.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+84,/usr/sbin/capsh -- -c 'bash -i',Capsh_Shell_Invocation_attack84.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+85,/usr/sbin/capsh -- -c 'id',Capsh_Shell_Invocation_attack85.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+86,"/usr/sbin/capsh -- -c ""whoami""",Capsh_Shell_Invocation_attack86.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+87,"/usr/sbin/capsh -- -c ""ls -la /root""",Capsh_Shell_Invocation_attack87.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+88,"/usr/sbin/capsh -- -c ""/sbin/bash""",Capsh_Shell_Invocation_attack88.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+89,"/usr/sbin/capsh -- -c ""/sbin/sh""",Capsh_Shell_Invocation_attack89.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+90,/usr/sbin/capsh -- -c 'echo hello',Capsh_Shell_Invocation_attack90.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+123,capsh --login,Capsh_Shell_Invocation_attack123.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+124,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack124.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+129,capsh --,Capsh_Shell_Invocation_attack129.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+175,capsh --login,Capsh_Shell_Invocation_attack175.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+182,capsh -- /usr/sbin,Capsh_Shell_Invocation_attack182.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+183,/capsh -- /usr/sbin,Capsh_Shell_Invocation_attack183.log,Bypass All,None
+186,capsh /usr/sbin --,Capsh_Shell_Invocation_attack186.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+188,/usr/sbin -- capsh,Capsh_Shell_Invocation_attack188.log,Bypass All,None
+196,/usr/sbin capsh --,Capsh_Shell_Invocation_attack196.log,Bypass All,None
+198,capsh /usr/sbin/ --,Capsh_Shell_Invocation_attack198.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+199,/usr/sbin/ -- capsh,Capsh_Shell_Invocation_attack199.log,Bypass All,None
+204,/sbin/usr capsh --,Capsh_Shell_Invocation_attack204.log,Bypass All,None
+205,/capsh /usr/sbin --,Capsh_Shell_Invocation_attack205.log,Bypass All,None
+207,/usr/sbin/capsh shell --,Capsh_Shell_Invocation_attack207.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+211,/usr/sbin -- capsh --,Capsh_Shell_Invocation_attack211.log,Bypass All,None
+212,- /usr/sbin -- capsh,Capsh_Shell_Invocation_attack212.log,Bypass All,None
+213,capsh -- -- /usr/sbin,Capsh_Shell_Invocation_attack213.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+214,/usr/sbin -- -- capsh,Capsh_Shell_Invocation_attack214.log,Bypass All,None
+215,- capsh -- /usr/sbin,Capsh_Shell_Invocation_attack215.log,Bypass All,None
+216,/usr/sbin capsh -- --,Capsh_Shell_Invocation_attack216.log,Bypass All,None
+217,- /usr/sbin capsh --,Capsh_Shell_Invocation_attack217.log,Bypass All,None
+218,-capsh -- /usr/sbin,Capsh_Shell_Invocation_attack218.log,Bypass All,None
+220,/usr/sbin/capsh --login,Capsh_Shell_Invocation_attack220.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+222,capsh /usr/sbin --login,Capsh_Shell_Invocation_attack222.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+223,/usr/sbin capsh --login,Capsh_Shell_Invocation_attack223.log,Bypass All,None
+224,/usr/sbin --login capsh,Capsh_Shell_Invocation_attack224.log,Bypass All,None
+225,/usr/sbin -- capsh --login,Capsh_Shell_Invocation_attack225.log,Bypass All,None
+227,- -- /usr/sbin/capsh,Capsh_Shell_Invocation_attack227.log,Bypass All,None
+228,- /usr/sbin --login capsh,Capsh_Shell_Invocation_attack228.log,Bypass All,None
+229,- capsh /usr/sbin --login,Capsh_Shell_Invocation_attack229.log,Bypass All,None
+230,capsh --login -- /usr/sbin,Capsh_Shell_Invocation_attack230.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+231,/usr/sbin -- capsh --shell,Capsh_Shell_Invocation_attack231.log,Bypass All,None
+232,/usr/sbin capsh --shell --,Capsh_Shell_Invocation_attack232.log,Bypass All,None
+233,-shell -- /usr/sbin capsh,Capsh_Shell_Invocation_attack233.log,Bypass All,None
+234,capsh /usr/sbin -- --shell,Capsh_Shell_Invocation_attack234.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+235,/usr/sbin --shell -- capsh,Capsh_Shell_Invocation_attack235.log,Bypass All,None
+238,-shell /usr/sbin capsh --,Capsh_Shell_Invocation_attack238.log,Bypass All,None
+239,capsh --shell /usr/sbin --,Capsh_Shell_Invocation_attack239.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+240,/usr/sbin/capsh -- --shell,Capsh_Shell_Invocation_attack240.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+241,/usr/sbin/capsh --,Capsh_Shell_Invocation_attack241.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+254,/usr/sbin/ca\u0070sh --,Capsh_Shell_Invocation_attack254.log,Bypass All,None
+255,/usr/sbin/\x63apsh --,Capsh_Shell_Invocation_attack255.log,Bypass All,None
+256,/usr/sbin/c\u0061psh --,Capsh_Shell_Invocation_attack256.log,Bypass All,None
+257,/usr/sbin/ca\x70sh --,Capsh_Shell_Invocation_attack257.log,Bypass All,None
+258,/usr/sbin/\143apsh --,Capsh_Shell_Invocation_attack258.log,Bypass All,None
+259,/usr/sbin/\x63\x61\x70\x73\x68 --,Capsh_Shell_Invocation_attack259.log,Bypass All,None
+260,/usr/sbin/\u0063\u0061\u0070\u0073\u0068 --,Capsh_Shell_Invocation_attack260.log,Bypass All,None
+271,/usr/sbin/./capsh --,Capsh_Shell_Invocation_attack271.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+272,/usr/./sbin/capsh --,Capsh_Shell_Invocation_attack272.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+276,$'\057usr\057sbin\057capsh' --,Capsh_Shell_Invocation_attack276.log,Bypass All,None
+277,$'\x2fusr\x2fsbin\x2fcapsh' --,Capsh_Shell_Invocation_attack277.log,Bypass All,None
+278,$'\u002fusr\u002fsbin\u002fcapsh' --,Capsh_Shell_Invocation_attack278.log,Bypass All,None
+279,$(echo /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack279.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+280,/usr/sbin/`echo capsh` --,Capsh_Shell_Invocation_attack280.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+281,/usr/sbin/$('capsh') --,Capsh_Shell_Invocation_attack281.log,Bypass All,None
+284,$(printf /usr/sbin/capsh) --,Capsh_Shell_Invocation_attack284.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+286,"""/usr/sbin/capsh"" --",Capsh_Shell_Invocation_attack286.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+287,'usr/sbin/capsh' --,Capsh_Shell_Invocation_attack287.log,Bypass All,None
+288,"""/usr""/""sbin""/""capsh"" --",Capsh_Shell_Invocation_attack288.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+289,"/usr/sbin/c""$IFS""apsh --",Capsh_Shell_Invocation_attack289.log,Bypass All,None
+290,/usr/sbin/capsh$IFS--,Capsh_Shell_Invocation_attack290.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+295,/usr//sbin///capsh --,Capsh_Shell_Invocation_attack295.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+299,/usr/sbin/capsh --;,Capsh_Shell_Invocation_attack299.log,Trigger: Capsh Shell Invocation - Linux (Enhanced),Capsh Shell Invocation - Linux (Enhanced)
+301,cp /usr/sbin/capsh /tmp/a; /tmp/a --,Capsh_Shell_Invocation_attack301.log,Bypass All,None
+302,cp /usr/sbin/capsh /dev/shm/c; /dev/shm/c --,Capsh_Shell_Invocation_attack302.log,Bypass All,None
+303,cp /usr/sbin/capsh ./mysbin; ./mysbin --,Capsh_Shell_Invocation_attack303.log,Bypass All,None
+304,install -m 755 /usr/sbin/capsh ./x; ./x --,Capsh_Shell_Invocation_attack304.log,Bypass All,None
+305,cp /usr/sbin/capsh /tmp/.hidden; /tmp/.hidden --,Capsh_Shell_Invocation_attack305.log,Bypass All,None
+306,cp /usr/sbin/capsh /usr/local/sbin/cx; /usr/local/sbin/cx --,Capsh_Shell_Invocation_attack306.log,Bypass All,None
+307,cp /usr/sbin/capsh cap; ./cap --,Capsh_Shell_Invocation_attack307.log,Bypass All,None
+308,cp /usr/sbin/capsh capsh.fake; ./capsh.fake --,Capsh_Shell_Invocation_attack308.log,Bypass All,None
+309,ln /usr/sbin/capsh ./custom; ./custom --,Capsh_Shell_Invocation_attack309.log,Bypass All,None
+310,cp /usr/sbin/capsh /var/tmp/exec; /var/tmp/exec --,Capsh_Shell_Invocation_attack310.log,Bypass All,None
+311,cp /usr/sbin/capsh /tmp/.cap_runner; /tmp/.cap_runner --,Capsh_Shell_Invocation_attack311.log,Bypass All,None
+312,cp /usr/sbin/capsh cap_runner; ./cap_runner --,Capsh_Shell_Invocation_attack312.log,Bypass All,None
+313,cp /usr/sbin/capsh /mnt/capsh_exec; /mnt/capsh_exec --,Capsh_Shell_Invocation_attack313.log,Bypass All,None
+314,cp /usr/sbin/capsh /tmp/systemd; /tmp/systemd --,Capsh_Shell_Invocation_attack314.log,Bypass All,None
+315,cp /usr/sbin/capsh /opt/update; /opt/update --,Capsh_Shell_Invocation_attack315.log,Bypass All,None
+316,cp /usr/sbin/capsh /tmp/init; /tmp/init --,Capsh_Shell_Invocation_attack316.log,Bypass All,None
+317,cp /usr/sbin/capsh /tmp/dbus-daemon; /tmp/dbus-daemon --,Capsh_Shell_Invocation_attack317.log,Bypass All,None
+318,cp /usr/sbin/capsh ./runner; ./runner --,Capsh_Shell_Invocation_attack318.log,Bypass All,None
+319,cp /usr/sbin/capsh ./sbin; ./sbin --,Capsh_Shell_Invocation_attack319.log,Bypass All,None
+320,cp /usr/sbin/capsh /var/tmp/.x; /var/tmp/.x --,Capsh_Shell_Invocation_attack320.log,Bypass All,None
+321,cp /usr/sbin/capsh /tmp/cp1; /tmp/cp1 --,Capsh_Shell_Invocation_attack321.log,Bypass All,None
+322,cp /usr/sbin/capsh ./update_engine; ./update_engine --,Capsh_Shell_Invocation_attack322.log,Bypass All,None
+323,cp /usr/sbin/capsh /usr/local/sbin/syncd; /usr/local/sbin/syncd --,Capsh_Shell_Invocation_attack323.log,Bypass All,None
+324,cp /usr/sbin/capsh /tmp/netd; /tmp/netd --,Capsh_Shell_Invocation_attack324.log,Bypass All,None
+325,cp /usr/sbin/capsh /tmp/shell; /tmp/shell --,Capsh_Shell_Invocation_attack325.log,Bypass All,None
+326,cp /usr/sbin/capsh /var/tmp/bootd; /var/tmp/bootd --,Capsh_Shell_Invocation_attack326.log,Bypass All,None
+327,cp /usr/sbin/capsh ./x0; ./x0 --,Capsh_Shell_Invocation_attack327.log,Bypass All,None
+328,cp /usr/sbin/capsh ./a.out; ./a.out --,Capsh_Shell_Invocation_attack328.log,Bypass All,None
+329,cp /usr/sbin/capsh /tmp/.sysinit; /tmp/.sysinit --,Capsh_Shell_Invocation_attack329.log,Bypass All,None
+330,cp /usr/sbin/capsh /tmp/ld-linux; /tmp/ld-linux --,Capsh_Shell_Invocation_attack330.log,Bypass All,None
+331,cp /usr/sbin/capsh /tmp/logrotate; /tmp/logrotate --,Capsh_Shell_Invocation_attack331.log,Bypass All,None
+332,cp /usr/sbin/capsh /tmp/kmod; /tmp/kmod --,Capsh_Shell_Invocation_attack332.log,Bypass All,None
+333,cp /usr/sbin/capsh /tmp/user-helper; /tmp/user-helper --,Capsh_Shell_Invocation_attack333.log,Bypass All,None
+334,cp /usr/sbin/capsh /tmp/cronjob; /tmp/cronjob --,Capsh_Shell_Invocation_attack334.log,Bypass All,None
+335,cp /usr/sbin/capsh /tmp/udevd; /tmp/udevd --,Capsh_Shell_Invocation_attack335.log,Bypass All,None
+336,cp /usr/sbin/capsh /tmp/sysctl; /tmp/sysctl --,Capsh_Shell_Invocation_attack336.log,Bypass All,None
+337,cp /usr/sbin/capsh /tmp/resolvconf; /tmp/resolvconf --,Capsh_Shell_Invocation_attack337.log,Bypass All,None
+338,cp /usr/sbin/capsh /tmp/pam_exec; /tmp/pam_exec --,Capsh_Shell_Invocation_attack338.log,Bypass All,None
+339,cp /usr/sbin/capsh /tmp/system-upgrade; /tmp/system-upgrade --,Capsh_Shell_Invocation_attack339.log,Bypass All,None
+340,cp /usr/sbin/capsh /tmp/tmpfs_exec; /tmp/tmpfs_exec --,Capsh_Shell_Invocation_attack340.log,Bypass All,None
+341,cp /usr/sbin/capsh /tmp/libcap; /tmp/libcap --,Capsh_Shell_Invocation_attack341.log,Bypass All,None
+342,cp /usr/sbin/capsh /tmp/bootctl; /tmp/bootctl --,Capsh_Shell_Invocation_attack342.log,Bypass All,None
+343,cp /usr/sbin/capsh /tmp/mountd; /tmp/mountd --,Capsh_Shell_Invocation_attack343.log,Bypass All,None
+344,cp /usr/sbin/capsh /tmp/devscan; /tmp/devscan --,Capsh_Shell_Invocation_attack344.log,Bypass All,None
+345,cp /usr/sbin/capsh /tmp/ifreload; /tmp/ifreload --,Capsh_Shell_Invocation_attack345.log,Bypass All,None
+346,cp /usr/sbin/capsh /tmp/netwatch; /tmp/netwatch --,Capsh_Shell_Invocation_attack346.log,Bypass All,None
+347,cp /usr/sbin/capsh /tmp/svcctl; /tmp/svcctl --,Capsh_Shell_Invocation_attack347.log,Bypass All,None
+348,cp /usr/sbin/capsh /tmp/eventd; /tmp/eventd --,Capsh_Shell_Invocation_attack348.log,Bypass All,None
+349,cp /usr/sbin/capsh /tmp/rsyslog; /tmp/rsyslog --,Capsh_Shell_Invocation_attack349.log,Bypass All,None
+350,cp /usr/sbin/capsh /tmp/inetutils; /tmp/inetutils --,Capsh_Shell_Invocation_attack350.log,Bypass All,None
+351,cp /usr/sbin/capsh /tmp/update-init; /tmp/update-init --,Capsh_Shell_Invocation_attack351.log,Bypass All,None
+352,cp /usr/sbin/capsh /tmp/daemonize; /tmp/daemonize --,Capsh_Shell_Invocation_attack352.log,Bypass All,None
+353,cp /usr/sbin/capsh /tmp/watchdog; /tmp/watchdog --,Capsh_Shell_Invocation_attack353.log,Bypass All,None
+354,cp /usr/sbin/capsh /tmp/sysrunner; /tmp/sysrunner --,Capsh_Shell_Invocation_attack354.log,Bypass All,None
+355,cp /usr/sbin/capsh /tmp/bridge-utils; /tmp/bridge-utils --,Capsh_Shell_Invocation_attack355.log,Bypass All,None
+356,cp /usr/sbin/capsh /tmp/dhcp-helper; /tmp/dhcp-helper --,Capsh_Shell_Invocation_attack356.log,Bypass All,None
+357,cp /usr/sbin/capsh /tmp/firewalld; /tmp/firewalld --,Capsh_Shell_Invocation_attack357.log,Bypass All,None
+358,cp /usr/sbin/capsh /tmp/capwrap; /tmp/capwrap --,Capsh_Shell_Invocation_attack358.log,Bypass All,None
+,,,,
+,,,,
+=== SUMMARY REPORT ===,,,,
+Target Rule,Capsh Shell Invocation - Linux (Enhanced),,,
+Total Meaningful Logs,157,,,
+Triggered Target,62,,,
+Bypass Logs,95,,,
+BYPASS RATE,95 / 157 (60.51%),,,
