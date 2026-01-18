@@ -1,1 +1,59 @@
-[]
+[{
+  "title": "Crontab Enumeration (Enhanced)",
+  "id": "403ed92c-b7ec-4edd-9947-5b535ee12d46",
+  "description": "Detects usage of crontab to list scheduled tasks for the current user or a specified user.",
+  "sigmafile": "",
+  "sigma": [
+    "SELECT * FROM logs WHERE (Image LIKE '%/crontab' ESCAPE '\\' OR Image LIKE '%crontab' ESCAPE '\\') AND (CommandLine LIKE '% -l%' ESCAPE '\\' OR (CommandLine LIKE '% -u%' ESCAPE '\\' AND CommandLine LIKE '% -l%' ESCAPE '\\')) AND (NOT (CommandLine LIKE '% --help%' ESCAPE '\\' OR CommandLine LIKE '% -h%' ESCAPE '\\' OR CommandLine LIKE '% --version%' ESCAPE '\\' OR CommandLine LIKE '% -V%' ESCAPE '\\'))"
+  ],
+  "rule_level": "low",
+  "tags": [
+    "attack.discovery",
+    "attack.t1007"
+  ],
+  "count": 1,
+  "matches": [
+    {
+      "row_id": 9,
+      "Provider_Name": "Linux-Sysmon",
+      "Guid": "{ff032593-a8d3-4f13-b0d6-01fc615a0f97}",
+      "EventID": 1,
+      "Version": 5,
+      "Level": 4,
+      "Task": 1,
+      "Opcode": 0,
+      "Keywords": "0x8000000000000000",
+      "SystemTime": "2026-01-12T17:05:16.402055000Z",
+      "EventRecordID": 368311,
+      "ProcessID": "5412",
+      "ThreadID": "5412",
+      "Channel": "Linux-Sysmon/Operational",
+      "Computer": "vincenzolog-VMware-Virtual-Platform",
+      "UserId": "0",
+      "RuleName": "-",
+      "UtcTime": "2026-01-12 04:50:09.233",
+      "ProcessGuid": "{8b8a9dc4-7d81-6964-455f-db20b8600000}",
+      "Image": "/usr/bin/crontab",
+      "User": "root",
+      "OriginalLogfile": "Crontab_Enumeration_attack239.log-6NZ0I90I.json",
+      "FileVersion": "-",
+      "Description": "-",
+      "Product": "-",
+      "Company": "-",
+      "OriginalFileName": "-",
+      "CommandLine": "crontab -l",
+      "CurrentDirectory": "/home/vincenzolog/Auto_test",
+      "LogonGuid": "{8b8a9dc4-0000-0000-0000-000009000000}",
+      "LogonId": 0,
+      "TerminalSessionId": 3,
+      "IntegrityLevel": "no level",
+      "SHA256": "d71b4e26034ec955cae7e7101a4b33f5923b3396a0e1e1893cd1274bbb51c3ec",
+      "Hashes": "SHA256=d71b4e26034ec955cae7e7101a4b33f5923b3396a0e1e1893cd1274bbb51c3ec",
+      "ParentProcessGuid": "{8b8a9dc4-7d81-6964-1d08-5330b35e0000}",
+      "ParentProcessId": 56470,
+      "ParentImage": "/usr/bin/dash",
+      "ParentCommandLine": "/bin/sh",
+      "ParentUser": "root"
+    }
+  ]
+}]

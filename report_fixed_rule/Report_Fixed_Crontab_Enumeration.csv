@@ -11,7 +11,7 @@ ID,Command,Log File,Result,All Detected Rules
 10,"crontab -l > /tmp/.discovery_c""ron"" && cat /tmp/.discovery_c""ron""",Crontab_Enumeration_attack10.log,Bypass All,None
 11,"crontab -l > /tmp/.disc""ov""ery_cron && cat /tmp/.disc""ov""ery_cron",Crontab_Enumeration_attack11.log,Bypass All,None
 12,"crontab -l > /tmp/.dis""co""very_cron && cat /tmp/.dis""co""very_cron",Crontab_Enumeration_attack12.log,Bypass All,None
-13,"crontab -l > /tmp/.di""scovery""cron && cat /tmp/.di""scovery""cron",Crontab_Enumeration_attack13.log,Bypass All,None
+13,"crontab -l > /tmp/.di""scovery""cron && cat /tmp/.di""scovery""cron",Crontab_Enumeration_attack13.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 14,"crontab -l > /tmp/.discovery_cron && cat /tmp/.dis""covery""_cron",Crontab_Enumeration_attack14.log,Bypass All,None
 15,"crontab -l > /tmp/.discov""ery""_cron && cat /tmp/.discov""ery""_cron",Crontab_Enumeration_attack15.log,Bypass All,None
 16,"crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery""_""cron",Crontab_Enumeration_attack16.log,Bypass All,None
@@ -46,7 +46,7 @@ ID,Command,Log File,Result,All Detected Rules
 45,"crontab -l > /tmp/.discovery_cron && cat /tmp/.d""i""scovery""_""cron",Crontab_Enumeration_attack45.log,Bypass All,None
 46,"crontab -l > /tmp/.d""isc""ov""ery_cron"" && cat /tmp/.d""isc""ov""ery_cron""",Crontab_Enumeration_attack46.log,Bypass All,None
 47,"crontab -l > /tmp/.dis""cove""ry_cron && cat /tmp/.dis""cove""ry_cron",Crontab_Enumeration_attack47.log,Bypass All,None
-48,"crontab -l > /tmp/.discove""ry""cron && cat /tmp/.discove""ry""cron",Crontab_Enumeration_attack48.log,Bypass All,None
+48,"crontab -l > /tmp/.discove""ry""cron && cat /tmp/.discove""ry""cron",Crontab_Enumeration_attack48.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 49,"crontab -l > /tmp/.dis""covery_cron"" && cat /tmp/.dis""covery_cron""",Crontab_Enumeration_attack49.log,Bypass All,None
 50,"crontab -l > /tmp/.d""iscov""ery_cron && cat /tmp/.d""iscov""ery_cron",Crontab_Enumeration_attack50.log,Bypass All,None
 51,"crontab -l > /tmp/.d""i""sco""v""ery_cron && cat /tmp/.d""i""sco""v""ery_cron",Crontab_Enumeration_attack51.log,Bypass All,None
@@ -68,7 +68,7 @@ ID,Command,Log File,Result,All Detected Rules
 182,crontab > /tmp/.discovery_cron -l && cat /tmp/.discovery_cron,Crontab_Enumeration_attack182.log,Bypass All,None
 184,cat /tmp/.discovery_cron && /usr/bin/crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack184.log,Bypass All,None
 185,/usr/bin/crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack185.log,Bypass All,None
-187,crontab -l | tee /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack187.log,Bypass All,None
+187,crontab -l | tee /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack187.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 188,cat /tmp/.discovery_cron < /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack188.log,Bypass All,None
 190,crontab -l 1> /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack190.log,Bypass All,None
 191,crontab -l 2>/dev/null > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack191.log,Bypass All,None
@@ -78,9 +78,9 @@ ID,Command,Log File,Result,All Detected Rules
 195,cat /tmp/.discovery_cron ; crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack195.log,Bypass All,None
 196,cat /tmp/.discovery_cron || crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack196.log,Bypass All,None
 197,cat /tmp/.discovery_cron && crontab -l >/tmp/.discovery_cron,Crontab_Enumeration_attack197.log,Bypass All,None
-198,crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack198.log,Bypass All,None
-200,cat /tmp/.discovery_cron; crontab -l | tee /tmp/.discovery_cron,Crontab_Enumeration_attack200.log,Bypass All,None
-201,crontab -l|tee /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack201.log,Bypass All,None
+198,crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack198.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+200,cat /tmp/.discovery_cron; crontab -l | tee /tmp/.discovery_cron,Crontab_Enumeration_attack200.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+201,crontab -l|tee /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack201.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 203,cat /tmp/.discovery_cron && (crontab -l > /tmp/.discovery_cron),Crontab_Enumeration_attack203.log,Bypass All,None
 204,crontab -l > /tmp/.discovery_cron && (cat /tmp/.discovery_cron),Crontab_Enumeration_attack204.log,Bypass All,None
 205,(cat /tmp/.discovery_cron) && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack205.log,Bypass All,None
@@ -97,13 +97,13 @@ ID,Command,Log File,Result,All Detected Rules
 216,crontab -l > /tmp/.discovery_cron; echo done; cat /tmp/.discovery_cron,Crontab_Enumeration_attack216.log,Bypass All,None
 217,echo start; crontab -l > /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack217.log,Bypass All,None
 218,echo list; cat /tmp/.discovery_cron; crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack218.log,Bypass All,None
-219,crontab -l && echo out > /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack219.log,Bypass All,None
+219,crontab -l && echo out > /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack219.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 220,cat /tmp/.discovery_cron && echo cron; crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack220.log,Bypass All,None
 221,"crontab -l > /tmp/.discovery_cron; echo ""log:""; cat /tmp/.discovery_cron",Crontab_Enumeration_attack221.log,Bypass All,None
 222,"echo ""start"" && cat /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron",Crontab_Enumeration_attack222.log,Bypass All,None
-223,crontab -l | cat - > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack223.log,Bypass All,None
-224,cat /tmp/.discovery_cron && crontab -l | tee /tmp/.discovery_cron,Crontab_Enumeration_attack224.log,Bypass All,None
-225,crontab -l | tee /tmp/.discovery_cron | cat && cat /tmp/.discovery_cron,Crontab_Enumeration_attack225.log,Bypass All,None
+223,crontab -l | cat - > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack223.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+224,cat /tmp/.discovery_cron && crontab -l | tee /tmp/.discovery_cron,Crontab_Enumeration_attack224.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+225,crontab -l | tee /tmp/.discovery_cron | cat && cat /tmp/.discovery_cron,Crontab_Enumeration_attack225.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 226,cat < /tmp/.discovery_cron | head && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack226.log,Bypass All,None
 227,crontab -l | tee >(cat > /tmp/.discovery_cron) && cat /tmp/.discovery_cron,Crontab_Enumeration_attack227.log,Bypass All,None
 228,"cat /tmp/.discovery_cron | grep -v ""^#"" && crontab -l > /tmp/.discovery_cron",Crontab_Enumeration_attack228.log,Bypass All,None
@@ -111,13 +111,13 @@ ID,Command,Log File,Result,All Detected Rules
 230,less /tmp/.discovery_cron & crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack230.log,Bypass All,None
 231,cat /tmp/.discovery_cron | wc -l && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack231.log,Bypass All,None
 232,wc -l /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack232.log,Bypass All,None
-233,"crontab -l | grep -v ""^#"" > /tmp/.discovery_cron && cat /tmp/.discovery_cron",Crontab_Enumeration_attack233.log,Bypass All,None
+233,"crontab -l | grep -v ""^#"" > /tmp/.discovery_cron && cat /tmp/.discovery_cron",Crontab_Enumeration_attack233.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 234,cat /tmp/.discovery_cron | grep cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack234.log,Bypass All,None
 235,grep cron /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack235.log,Bypass All,None
-236,crontab -l | grep . > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack236.log,Bypass All,None
+236,crontab -l | grep . > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack236.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 237,cat /tmp/.discovery_cron | tail && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack237.log,Bypass All,None
 238,tail /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack238.log,Bypass All,None
-239,crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack239.log,Bypass All,None
+239,crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack239.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 240,awk '{print}' /tmp/.discovery_cron && crontab -l > /tmp/.discovery_cron,Crontab_Enumeration_attack240.log,Bypass All,None
 241,crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack241.log,Bypass All,None
 242,"crontab -l > /tmp/.discovery_cron && cat /tmp/$(printf ""%s"" "".discovery_cron"")",Crontab_Enumeration_attack242.log,Bypass All,None
@@ -136,14 +136,14 @@ ID,Command,Log File,Result,All Detected Rules
 257,$(echo crontab) -l > /tmp/.discovery_cron && $(echo cat) /tmp/.discovery_cron,Crontab_Enumeration_attack257.log,Bypass All,None
 258,$(echo -n crontab) -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack258.log,Bypass All,None
 262,crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron | cat,Crontab_Enumeration_attack262.log,Bypass All,None
-263,crontab -l | tee /tmp/.discovery_cron | cat,Crontab_Enumeration_attack263.log,Bypass All,None
-264,crontab -l | tee /tmp/.discovery_cron > /dev/null && cat /tmp/.discovery_cron,Crontab_Enumeration_attack264.log,Bypass All,None
-265,crontab -l | awk '{print}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack265.log,Bypass All,None
-266,crontab -l | sed '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack266.log,Bypass All,None
-267,crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack267.log,Bypass All,None
+263,crontab -l | tee /tmp/.discovery_cron | cat,Crontab_Enumeration_attack263.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+264,crontab -l | tee /tmp/.discovery_cron > /dev/null && cat /tmp/.discovery_cron,Crontab_Enumeration_attack264.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+265,crontab -l | awk '{print}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack265.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+266,crontab -l | sed '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack266.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+267,crontab -l | cat > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack267.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 268,crontab -l > /tmp/.discovery_cron; cat /tmp/.discovery_cron,Crontab_Enumeration_attack268.log,Bypass All,None
-269,crontab -l | base64 -d > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack269.log,Bypass All,None
-270,crontab -l | xargs -I {} echo {} > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack270.log,Bypass All,None
+269,crontab -l | base64 -d > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack269.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+270,crontab -l | xargs -I {} echo {} > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack270.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 271,"crontab -l > $(cat <<< ""/tmp/.discovery_cron"") && cat /tmp/.discovery_cron",Crontab_Enumeration_attack271.log,Bypass All,None
 272,"crontab -l > /tmp/.discovery_cron && cat ""/tmp/.discovery_cron""",Crontab_Enumeration_attack272.log,Bypass All,None
 273,"crontab -l > $(echo -e ""/tmp/.discovery_cron"") && cat /tmp/.discovery_cron",Crontab_Enumeration_attack273.log,Bypass All,None
@@ -151,24 +151,24 @@ ID,Command,Log File,Result,All Detected Rules
 276,$(tr -d '\n' <<< 'crontab') -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack276.log,Bypass All,None
 281,bash -c 'crontab -l' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack281.log,Bypass All,None
 282,"python3 -c 'import os; os.system(""crontab -l > /tmp/.discovery_cron"")' && cat /tmp/.discovery_cron",Crontab_Enumeration_attack282.log,Bypass All,None
-283,crontab -l | dd of=/tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack283.log,Bypass All,None
-284,crontab -l | head -n 1000 > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack284.log,Bypass All,None
-285,crontab -l | grep '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack285.log,Bypass All,None
-286,crontab -l | tr -d '\r' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack286.log,Bypass All,None
-287,crontab -l | tail -n +1 > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack287.log,Bypass All,None
+283,crontab -l | dd of=/tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack283.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+284,crontab -l | head -n 1000 > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack284.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+285,crontab -l | grep '' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack285.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+286,crontab -l | tr -d '\r' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack286.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+287,crontab -l | tail -n +1 > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack287.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 288,timeout 1s crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack288.log,Bypass All,None
 289,stdbuf -oL crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack289.log,Bypass All,None
 290,nohup crontab -l > /tmp/.discovery_cron 2>/dev/null && cat /tmp/.discovery_cron,Crontab_Enumeration_attack290.log,Bypass All,None
 291,env PATH=$PATH crontab -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack291.log,Bypass All,None
-292,crontab -l | tee /dev/stdout > /tmp/.discovery_cron,Crontab_Enumeration_attack292.log,Bypass All,None
+292,crontab -l | tee /dev/stdout > /tmp/.discovery_cron,Crontab_Enumeration_attack292.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 293,"perl -e 'system(""crontab -l > /tmp/.discovery_cron"")' && cat /tmp/.discovery_cron",Crontab_Enumeration_attack293.log,Bypass All,None
 294,"php -r 'system(""crontab -l > /tmp/.discovery_cron"");' && cat /tmp/.discovery_cron",Crontab_Enumeration_attack294.log,Bypass All,None
-295,crontab -l | gzip > /tmp/discovery.gz && gunzip -c /tmp/discovery.gz,Crontab_Enumeration_attack295.log,Bypass All,None
-296,crontab -l | tee /tmp/.discovery_cron | tail -n +0,Crontab_Enumeration_attack296.log,Bypass All,None
-297,crontab -l | sed -e 's/^/ /' | sed -e 's/^ //' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack297.log,Bypass All,None
+295,crontab -l | gzip > /tmp/discovery.gz && gunzip -c /tmp/discovery.gz,Crontab_Enumeration_attack295.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+296,crontab -l | tee /tmp/.discovery_cron | tail -n +0,Crontab_Enumeration_attack296.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
+297,crontab -l | sed -e 's/^/ /' | sed -e 's/^ //' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack297.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 298,"$(head -1 <<< ""crontab"") -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron",Crontab_Enumeration_attack298.log,Bypass All,None
 299,"crontab -l > /tmp/.discovery_cron && cat /tmp/$(cat <<< "".discovery_cron"")",Crontab_Enumeration_attack299.log,Bypass All,None
-300,crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack300.log,Bypass All,None
+300,crontab -l | awk '{print $0}' > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack300.log,Trigger: Crontab Enumeration (Enhanced),Crontab Enumeration (Enhanced)
 301,cp /usr/bin/crontab /tmp/t && /tmp/t -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack301.log,Bypass All,None
 302,cp $(which crontab) /tmp/tcron && /tmp/tcron -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack302.log,Bypass All,None
 303,cp /bin/crontab ./c && ./c -l > /tmp/.discovery_cron && cat /tmp/.discovery_cron,Crontab_Enumeration_attack303.log,Bypass All,None
@@ -232,8 +232,8 @@ ID,Command,Log File,Result,All Detected Rules
 ,,,,
 ,,,,
 === SUMMARY REPORT ===,,,,
-Target Rule,Crontab Enumeration (Hardened),,,
+Target Rule,Crontab Enumeration (Enhanced),,,
 Total Meaningful Logs,230,,,
-Triggered Target,0,,,
-Bypass Logs,230,,,
-BYPASS RATE,230 / 230 (100.00%),,,
+Triggered Target,30,,,
+Bypass Logs,200,,,
+BYPASS RATE,200 / 230 (86.96%),,,

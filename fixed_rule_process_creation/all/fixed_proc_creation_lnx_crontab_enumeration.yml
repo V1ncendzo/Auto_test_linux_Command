@@ -1,59 +1,54 @@
-title: Crontab Enumeration (Hardened)
-id: 403ed92c-b7ec-4edd-9947-5b535ee12d47
-status: stable
-description: |
-    Detects suspicious enumeration of scheduled tasks using the 'crontab' utility (list, edit, user targeting) 
-    AND direct access to sensitive cron configuration files (behavioral detection).
+title: Crontab Enumeration (Enhanced)
+id: 403ed92c-b7ec-4edd-9947-5b535ee12d46
+status: test
+description: Detects usage of crontab to list scheduled tasks for the current user or a specified user.
 references:
-    - https://attack.mitre.org/techniques/T1053/003/
-author: Joseliyo Sanchez, Optimized by Assistant
-date: 2026-01-17
+  - https://blogs.jpcert.or.jp/en/2023/05/gobrat.html
+  - https://jstnk9.github.io/jstnk9/research/GobRAT-Malware/
+  - https://www.virustotal.com/gui/file/60bcd645450e4c846238cf0e7226dc40c84c96eba99f6b2cffcd0ab4a391c8b3/detection
+  - https://www.virustotal.com/gui/file/3e44c807a25a56f4068b5b8186eee5002eed6f26d665a8b791c472ad154585d1/detection
+author: Joseliyo Sanchez, @Joseliyo_Jstnk (enhanced by ChatGPT)
+date: 2023-06-02
+modified: 2026-01-18
 tags:
-    - attack.discovery
-    - attack.execution
-    - attack.t1053.003
+  - attack.discovery
+  - attack.t1007
 logsource:
-    product: linux
-    category: process_creation
+  product: linux
+  category: process_creation
+
 detection:
-    # --- BLOCK 1: Crontab Binary Usage ---
-    selection_binary:
-        Image|endswith: '/crontab'
-    
-    # Bắt list (-l), edit (-e), user target (-u)
-    # Dùng regex để bắt cả trường hợp có/không có dấu cách hoặc quotes: crontab "-l", crontab -u root
-    selection_flags_regex:
-        CommandLine|re: 
-            - '\s-[leu]\b'           # Matches -l, -e, -u
-            - '\s-[a-z]*l[a-z]*\b'   # Matches combined flags like -ul (rare but possible)
-            - '["'']-[leu]["'']'     # Matches quoted flags "-l"
+  # 1) More robust Image match:
+  #    - handles "/usr/bin/crontab", "/bin/crontab", and also plain "crontab"
+  selection_image:
+    Image|endswith:
+      - '/crontab'
+      - 'crontab'
 
-    # --- BLOCK 2: Direct File Access (Behavioral) ---
-    # Bắt hành vi đọc file cấu hình cron bằng các tool phổ biến
-    selection_tools:
-        Image|endswith:
-            - '/cat'
-            - '/grep'
-            - '/more'
-            - '/less'
-            - '/tail'
-            - '/head'
-            - '/vi'
-            - '/vim'
-            - '/nano'
-            - '/awk'
-            - '/sed'
-    
-    selection_cron_files:
-        CommandLine|contains:
-            - '/etc/crontab'
-            - '/var/spool/cron'
-            - '/etc/cron.d/'
-            - '/etc/cron.daily'
-            - '/etc/cron.hourly'
+  # 2) Detect listing:
+  #    - covers "crontab -l"
+  #    - covers "crontab -u <user> -l"
+  #    - covers reordered flags where -l still appears
+  selection_list_current:
+    CommandLine|contains:
+      - ' -l'
+  selection_list_other_user:
+    CommandLine|contains|all:
+      - ' -u'
+      - ' -l'
 
-    condition: (selection_binary and selection_flags_regex) or (selection_tools and selection_cron_files)
+  # 3) Reduce obvious noise / false positives (optional but helpful):
+  #    - ignore help/version output often used by admins or scripts
+  filter_noise:
+    CommandLine|contains:
+      - ' --help'
+      - ' -h'
+      - ' --version'
+      - ' -V'
+
+  condition: selection_image and (selection_list_current or selection_list_other_user) and not filter_noise
+
 falsepositives:
-    - System Administration (Backup scripts reading crontabs)
-    - CM Tools (Ansible/Saltstack checking cron state)
-level: high
+  - Legitimate use of crontab by administrators or users
+  - System management scripts that enumerate cron entries
+level: low
