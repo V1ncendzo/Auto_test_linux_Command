@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8f15-6964-1d48-7cc5195d0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8f15-6964-cdfb-68e2595e0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -119,7 +119,7 @@
       "ProcessGuid": "{8b8a9dc4-8f15-6964-1da8-7da0505d0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -161,7 +161,7 @@
       "ProcessGuid": "{8b8a9dc4-8f15-6964-cdcb-a5ed57610000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -219,7 +219,7 @@
       "ProcessGuid": "{8b8a9dc4-8f16-6964-1d98-321d26650000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -278,7 +278,7 @@
       "ProcessGuid": "{8b8a9dc4-8f16-6964-458f-86e3e95a0000}",
       "Image": "/tmp/remove_me",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -320,7 +320,7 @@
       "ProcessGuid": "{8b8a9dc4-8f16-6964-458f-86e3e95a0000}",
       "Image": "/tmp/remove_me",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-N9R68P5R.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack354.log-AQ254LCR.json"
     }
   ]
 }]

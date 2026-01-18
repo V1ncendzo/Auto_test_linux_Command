@@ -1,0 +1,12 @@
+Filter Summary for Suspicious_Invocation_of_Shell_via_AWK
+=========================================================
+Total Logs: 301
+Filtered (Kept): 271
+  - Trigger (Sigma Match): 125
+  - Bypass (Right Meaning, No Match): 146
+Discarded (Wrong Meaning): 30
+
+Definitions:
+- Trigger: Image is awk/sibling, CLI contains 'BEGIN {system' AND exact shell path.
+- Bypass: Invokes 'system(' or pipes to shell but avoids exact string match (e.g. string concatenation, encoded chars, missing BEGIN).
+- Wrong Meaning: No system() call or shell invocation attempt found.

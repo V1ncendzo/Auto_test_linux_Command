@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8ed0-6964-1df8-b0009a570000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-NPJYZWB2.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-A0DKOF8L.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8ed0-6964-cddb-ed59695e0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-NPJYZWB2.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-A0DKOF8L.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -135,7 +135,7 @@
       "ProcessGuid": "{8b8a9dc4-8ed1-6964-1db8-82dae1560000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-NPJYZWB2.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-A0DKOF8L.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -194,7 +194,7 @@
       "ProcessGuid": "{8b8a9dc4-8ed1-6964-45ff-df6854600000}",
       "Image": "/tmp/crontab_helper",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-NPJYZWB2.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-A0DKOF8L.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -236,7 +236,7 @@
       "ProcessGuid": "{8b8a9dc4-8ed1-6964-45ff-df6854600000}",
       "Image": "/tmp/crontab_helper",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-NPJYZWB2.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack337.log-A0DKOF8L.json"
     }
   ]
 }]

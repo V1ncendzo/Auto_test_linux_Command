@@ -42,7 +42,7 @@
   },
   "labels": {
     "sigma_rule_title": "Ufw Force Stop Using Ufw-Init",
-    "sigma_rule_id": null,
+    "sigma_rule_id": "84c9e83c-599a-458a-a0cb-0ecce44e807a",
     "attack_id": "178",
     "original_command": "python3 -c \"import os; os.system('\\u0075\\u0066\\u0077\\u0020\\u0064\\u0069\\u0073\\u0061\\u0062\\u006c\\u0065')\"",
     "log_file": "Ufw_Force_Stop_Using_Ufw-Init_attack178.log",

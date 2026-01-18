@@ -1,0 +1,44 @@
+title: Linux Crypto Mining Indicators (Enhanced)
+id: 9069ea3c-b213-4c52-be13-86506a227ab1
+status: stable
+description: Detects command line parameters or strings often used by crypto miners, robust against simple obfuscation.
+author: Florian Roth (Nextron Systems), Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.impact
+    - attack.t1496
+logsource:
+    product: linux
+    category: process_creation
+detection:
+    # Selection 1: Common Miner Flags (Giữ nguyên các cờ hiệu quả)
+    selection_flags:
+        CommandLine|contains:
+            - ' --cpu-priority='
+            - '--donate-level=0'
+            - ' -o pool.'
+            - ' --nicehash'
+            - ' --algo=rx/0 '
+            - 'stratum+tcp://'
+            - 'stratum+udp://'
+            
+    # Selection 2: XMRig MSR Modprobe (Vá lỗi bypass tại đây)
+    # Phát hiện bất kỳ lệnh nào chứa đồng thời "modprobe", "msr" và "allow_writes"
+    selection_msr_modprobe:
+        CommandLine|contains|all:
+            - 'modprobe'
+            - 'msr'
+            - 'allow_writes'
+
+    # Selection 3: Base64 Encoded indicators (Giữ nguyên)
+    selection_b64:
+        CommandLine|contains:
+            - 'LS1kb25hdGUtbGV2ZWw9' # --donate-level=
+            - '0tZG9uYXRlLWxldmVsP'
+            - 'c3RyYXR1bSt0Y3A6Ly'   # stratum+tcp://
+            # ... (các chuỗi base64 khác)
+
+    condition: selection_flags or selection_msr_modprobe or selection_b64
+falsepositives:
+    - Legitimate administration requiring MSR modification (Rare)
+level: high

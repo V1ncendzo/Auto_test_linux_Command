@@ -53,7 +53,7 @@
       "ParentImage": "/usr/bin/python3.12",
       "ParentCommandLine": "python3",
       "ParentUser": "root",
-      "OriginalLogfile": "Linux_Crypto_Mining_Indicators_attack6.log-5K5IDDMY.json"
+      "OriginalLogfile": "Linux_Crypto_Mining_Indicators_attack6.log-VHTC55RW.json"
     },
     {
       "row_id": 18,
@@ -95,7 +95,7 @@
       "ParentImage": "/usr/bin/dash",
       "ParentCommandLine": "/bin/sh",
       "ParentUser": "root",
-      "OriginalLogfile": "Linux_Crypto_Mining_Indicators_attack6.log-5K5IDDMY.json"
+      "OriginalLogfile": "Linux_Crypto_Mining_Indicators_attack6.log-VHTC55RW.json"
     }
   ]
 }]

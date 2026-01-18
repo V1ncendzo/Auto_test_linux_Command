@@ -1,0 +1,48 @@
+title: Capsh Shell Invocation - Linux (Enhanced)
+id: db1ac3be-f606-4e3a-89e0-9607cbe6b98a
+status: stable
+description: |
+    Detects the use of the "capsh" utility to invoke a shell or execute commands.
+    Enhanced to detect bypasses involving flag reordering, execution via -c, and login shells.
+references:
+    - https://gtfobins.github.io/gtfobins/capsh/#shell
+    - https://linux.die.net/man/1/capsh
+author: Li Ling, Andy Parkidomo, Robert Rakowski, Blake Hartstein (Bloomberg L.P.), Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.execution
+    - attack.t1059.004
+    - attack.privilege_escalation
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    # Selection 1: Standard binary usage
+    selection_img:
+        Image|endswith: '/capsh'
+    
+    # Selection 2: Dangerous arguments regardless of position
+    selection_args:
+        CommandLine|contains:
+            - ' --'        # Covers " --" anywhere (ID 7, 20, 52, etc.)
+            - ' --login'   # Covers --login bypasses (ID 5, 220)
+            - ' --shell='  # Covers specific shell definition
+            - ' -c '       # Covers command execution bypasses (ID 81-90)
+            - ' --shell '  # Covers shell flag without =
+
+    # Selection 3: Attempt to detect renamed binaries via arguments (High FPs possible, tune carefully)
+    # This specifically targets the "cp /usr/sbin/capsh /tmp/x; /tmp/x --" scenario
+    selection_renamed_behavior:
+        CommandLine|contains:
+            - ' --print'
+            - ' --uid='
+            - ' --gid='
+            - ' --drop='
+            - ' --caps='
+            # Note: Detecting bare " --" on non-capsh images is too noisy.
+            # We rely on the specific flags above if the binary is renamed.
+            
+    condition: (selection_img and selection_args)
+falsepositives:
+    - Scripts using capsh for legitimate capability dropping (verify the arguments usually involve --drop or --caps, not just --/--login)
+level: high

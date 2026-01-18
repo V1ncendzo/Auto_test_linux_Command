@@ -1,0 +1,60 @@
+[{
+  "title": "Linux Base64 Encoded Pipe to Shell (Hardened)",
+  "id": "ba592c6d-6888-43c3-b8c6-689b8fe47337",
+  "description": "Detects suspicious process command line that uses base64 encoded input for execution with a shell, robust against common obfuscation techniques.",
+  "sigmafile": "",
+  "sigma": [
+    "SELECT * FROM logs WHERE CommandLine REGEXP 'b[\\\"\\\\]*a[\\\"\\\\]*s[\\\"\\\\]*e[\\\"\\\\]*6[\\\"\\\\]*4' AND CommandLine REGEXP '\\|\\s*(/bin/|/usr/bin/)?[\\\"\\\\]*(sh|bash|zsh|dash|ksh)[\\\"\\\\]*'"
+  ],
+  "rule_level": "high",
+  "tags": [
+    "attack.defense-evasion",
+    "attack.t1140",
+    "attack.execution"
+  ],
+  "count": 1,
+  "matches": [
+    {
+      "row_id": 10,
+      "Provider_Name": "Linux-Sysmon",
+      "Guid": "{ff032593-a8d3-4f13-b0d6-01fc615a0f97}",
+      "EventID": 1,
+      "Version": 5,
+      "Level": 4,
+      "Task": 1,
+      "Opcode": 0,
+      "Keywords": "0x8000000000000000",
+      "SystemTime": "2026-01-09T06:00:48.888838000Z",
+      "EventRecordID": 86661,
+      "ProcessID": "8040",
+      "ThreadID": "8040",
+      "Channel": "Linux-Sysmon/Operational",
+      "Computer": "vincenzolog-VMware-Virtual-Platform",
+      "UserId": "0",
+      "RuleName": "-",
+      "UtcTime": "2026-01-09 05:32:33.502",
+      "ProcessGuid": "{8b8a9dc4-92f1-6960-2d83-2d85bb560000}",
+      "Image": "/usr/bin/bash",
+      "User": "root",
+      "OriginalLogfile": "Linux_Base64_Encoded_Pipe_to_Shell_attack4.log-RVC52DJN.json",
+      "FileVersion": "-",
+      "Description": "-",
+      "Product": "-",
+      "Company": "-",
+      "OriginalFileName": "-",
+      "CommandLine": "/bin/bash -c echo \"ZWNobyAiVHJpZ2dlcmluZyBTaWdtYSBSdWxlIiA7IGlkCg==\" | base64 -d | bash",
+      "CurrentDirectory": "/home/vincenzolog/Auto_test",
+      "LogonGuid": "{8b8a9dc4-0000-0000-0000-000006000000}",
+      "LogonId": 0,
+      "TerminalSessionId": 3,
+      "IntegrityLevel": "no level",
+      "SHA256": "bc5945feb8bd26203ebfafea5ce1878bb2e32cb8fb50ab7ae395cfb1e1aaaef1",
+      "Hashes": "SHA256=bc5945feb8bd26203ebfafea5ce1878bb2e32cb8fb50ab7ae395cfb1e1aaaef1",
+      "ParentProcessGuid": "{8b8a9dc4-92f1-6960-1d08-ed0ed1570000}",
+      "ParentProcessId": 9841,
+      "ParentImage": "/usr/bin/dash",
+      "ParentCommandLine": "/bin/sh",
+      "ParentUser": "root"
+    }
+  ]
+}]

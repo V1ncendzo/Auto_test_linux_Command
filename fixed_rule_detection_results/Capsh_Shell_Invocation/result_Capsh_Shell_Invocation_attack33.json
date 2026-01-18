@@ -1,0 +1,60 @@
+[{
+  "title": "Capsh Shell Invocation - Linux (Enhanced)",
+  "id": "db1ac3be-f606-4e3a-89e0-9607cbe6b98a",
+  "description": "Detects the use of the \"capsh\" utility to invoke a shell or execute commands.\nEnhanced to detect bypasses involving flag reordering, execution via -c, and login shells.\n",
+  "sigmafile": "",
+  "sigma": [
+    "SELECT * FROM logs WHERE Image LIKE '%/capsh' ESCAPE '\\' AND (CommandLine LIKE '% --%' ESCAPE '\\' OR CommandLine LIKE '% --login%' ESCAPE '\\' OR CommandLine LIKE '% --shell=%' ESCAPE '\\' OR CommandLine LIKE '% -c %' ESCAPE '\\' OR CommandLine LIKE '% --shell %' ESCAPE '\\')"
+  ],
+  "rule_level": "high",
+  "tags": [
+    "attack.execution",
+    "attack.t1059.004",
+    "attack.privilege_escalation"
+  ],
+  "count": 1,
+  "matches": [
+    {
+      "row_id": 9,
+      "Provider_Name": "Linux-Sysmon",
+      "Guid": "{ff032593-a8d3-4f13-b0d6-01fc615a0f97}",
+      "EventID": 1,
+      "Version": 5,
+      "Level": 4,
+      "Task": 1,
+      "Opcode": 0,
+      "Keywords": "0x8000000000000000",
+      "SystemTime": "2026-01-16T16:26:55.296750000Z",
+      "EventRecordID": 896590,
+      "ProcessID": "1624",
+      "ThreadID": "1624",
+      "Channel": "Linux-Sysmon/Operational",
+      "Computer": "vincenzolog-VMware-Virtual-Platform",
+      "UserId": "0",
+      "RuleName": "-",
+      "UtcTime": "2026-01-16 15:28:17.948",
+      "ProcessGuid": "{8b8a9dc4-5911-696a-11b3-aa7fb85c0000}",
+      "Image": "/usr/sbin/capsh",
+      "User": "root",
+      "OriginalLogfile": "Capsh_Shell_Invocation_attack33.log-L0KNYP4B.json",
+      "FileVersion": "-",
+      "Description": "-",
+      "Product": "-",
+      "Company": "-",
+      "OriginalFileName": "-",
+      "CommandLine": "/usr/sbin/capsh / -- /",
+      "CurrentDirectory": "/home/vincenzolog/Auto_test",
+      "LogonGuid": "{8b8a9dc4-0000-0000-0000-000005000000}",
+      "LogonId": 0,
+      "TerminalSessionId": 3,
+      "IntegrityLevel": "no level",
+      "SHA256": "e5ce3b058185f1379d7280ae5057e3d92bab8619cb08a78b1ed6a11c08d8726c",
+      "Hashes": "SHA256=e5ce3b058185f1379d7280ae5057e3d92bab8619cb08a78b1ed6a11c08d8726c",
+      "ParentProcessGuid": "{8b8a9dc4-5911-696a-1d68-eef55e5f0000}",
+      "ParentProcessId": 102487,
+      "ParentImage": "/usr/bin/dash",
+      "ParentCommandLine": "/bin/sh",
+      "ParentUser": "root"
+    }
+  ]
+}]

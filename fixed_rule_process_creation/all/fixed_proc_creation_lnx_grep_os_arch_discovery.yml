@@ -1,0 +1,44 @@
+title: OS Architecture Discovery Via Grep (Hardened)
+id: d27ab432-2199-483f-a297-03633c05bae6
+status: stable
+description: |
+    Detects the use of grep to identify information about the operating system architecture. 
+    Enhanced to detect flags reordering and regex obfuscation.
+references:
+    - https://blogs.jpcert.or.jp/en/2023/05/gobrat.html
+author: Joseliyo Sanchez, Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.discovery
+    - attack.t1082
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    selection_process:
+        Image|endswith: '/grep'
+    
+    # Selection 1: Standard keywords appearing anywhere in the command
+    selection_keywords:
+        CommandLine|contains:
+            - 'x86_64'
+            - 'aarch64'
+            - 'i686'
+            - 'mips'
+            # Note: 'arm' and 'i386' are short and prone to FPs if simply contained.
+            # Using spaced versions or regex is safer for them.
+            - ' i386' 
+            - ' arm'
+
+    # Selection 2: Regex to catch obfuscated architecture strings
+    # Catches: "x86.64", "[x]86_64", "x86[_]64"
+    selection_regex:
+        CommandLine|re: 
+            - 'x86[\._]64'
+            - '\[x\]86_64'
+            - 'x86\[_\]64'
+
+    condition: selection_process and (selection_keywords or selection_regex)
+falsepositives:
+    - Scripts checking architecture for legitimate software installation (High noise potential, should be tuned by ParentProcess or User).
+level: medium

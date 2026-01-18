@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8f26-6964-1df8-b020d25a0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-EPT73BTD.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-OMRJQE60.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8f26-6964-cdbb-edc86f590000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-EPT73BTD.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-OMRJQE60.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -135,7 +135,7 @@
       "ProcessGuid": "{8b8a9dc4-8f27-6964-1d48-d89520650000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-EPT73BTD.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-OMRJQE60.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -194,7 +194,7 @@
       "ProcessGuid": "{8b8a9dc4-8f27-6964-454f-b1a28c610000}",
       "Image": "/tmp/ninja",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-EPT73BTD.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-OMRJQE60.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -236,7 +236,7 @@
       "ProcessGuid": "{8b8a9dc4-8f27-6964-454f-b1a28c610000}",
       "Image": "/tmp/ninja",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-EPT73BTD.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack358.log-OMRJQE60.json"
     }
   ]
 }]

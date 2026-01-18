@@ -1,0 +1,31 @@
+title: Linux Base64 Encoded Pipe to Shell (Hardened)
+id: ba592c6d-6888-43c3-b8c6-689b8fe47337
+status: stable
+description: Detects suspicious process command line that uses base64 encoded input for execution with a shell, robust against common obfuscation techniques.
+author: pH-T (Nextron Systems), Optimized by Assistant
+date: 2026-01-17
+tags:
+    - attack.defense-evasion
+    - attack.t1140
+    - attack.execution
+logsource:
+    product: linux
+    category: process_creation
+detection:
+    # Selection 1: Detect "base64" keyword with common obfuscation (quotes, backslashes)
+    selection_base64_obfuscated:
+        CommandLine|re: 'b[\"\\]*a[\"\\]*s[\"\\]*e[\"\\]*6[\"\\]*4'
+    
+    # Selection 2: Detect the specific flag for decoding (Strong indicator)
+    selection_decode_flag:
+        CommandLine|contains: ' -d'
+    
+    # Selection 3: Detect Pipe to Shell (Handling path variations and obfuscation)
+    selection_shell_pipe:
+        CommandLine|re: '\|\s*(/bin/|/usr/bin/)?[\"\\]*(sh|bash|zsh|dash|ksh)[\"\\]*'
+
+    # Condition: Must include base64 usage AND a pipe to shell
+    condition: selection_base64_obfuscated and selection_shell_pipe
+falsepositives:
+    - Legitimate administration scripts using base64 decoding piped to shell (Rare, but possible in deployment scripts).
+level: high

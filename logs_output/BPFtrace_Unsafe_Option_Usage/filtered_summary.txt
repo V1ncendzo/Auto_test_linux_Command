@@ -1,0 +1,12 @@
+Filter Summary for BPFtrace_Unsafe_Option_Usage
+==============================================
+Total Logs: 360
+Filtered (Kept): 360
+  - Trigger (Sigma Match): 110
+  - Bypass (Right Meaning, No Match): 250
+Discarded (Wrong Meaning): 0
+
+Definitions:
+- Trigger: Image ends in bpftrace, CLI contains '--unsafe'.
+- Bypass: Invokes bpftrace/execution but avoids exact '--unsafe' (e.g. --un"safe", --un$afe, renamed binary).
+- Wrong Meaning: No script execution or unsafe flag usage found.

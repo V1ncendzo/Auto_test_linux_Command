@@ -41,8 +41,8 @@
     }
   },
   "labels": {
-    "sigma_rule_title": "Shell Invocation via Apt",
-    "sigma_rule_id": null,
+    "sigma_rule_title": "Shell Invocation via Apt - Linux",
+    "sigma_rule_id": "bb382fd5-b454-47ea-a264-1828e4c766d6",
     "attack_id": "113",
     "original_command": "sudo apt -o \"APT::Update::Pre-Invoke::=whoami; find /home /root -name id_rsa -or -name '*.conf' 2>/dev/null\" update -qq",
     "log_file": "Shell_Invocation_via_Apt_attack113.log",

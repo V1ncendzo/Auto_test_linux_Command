@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8ea8-6964-1d78-d8af6a5b0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-0G7TXJ6D.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-OVLLDIGT.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8ea8-6964-cdeb-258a6c630000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-0G7TXJ6D.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-OVLLDIGT.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -135,7 +135,7 @@
       "ProcessGuid": "{8b8a9dc4-8ea9-6964-1de8-e14cde550000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-0G7TXJ6D.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-OVLLDIGT.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -194,7 +194,7 @@
       "ProcessGuid": "{8b8a9dc4-8ea9-6964-457f-85b6035e0000}",
       "Image": "/tmp/delc",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-0G7TXJ6D.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-OVLLDIGT.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -236,7 +236,7 @@
       "ProcessGuid": "{8b8a9dc4-8ea9-6964-457f-85b6035e0000}",
       "Image": "/tmp/delc",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-0G7TXJ6D.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack327.log-OVLLDIGT.json"
     }
   ]
 }]

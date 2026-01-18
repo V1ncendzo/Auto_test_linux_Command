@@ -34,7 +34,7 @@
       "ProcessGuid": "{8b8a9dc4-8e94-6964-b14b-20e422640000}",
       "Image": "/usr/bin/nohup",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -93,7 +93,7 @@
       "ProcessGuid": "{8b8a9dc4-8e93-6964-1da8-b4857e5f0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -135,7 +135,7 @@
       "ProcessGuid": "{8b8a9dc4-8e93-6964-cd1b-893d30590000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -193,7 +193,7 @@
       "ProcessGuid": "{8b8a9dc4-8e94-6964-1d28-dd9bbe620000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -252,7 +252,7 @@
       "ProcessGuid": "{8b8a9dc4-8e94-6964-459f-5f28d8630000}",
       "Image": "/tmp/.cr",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -311,7 +311,7 @@
       "ProcessGuid": "{8b8a9dc4-8e94-6964-b14b-20e422640000}",
       "Image": "/usr/bin/nohup",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -353,7 +353,7 @@
       "ProcessGuid": "{8b8a9dc4-8e94-6964-b14b-20e422640000}",
       "Image": "/usr/bin/nohup",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-ZDOWHSMK.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack322.log-0CSIK1T4.json"
     }
   ]
 }]

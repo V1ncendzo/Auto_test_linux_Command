@@ -1,0 +1,29 @@
+# Combined Detection Report Summary
+
+**Total Rules:** 22
+
+| Rule Name | Total | Triggered | Bypassed | Errors | Bypass Rate (%) |
+|---|---|---|---|---|---|
+| BPFtrace_Unsafe_Option_Usage | 360 | 115 | 245 | 0 | 68.06 |
+| Capsh_Shell_Invocation | 157 | 29 | 128 | 0 | 81.53 |
+| Clear_Linux_Logs | 210 | 195 | 15 | 0 | 7.14 |
+| Crontab_Enumeration | 230 | 30 | 200 | 0 | 86.96 |
+| DD_File_Overwrite | 206 | 106 | 100 | 0 | 48.54 |
+| Decode_Base64_Encoded_Text | 158 | 66 | 92 | 0 | 58.23 |
+| File_and_Directory_Discovery | 180 | 115 | 65 | 0 | 36.11 |
+| Kaspersky_Endpoint_Security_Stopped_Via_CommandLine | 215 | 144 | 71 | 0 | 33.02 |
+| Linux_Base64_Encoded_Pipe_to_Shell | 260 | 53 | 207 | 0 | 79.62 |
+| Linux_Base64_Encoded_Shebang_In_CLI | 232 | 232 | 0 | 0 | 0.00 |
+| Linux_Crypto_Mining_Indicators | 186 | 30 | 156 | 0 | 83.87 |
+| Linux_Shell_Pipe_to_Shell | 139 | 65 | 74 | 0 | 53.24 |
+| Local_Groups_Discovery_-_Linux | 261 | 115 | 146 | 0 | 55.94 |
+| Local_System_Accounts_Discovery_-_Linux | 218 | 86 | 132 | 0 | 60.55 |
+| OMIGOD_SCX_RunAsProvider_ExecuteShellCommand | 311 | 105 | 206 | 0 | 66.24 |
+| OS_Architecture_Discovery_Via_Grep | 269 | 59 | 210 | 0 | 78.07 |
+| Remove_Scheduled_Cron_Task | 334 | 134 | 200 | 0 | 59.88 |
+| Shell_Execution_via_Find | 352 | 153 | 199 | 0 | 56.53 |
+| Shell_Execution_via_Flock | 385 | 81 | 304 | 0 | 78.96 |
+| Shell_Invocation_via_Apt | 165 | 165 | 0 | 0 | 0.00 |
+| Suspicious_Invocation_of_Shell_via_AWK | 264 | 84 | 180 | 0 | 68.18 |
+| Ufw_Force_Stop_Using_Ufw-Init | 246 | 233 | 13 | 0 | 5.28 |
+| **TOTAL** | **5338** | **2395** | **2943** | **0** | **55.13** |

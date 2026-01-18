@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8f22-6964-1da8-e8981f560000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8f22-6964-cd2b-d652675f0000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -136,7 +136,7 @@
       "ProcessGuid": "{8b8a9dc4-8f23-6964-e19c-9c8d69620000}",
       "Image": "/usr/bin/cp",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -194,7 +194,7 @@
       "ProcessGuid": "{8b8a9dc4-8f23-6964-1dc8-e39e245d0000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -253,7 +253,7 @@
       "ProcessGuid": "{8b8a9dc4-8f23-6964-45bf-deb5ad5e0000}",
       "Image": "/tmp/shadow_cron",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -295,7 +295,7 @@
       "ProcessGuid": "{8b8a9dc4-8f23-6964-45bf-deb5ad5e0000}",
       "Image": "/tmp/shadow_cron",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-QXARIW4U.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack357.log-M5YZLQCL.json"
     }
   ]
 }]

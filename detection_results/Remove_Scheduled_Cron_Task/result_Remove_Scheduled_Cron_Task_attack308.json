@@ -35,7 +35,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5b-6964-1d08-b48787580000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -77,7 +77,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5b-6964-cd1b-b31f0e630000}",
       "Image": "/usr/bin/journalctl",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -135,7 +135,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5c-6964-1d98-f74714630000}",
       "Image": "/usr/bin/dash",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -194,7 +194,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5c-6964-456f-e570de640000}",
       "Image": "/tmp/newcron",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
@@ -236,7 +236,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5c-6964-456f-e570de640000}",
       "Image": "/tmp/newcron",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json"
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json"
     }
   ]
 },
@@ -277,7 +277,7 @@
       "ProcessGuid": "{8b8a9dc4-8e5c-6964-d16f-1ddc955b0000}",
       "Image": "/usr/bin/chmod",
       "User": "root",
-      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-Q6TSKEPG.json",
+      "OriginalLogfile": "Remove_Scheduled_Cron_Task_attack308.log-8QDSBZP5.json",
       "FileVersion": "-",
       "Description": "-",
       "Product": "-",
